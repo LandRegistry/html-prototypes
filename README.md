@@ -1,8 +1,6 @@
 html-prototypes
 ===============
 
-Canonical source of markup patterns and css
-
 html-prototypes is a [Flask](http://flask.pocoo.org/) application, with [Grunt](http://gruntjs.com/) workflow to generate assets.
 
 
