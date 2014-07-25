@@ -68,4 +68,5 @@ Once you've got the requirements in place:
 
 * Clone this repo.
 * Ensure you’ve cd’ed into the style-guide folder, then ```npm install``` to install dependencies.
+* Start your Python virtual environment: ```workon html-prototypes```
 * To run the server and have sass files watched: ```grunt```
