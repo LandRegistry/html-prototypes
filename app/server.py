@@ -29,6 +29,10 @@ def sprint_2_2():
 def sprint_2_3():
   return render_template('sprint-2/citizen-3-choose-method.html')
 
+@app.route('/sprint-2/generate-token')
+def sprint_2_4():
+  return render_template('sprint-2/citizen-4-generate-token.html')
+
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0')

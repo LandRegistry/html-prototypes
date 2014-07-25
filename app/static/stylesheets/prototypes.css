@@ -227,3 +227,10 @@ nav ol, nav ul {
 .form details .panel-indent {
   margin-bottom: 0;
 }
+
+.token-display {
+  text-align: center;
+}
+.token-display span {
+  display: block;
+}
