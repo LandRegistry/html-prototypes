@@ -98,3 +98,14 @@
     margin: $gutter 0;
   }
 }
+
+.form details {
+  clear: both;
+  margin-bottom: $gutter;
+  summary {
+    margin-top: $gutter-half;
+  }
+  .panel-indent {
+    margin-bottom: 0;
+  }
+}

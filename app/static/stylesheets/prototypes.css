@@ -216,3 +216,14 @@ nav ol, nav ul {
 .change-controls .controls {
   margin: 30px 0;
 }
+
+.form details {
+  clear: both;
+  margin-bottom: 30px;
+}
+.form details summary {
+  margin-top: 15px;
+}
+.form details .panel-indent {
+  margin-bottom: 0;
+}

@@ -16,9 +16,18 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+# Sprint 2, prototype 1: Passing a "token"
 @app.route('/sprint-2/token')
 def sprint_2_1():
   return render_template('sprint-2/citizen-1-register.html')
+
+@app.route('/sprint-2/select-action')
+def sprint_2_2():
+  return render_template('sprint-2/citizen-2-select-action.html')
+
+@app.route('/sprint-2/choose-method')
+def sprint_2_3():
+  return render_template('sprint-2/citizen-3-choose-method.html')
 
 
 if __name__ == '__main__':

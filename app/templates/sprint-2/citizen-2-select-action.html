@@ -1,0 +1,56 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  Official register of title TGL56315
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+
+  <div id="content">
+
+    {% include "includes/alpha_banner.html" %}
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <form action="choose-method" method="get" class="form">
+
+          <h1 class="form-title heading-large">
+            Select change
+          </h1>
+
+          <div class="form-group">
+
+            <label for="radio-1" class="block-label">
+              <input id="radio-1" type="radio" name="radio-group" value="1">
+              Sell this property
+            </label>
+
+            <label for="radio-2" class="block-label">
+              <input id="radio-2" type="radio" name="radio-group" value="2">
+              Change a proprietor&rsquo;s personal details
+            </label>
+
+            <label for="radio-3" class="block-label">
+              <input id="radio-3" type="radio" name="radio-group" value="3">
+              Another task
+            </label>
+
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="button">Next</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

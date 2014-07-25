@@ -1,0 +1,69 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  Official register of title TGL56315
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+
+  <div id="content">
+
+    {% include "includes/alpha_banner.html" %}
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <form action="" method="get" class="form">
+
+          <h1 class="form-title heading-large">
+            Choose method
+          </h1>
+
+          <div class="form-group">
+
+            <label for="radio-1" class="block-label">
+              <input id="radio-1" type="radio" name="radio-group" value="1">
+              Generate a token
+            </label>
+
+            <details>
+              <summary>Help with tokens</summary>
+              <div class="panel-indent">
+                <p>
+                  Help text to explain the purpose of the token.
+                </p>
+              </div>
+            </details>
+
+            <label for="radio-2" class="block-label">
+              <input id="radio-2" type="radio" name="radio-group" value="2">
+              Do it yourself
+            </label>
+
+            <details>
+              <summary>Help with doing it yourself</summary>
+              <div class="panel-indent">
+                <p>
+                  Help text to explain the implications of doing it yourself.
+                </p>
+              </div>
+            </details>
+
+          </div>
+
+          <div class="form-group">
+            <a href="generate-token" class="button">Next</a>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
