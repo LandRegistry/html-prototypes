@@ -10,7 +10,7 @@
 @-o-viewport {
   width: device-width;
 }
-.inline:after, .summary:after {
+.inline:after, .summary:after, .task-summary:after {
   content: "";
   display: block;
   clear: both;
@@ -42,7 +42,7 @@
 @-o-viewport {
   width: device-width;
 }
-.inline:after, .summary:after {
+.inline:after, .summary:after, .task-summary:after {
   content: "";
   display: block;
   clear: both;
@@ -60,7 +60,7 @@
 @-o-viewport {
   width: device-width;
 }
-.inline:after, .summary:after {
+.inline:after, .summary:after, .task-summary:after {
   content: "";
   display: block;
   clear: both;
@@ -72,7 +72,7 @@
 @-o-viewport {
   width: device-width;
 }
-.inline:after, .summary:after {
+.inline:after, .summary:after, .task-summary:after {
   content: "";
   display: block;
   clear: both;
@@ -106,6 +106,32 @@ nav ol, nav ul {
   margin-right: 15px;
 }
 
+b {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.subtitle {
+  display: block;
+  margin: 0;
+  color: #6f777b;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  .subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 @media (min-width: 641px) {
   .inline dt {
     float: left;
@@ -133,7 +159,7 @@ nav ol, nav ul {
   color: white;
   background-color: #2b8cc4;
 }
-.summary h1 {
+.summary h1, .summary h2 {
   margin-top: 0;
 }
 .summary .title-flag {
@@ -158,6 +184,21 @@ nav ol, nav ul {
   border-bottom: 1px solid white;
 }
 .summary dd {
+  font-weight: bold;
+}
+
+.task-summary {
+  margin: 30px;
+  padding: 30px 0;
+  background-color: #f8f8f8;
+}
+.task-summary h1, .task-summary h2 {
+  margin-top: 0;
+}
+.task-summary dl {
+  padding-top: 30px;
+}
+.task-summary dd {
   font-weight: bold;
 }
 
@@ -205,16 +246,14 @@ nav ol, nav ul {
   padding: 7.5px;
   background-color: #f8f8f8;
 }
-.title-plan img {
-  display: block;
-  max-width: 100%;
-}
 
 .change-controls {
   border-top: 7.5px solid #dee0e2;
 }
-.change-controls .controls {
-  margin: 30px 0;
+
+.controls {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .form details {

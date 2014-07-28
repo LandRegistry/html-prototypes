@@ -2,6 +2,22 @@
 @import "navigation";
 @import "tags";
 
+b {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.subtitle{
+  display: block;
+  margin: 0;
+  color: $secondary-text-colour;
+  @include core-24;
+}
+
 .inline {
   
   @extend %contain-floats;
@@ -42,7 +58,7 @@
 
   @extend %contain-floats;
 
-  h1 {
+  h1, h2 {
     margin-top: 0;
   }
 
@@ -60,6 +76,26 @@
     font-weight: bold;
   }
 
+}
+
+.task-summary {
+  margin: $gutter;
+  padding: $gutter 0;
+
+  background-color: $grey-4;
+
+  @extend %contain-floats;
+
+  h1, h2 {
+    margin-top: 0;
+  }
+
+  dl {
+    padding-top: $gutter;
+  }
+  dd {
+    font-weight: bold;
+  }
 }
 
 .first-item {
@@ -85,18 +121,15 @@
   margin: $gutter 0;
   padding: $gutter-one-quarter;
   background-color: $grey-4;
-  img {
-    display: block;
-    max-width: 100%;
-  }
 }
 
 .change-controls {
   border-top: $gutter-one-quarter solid $grey-3;
+}
 
-  .controls {
-    margin: $gutter 0;
-  }
+.controls {
+  margin-top: $gutter;
+  margin-bottom: $gutter;
 }
 
 .form details {
