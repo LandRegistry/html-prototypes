@@ -43,6 +43,15 @@ def sprint_2_5():
 def sprint_2_6():
   return render_template('sprint-2/token/conveyancer-2-retrieve-details.html')
 
+# Sprint 2, spike - Execute Deed -----------------------------------------
+@app.route('/sprint-2/execute-deed')
+def sprint_2_7():
+  return render_template('sprint-2/deed/buyer-1-execute-deed.html')
+
+@app.route('/sprint-2/execution-complete')
+def sprint_2_8():
+  return render_template('sprint-2/deed/buyer-2-execution-complete.html')
+
 
 if __name__ == '__main__':
   # Bind to PORT if defined, otherwise default to 5000.
