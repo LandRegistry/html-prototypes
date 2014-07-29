@@ -35,12 +35,16 @@ def sprint_2_3():
 def sprint_2_4():
   return render_template('sprint-2/token/citizen-4-generate-token.html')
 
-@app.route('/sprint-2/input-token')
+@app.route('/sprint-2/show-change')
 def sprint_2_5():
+  return render_template('sprint-2/token/citizen-5-register-during-change.html')
+
+@app.route('/sprint-2/input-token')
+def sprint_2_6():
   return render_template('sprint-2/token/conveyancer-1-input-token.html')
 
 @app.route('/sprint-2/retrieve-token')
-def sprint_2_6():
+def sprint_2_7():
   return render_template('sprint-2/token/conveyancer-2-retrieve-details.html')
 
 
