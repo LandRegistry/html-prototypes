@@ -206,7 +206,7 @@ img {
 .change-flag {
   margin: 30px 0;
   padding: 30px;
-  border: 7.5px solid #b10e1e;
+  border: 7.5px solid #85994b;
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -321,7 +321,8 @@ img {
 }
 
 a.stop-changes {
-  color: #b10e1e;
+  display: inline-block;
+  margin-left: 30px;
 }
 
 strong, b {

@@ -102,7 +102,7 @@ img {
 .change-flag {
   margin: $gutter 0;
   padding: $gutter;
-  border: $gutter-one-quarter solid $red;
+  border: $gutter-one-quarter solid $grass-green;
 
   @include core-16;
 
@@ -182,5 +182,6 @@ img {
 }
 
 a.stop-changes {
-  color: $red;
+  display: inline-block;
+  margin-left: $gutter; 
 }
