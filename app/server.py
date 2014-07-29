@@ -21,27 +21,27 @@ def home():
 # Sprint 2, prototype 1: Passing a "token" -----------------------------------------
 @app.route('/sprint-2/token')
 def sprint_2_1():
-  return render_template('sprint-2/citizen-1-register.html')
+  return render_template('sprint-2/token/citizen-1-register.html')
 
 @app.route('/sprint-2/select-action')
 def sprint_2_2():
-  return render_template('sprint-2/citizen-2-select-action.html')
+  return render_template('sprint-2/token/citizen-2-select-action.html')
 
 @app.route('/sprint-2/choose-method')
 def sprint_2_3():
-  return render_template('sprint-2/citizen-3-choose-method.html')
+  return render_template('sprint-2/token/citizen-3-choose-method.html')
 
 @app.route('/sprint-2/generate-token')
 def sprint_2_4():
-  return render_template('sprint-2/citizen-4-generate-token.html')
+  return render_template('sprint-2/token/citizen-4-generate-token.html')
 
 @app.route('/sprint-2/input-token')
 def sprint_2_5():
-  return render_template('sprint-2/conveyancer-1-input-token.html')
+  return render_template('sprint-2/token/conveyancer-1-input-token.html')
 
 @app.route('/sprint-2/retrieve-token')
 def sprint_2_6():
-  return render_template('sprint-2/conveyancer-2-retrieve-details.html')
+  return render_template('sprint-2/token/conveyancer-2-retrieve-details.html')
 
 
 if __name__ == '__main__':
