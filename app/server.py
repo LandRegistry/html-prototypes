@@ -20,36 +20,40 @@ def home():
 
 # Sprint 2, prototype 1: Passing a "token" -----------------------------------------
 @app.route('/sprint-2/token')
-def sprint_2_1():
+def sprint_2_token():
   return render_template('sprint-2/token/citizen-1-register.html')
 
 @app.route('/sprint-2/select-action')
-def sprint_2_2():
+def sprint_2_select_action():
   return render_template('sprint-2/token/citizen-2-select-action.html')
 
 @app.route('/sprint-2/choose-method')
-def sprint_2_3():
+def sprint_2_choose_method():
   return render_template('sprint-2/token/citizen-3-choose-method.html')
 
 @app.route('/sprint-2/generate-token')
-def sprint_2_4():
+def sprint_2_generate_token():
   return render_template('sprint-2/token/citizen-4-generate-token.html')
 
+@app.route('/sprint-2/show-change')
+def sprint_2_show_change():
+  return render_template('sprint-2/token/citizen-5-register-during-change.html')
+
 @app.route('/sprint-2/input-token')
-def sprint_2_5():
+def sprint_2_input_token():
   return render_template('sprint-2/token/conveyancer-1-input-token.html')
 
 @app.route('/sprint-2/retrieve-token')
-def sprint_2_6():
+def sprint_2_retrieve_token():
   return render_template('sprint-2/token/conveyancer-2-retrieve-details.html')
 
 # Sprint 2, spike - Execute Deed -----------------------------------------
 @app.route('/sprint-2/execute-deed')
-def sprint_2_7():
+def sprint_2_execute_deed():
   return render_template('sprint-2/deed/buyer-1-execute-deed.html')
 
 @app.route('/sprint-2/execution-complete')
-def sprint_2_8():
+def sprint_2_execution_complete():
   return render_template('sprint-2/deed/buyer-2-execution-complete.html')
 
 

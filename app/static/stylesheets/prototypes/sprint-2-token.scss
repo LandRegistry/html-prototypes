@@ -68,7 +68,8 @@ img {
 
   .lede {
     margin-bottom: $gutter;
-    padding-bottom: $gutter;
+    padding: $gutter 0;
+    border-top: 1px solid $white;
     border-bottom: 1px solid $white;
   }
 
@@ -96,6 +97,36 @@ img {
   dd {
     font-weight: bold;
   }
+}
+
+.change-flag {
+  margin: $gutter 0;
+  padding: $gutter;
+  border: $gutter-one-quarter solid $red;
+
+  @include core-16;
+
+  @extend %contain-floats;
+
+  h1, h2 {
+    margin-top: 0;
+  }
+
+  .title-flag {
+    @include highlight-tag($light-blue, $white);
+  }
+
+  .lede {
+    margin-bottom: $gutter;
+    padding: $gutter 0;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+  }
+
+  dd {
+    font-weight: bold;
+  }
+
 }
 
 .first-item {
@@ -148,4 +179,8 @@ img {
   span {
     display: block;
   }
+}
+
+a.stop-changes {
+  color: $red;
 }
