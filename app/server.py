@@ -18,6 +18,20 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+# Sprint 3, prototype 1, conveyancer - buyer relationship --------------------------
+@app.route('/sprint-3/conveyancer-register')
+def sprint_3_conveyancer_register():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-3-register.html')
+
+@app.route('/sprint-3/select-action')
+def sprint_3_select_action():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-4-select-action.html')
+
+@app.route('/sprint-3/add-buyers')
+def sprint_3_add_buyers():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-5-add-buyers.html')
+
+
 # Sprint 2, prototype 1: Passing a "token" -----------------------------------------
 @app.route('/sprint-2/token')
 def sprint_2_token():
