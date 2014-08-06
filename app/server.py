@@ -31,6 +31,16 @@ def sprint_3_select_action():
 def sprint_3_add_buyers():
   return render_template('sprint-3/buyer-conveyancer/conveyancer-5-add-buyers.html')
 
+# Sprint 3, Execute Deed -reworked from sprint 2 -----------------------------------
+@app.route('/sprint-3/execute-deed')
+def sprint_3_execute_deed():
+  return render_template('sprint-3/deed/buyer-1-execute-deed.html')
+
+@app.route('/sprint-3/execution-complete')
+def sprint_3_execution_complete():
+  return render_template('sprint-3/deed/buyer-2-execution-complete.html')
+
+
 
 # Sprint 2, prototype 1: Passing a "token" -----------------------------------------
 @app.route('/sprint-2/token')
