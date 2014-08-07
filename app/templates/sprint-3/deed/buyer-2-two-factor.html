@@ -1,0 +1,50 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  <!-- insert page title here -->
+  Page title
+  <!-- -->
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+
+  <div id="content">
+
+    {% include "includes/alpha_banner.html" %}
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <form action="signing-complete" method="get" class="form">
+
+          <h1 class="form-title heading-xlarge">
+            
+          </h1>
+
+<p>An authentication code has been to your phone</p>
+<p>use this to finish signing the mortgage</p>
+
+
+
+          <div class="form-group">
+            <label for="2-factor-code" class="form-label">Code</label>
+            <input type="text" size="10" class="form-control" id="2-factor-code">
+          </div>
+
+
+          <div class="form-group">           
+            <button type="submit" class="button">Sign</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
