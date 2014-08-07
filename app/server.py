@@ -19,6 +19,14 @@ def home():
   return render_template('index.html')
 
 # Sprint 3, prototype 1, conveyancer - buyer relationship --------------------------
+@app.route('/sprint-3/conveyancer-login')
+def sprint_3_conveyancer_login():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-1-login.html')
+
+@app.route('/sprint-3/conveyancer-search')
+def sprint_3_conveyancer_search():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-2-search.html')
+
 @app.route('/sprint-3/conveyancer-register')
 def sprint_3_conveyancer_register():
   return render_template('sprint-3/buyer-conveyancer/conveyancer-3-register.html')
@@ -27,18 +35,40 @@ def sprint_3_conveyancer_register():
 def sprint_3_select_action():
   return render_template('sprint-3/buyer-conveyancer/conveyancer-4-select-action.html')
 
-@app.route('/sprint-3/add-buyers')
-def sprint_3_add_buyers():
-  return render_template('sprint-3/buyer-conveyancer/conveyancer-5-add-buyers.html')
+# @app.route('/sprint-3/add-buyers')
+# def sprint_3_add_buyers():
+#   return render_template('sprint-3/buyer-conveyancer/conveyancer-5-add-buyers.html')
 
-# Sprint 3, Execute Deed -reworked from sprint 2 -----------------------------------
-@app.route('/sprint-3/execute-deed')
+@app.route('/sprint-3/relationship-reference')
+def sprint_3_relationship_reference():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-6-ref-for-buyers.html')
+
+# Sprint 3, prototype 1, buyer -> conveyancer relationship --------------------------
+@app.route('/sprint-3/buyer-login')
+def sprint_3_buyer_login():
+  return render_template('sprint-3/buyer-conveyancer/buyer-1-login.html')
+
+@app.route('/sprint-3/buyer-ref-code')
+def sprint_3_buyer_ref_code():
+  return render_template('sprint-3/buyer-conveyancer/buyer-2-reference-code.html')
+
+@app.route('/sprint-3/buyer-register')
+def sprint_3_buyer_register():
+  return render_template('sprint-3/buyer-conveyancer/buyer-3-register.html')
+
+
+# Sprint 3, Execute Deed - reworked from sprint 2 -----------------------------------
+@app.route('/sprint-3/display-charge-for-signing')
 def sprint_3_execute_deed():
-  return render_template('sprint-3/deed/buyer-1-execute-deed.html')
+  return render_template('sprint-3/deed/buyer-1-sign-charge.html')
 
-@app.route('/sprint-3/execution-complete')
-def sprint_3_execution_complete():
-  return render_template('sprint-3/deed/buyer-2-execution-complete.html')
+@app.route('/sprint-3/two-factor')
+def sprint_3_two_factor():
+  return render_template('sprint-3/deed/buyer-2-two-factor.html')
+
+@app.route('/sprint-3/signing-complete')
+def sprint_3_signing_complete():
+  return render_template('sprint-3/deed/buyer-3-signing-complete.html')
 
 
 
@@ -79,6 +109,13 @@ def sprint_2_execute_deed():
 @app.route('/sprint-2/execution-complete')
 def sprint_2_execution_complete():
   return render_template('sprint-2/deed/buyer-2-execution-complete.html')
+
+
+# Example pages - for designers -----------------------------------------
+@app.route('/examples/example-1')
+def example_1():
+  return render_template('examples/example-page.html')
+
 
 
 if __name__ == '__main__':
