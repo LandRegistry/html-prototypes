@@ -19,25 +19,29 @@ def home():
   return render_template('index.html')
 
 # Sprint 3, prototype 1, conveyancer - buyer relationship --------------------------
+@app.route('/sprint-3/conveyancer-start')
+def sprint_3_conveyancer_start():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-0-start.html')
+
 @app.route('/sprint-3/conveyancer-login')
 def sprint_3_conveyancer_login():
   return render_template('sprint-3/buyer-conveyancer/conveyancer-1-login.html')
 
-@app.route('/sprint-3/conveyancer-search')
-def sprint_3_conveyancer_search():
-  return render_template('sprint-3/buyer-conveyancer/conveyancer-2-search.html')
+@app.route('/sprint-3/conveyancer-enter-title')
+def sprint_3_conveyancer_enter_title():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-2-enter-title.html')
 
-@app.route('/sprint-3/conveyancer-register')
-def sprint_3_conveyancer_register():
-  return render_template('sprint-3/buyer-conveyancer/conveyancer-3-register.html')
+# @app.route('/sprint-3/conveyancer-register')
+# def sprint_3_conveyancer_register():
+#   return render_template('sprint-3/buyer-conveyancer/conveyancer-3-register.html')
 
-@app.route('/sprint-3/select-action')
-def sprint_3_select_action():
-  return render_template('sprint-3/buyer-conveyancer/conveyancer-4-select-action.html')
+# @app.route('/sprint-3/select-action')
+# def sprint_3_select_action():
+#   return render_template('sprint-3/buyer-conveyancer/conveyancer-4-select-action.html')
 
-# @app.route('/sprint-3/add-buyers')
-# def sprint_3_add_buyers():
-#   return render_template('sprint-3/buyer-conveyancer/conveyancer-5-add-buyers.html')
+@app.route('/sprint-3/conveyancer-add-buyers')
+def sprint_3_conveyancer_add_buyers():
+  return render_template('sprint-3/buyer-conveyancer/conveyancer-5-add-buyers.html')
 
 @app.route('/sprint-3/relationship-reference')
 def sprint_3_relationship_reference():
