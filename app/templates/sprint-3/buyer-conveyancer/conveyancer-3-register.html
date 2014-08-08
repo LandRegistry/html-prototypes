@@ -138,14 +138,6 @@
       
             <h2 class="heading-medium">Proprietorship register</h2>
 
-            <details>
-              <summary>What is the proprietorship register?</summary>
-              <div class="panel-indent">
-                <p>
-                  This register specifies the class of title and identifies the owner. It contains any entries that affect the right of disposal.
-                </p>
-              </div>
-            </details>
 
             <div class="note">
               <time datetime="2013-08-07">7 August 2013</time>
@@ -181,14 +173,6 @@
       
             <h2 class="heading-medium">Charges register</h2>
 
-            <details>
-              <summary>What is the charges register?</summary>
-              <div class="panel-indent">
-                <p>
-                  This register contains any charges and other matters that affect the land.
-                </p>
-              </div>
-            </details>
 
             <div class="note">
               <time datetime="2013-08-07">7 August 2013</time>
@@ -204,15 +188,6 @@
       
             <h2 class="heading-medium">Title plan</h2>
 
-            <details>
-              <summary>What are title plans?</summary>
-              <div class="panel-indent">
-                <p>
-                  Title plans are things that represent things. They help you to know something.
-                </p>
-              </div>
-            </details>
-
             <figure class="title-plan">
               <img src="{{ prototypes_asset_path }}images/dummy-title-plan.png" alt="">
             </figure>
@@ -220,32 +195,39 @@
           </section>
 
 
-          <h2 class="heading-medium">Who are you acting for?</h2>
-          <div class="form-group">
+          <form action="relationship-reference" method="get" class="form">
 
-            <label for="radio-1" class="block-label">
-              <input id="radio-1" type="radio" name="radio-group" value="1">
-              buyer(s)
-            </label>
+            <h2 class="heading-medium">Who are you acting for?</h2>
+            <div class="form-group">
+              <fieldset class="inline">
+                <legend></legend>
 
-            <label for="radio-2" class="block-label">
-              <input id="radio-2" type="radio" name="radio-group" value="2">
-              seller(s)
-            </label>
+                <label for="radio-inline-1" class="block-label">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="buyer">
+                  buyer(s)
+                </label>
+                <label for="radio-inline-2" class="block-label">
+                  <input id="radio-inline-2" type="radio" name="radio-inline-group" value="seller">
+                  seller(s)
+                </label>
+              </fieldset>
+            </div>
 
-          </div>
 
-          <section id="change" class="change-controls text">
       
             <h2 class="heading-medium">Authorise change</h2>
 
             <p>To register a change on this title you must first create an authorisation code to give to your client.</p>
 
-            <div class="controls">
-              <a href="select-action" class="button">Create code</a>
+
+            <div class="form-group">
+              <button type="submit" class="button">Create code</button>
+              <p>
+                <a href="conveyancer-search">Back</a>
+              </p>
             </div>
 
-          </section>
+          </form>
 
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 {% block page_title %}
   <!-- insert page title here -->
-  Page title
+  Sign in to your account
   <!-- -->
 {% endblock %}
   
@@ -20,22 +20,27 @@
         <form action="conveyancer-search" method="get" class="form">
 
           <h1 class="form-title heading-xlarge">
-            Login
+            Sign in to your account
           </h1>
 
+          <p class="lede text">Sign in to your account to create an authorisation code.</p>
 
           <div class="form-group">
-            <label for="username" class="form-label">Username</label>
+            <label for="username" class="form-label-bold">Username</label>
             <input type="text" class="form-control" id="username">
           </div>
 
           <div class="form-group">
-            <label for="password" class="form-label">Password</label>
+            <label for="password" class="form-label-bold">Password</label>
             <input type="password" class="form-control" id="password">
           </div>
 
+          <p>
+              <a href="#">I’ve forgotten my sign-in details</a>
+          </p>
+
           <div class="form-group">           
-            <button type="submit" class="button">Login</button>
+            <button type="submit" class="button">Sign in</button>
           </div>
 
         </form>
