@@ -62,6 +62,11 @@ def sprint_3_buyer_register():
 def sprint_3_execute_deed():
   return render_template('sprint-3/deed/buyer-1-sign-charge.html')
 
+@app.route('/sprint-3/display-transfer-for-signing')
+def sprint_3_execute_transfer():
+  return render_template('sprint-3/deed/buyer-1a-sign-transfer.html')
+
+
 @app.route('/sprint-3/two-factor')
 def sprint_3_two_factor():
   return render_template('sprint-3/deed/buyer-2-two-factor.html')
