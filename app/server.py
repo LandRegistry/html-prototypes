@@ -58,6 +58,14 @@ def sprint_3_buyer_register():
 
 
 # Sprint 3, Execute Deed - reworked from sprint 2 -----------------------------------
+@app.route('/sprint-3/buyer-signing-start')
+def sprint_3_buyer_signing_start():
+  return render_template('sprint-3/deed/buyer-0-start.html')
+
+@app.route('/sprint-3/buyer-signing-login')
+def sprint_3_buyer_signing_login():
+  return render_template('sprint-3/deed/buyer-0a-login.html')
+
 @app.route('/sprint-3/display-charge-for-signing')
 def sprint_3_execute_deed():
   return render_template('sprint-3/deed/buyer-1-sign-charge.html')
