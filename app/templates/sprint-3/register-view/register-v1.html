@@ -1,12 +1,10 @@
 {% extends "global/prototypes_base.html" %}
 
-{% block overwrite_css %}
-TEST
-{% endblock %}
-
 {% block page_title %}
   Official register of title GHR67834
 {% endblock %}
+
+{% block body_classes %}register-view-v1{% endblock %}
   
 {% block content %}
 
@@ -76,6 +74,7 @@ TEST
               <li><a href="#proprietorship-register">Proprietorship register</a></li>
               <li><a href="#charges-register">Charges register</a></li>
               <li><a href="#title-plan">Title plan</a></li>
+              <li><a href="#historical-changes">Historical changes</a></li>
               <li><a href="#change">Make a change</a></li>
             </ul>
           </nav>
@@ -228,6 +227,172 @@ TEST
             <figure class="title-plan">
               <img src="{{ prototypes_asset_path }}images/dummy-title-plan.png" alt="">
             </figure>
+
+          </section>
+
+          <section id="historical-changes" class="changes text">
+      
+            <h2 class="heading-medium">Historical changes</h2>
+
+            <details>
+              <summary><time datetime="2013-08-07">7 August 2013</time></summary>
+
+              <h3>Proprietorship register</h3>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                  <p>
+                    <strong>Proprietor:</strong> <del>Grace Dent</del> of Flat 18 Kingman Court, Verdant Road, London SV19 9BT.
+                  </p>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p>
+                    <strong>Proprietor:</strong> <ins>Matthew Jameson</ins> of Flat 18 Kingman Court, Verdant Road, London SV19 9BT.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                  <p>The price stated to have been paid on <del>12 February 1991</del> was <del>&pound;50,000</del>.</p>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p>The price stated to have been paid on <ins>26 July 2013</ins> was <ins>&pound;450,000</ins>.</p>
+                </div>
+
+              </div>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p>
+                    <ins><strong>Restriction:</strong> no disposition by a sole proprietor of the registered estate (except a trust corporation) under which capital money arises is to be registered unless authorised by an order of the court.</ins>
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                  <p>
+                    <strong>Restriction:</strong> no disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by the proprietor for the time being of the Charge dated <del>12 February 1991</del> in favour of <del>Another UK PLC</del> referred to in the Charges Register.
+                  </p>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p>
+                    <strong>Restriction:</strong> no disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by the proprietor for the time being of the Charge dated <ins>27 July 2013</ins> in favour of <ins>big Bank UK PLC</ins> referred to in the Charges Register.
+                  </p>
+                </div>
+
+              </div>
+
+              <h3>Charges register</h3>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                  <p>
+                    Registered charge dated <del>20 February 1991</del>.<br>
+                    Proprietor: <del>Another UK PLC (Co. Regn. No. 2347676) of 12 Trinity Place, Regents Street, London NW10 6TQ.</del>
+                  </p>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p>
+                    Registered charge dated <ins>27 July 2013</ins>.<br>
+                    Proprietor: <ins>General UK PLC (Co. Regn. No. 1231234) of 21 Diam Street, London SE10 4QT</ins>.</ins>
+                  </p>
+                </div>
+
+              </div>
+            </details>
+
+            <details>
+              <summary><time datetime="1991-02-12">12 February 1991</time></summary>
+
+              <h3>Proprietorship register</h3>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p>
+                    <ins><strong>Proprietor:</strong> Grace Dent of Flat 18 Kingman Court, Verdant Road, London SV19 9BT.</ins>
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p><ins>The price stated to have been paid on 12 February 1991 was &pound;50,000.</ins></p>
+                </div>
+
+              </div>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p>
+                    <ins><strong>Restriction:</strong> no disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 12 February 1991 in favour of Another UK PLC referred to in the Charges Register.</ins>
+                  </p>
+                </div>
+
+              </div>
+
+              <h3>Charges register</h3>
+
+              <div class="changelog">
+
+                <div class="removal">
+                  <h4>Removed</h4>
+                </div>
+
+                <div class="addition">
+                  <h4>Added</h4>
+                  <p>
+                    <ins>Registered charge dated 20 February 1991.<br>
+                    Proprietor: Another UK PLC (Co. Regn. No. 2347676) of 12 Trinity Place, Regents Street, London NW10 6TQ.</ins>
+                  </p>
+                </div>
+
+              </div>
+            </details>
 
           </section>
 
