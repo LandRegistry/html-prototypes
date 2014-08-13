@@ -19,11 +19,6 @@ body.register-view-v1 {
     @extend %contain-floats;
     @include core-16;
 
-    &:last-of-type {
-      border-bottom: 2px solid $grey-3;
-      margin-bottom: $gutter;
-    }
-
     h4 {
       font-style: italic;
     }

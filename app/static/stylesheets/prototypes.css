@@ -423,10 +423,6 @@ body.register-view-v1 .changelog {
     line-height: 1.14286;
   }
 }
-body.register-view-v1 .changelog:last-of-type {
-  border-bottom: 2px solid #dee0e2;
-  margin-bottom: 30px;
-}
 body.register-view-v1 .changelog h4 {
   font-style: italic;
 }
