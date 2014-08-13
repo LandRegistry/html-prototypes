@@ -18,6 +18,11 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+# Sprint 3, Register view --------------------------
+@app.route('/sprint-3/register-v1')
+def sprint_3_register_v1():
+  return render_template('sprint-3/register-view/register-v1.html')
+
 # Sprint 3, prototype 1, conveyancer - buyer relationship --------------------------
 @app.route('/sprint-3/conveyancer-start')
 def sprint_3_conveyancer_start():
