@@ -3,7 +3,7 @@
 
 @mixin highlight-tag($text-colour: #000, $bg-colour: #fff) {
   @include inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
 
   @include media(tablet) {
     vertical-align: baseline;

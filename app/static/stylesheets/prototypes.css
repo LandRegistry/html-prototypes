@@ -165,7 +165,7 @@ img {
 .summary .title-flag {
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
@@ -219,7 +219,7 @@ img {
 .change-flag .title-flag {
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
@@ -258,7 +258,7 @@ img {
   text-transform: none;
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
@@ -363,7 +363,7 @@ nav ol, nav ul {
 .complete .title-flag {
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
@@ -401,24 +401,27 @@ nav ol, nav ul {
   font-weight: bold;
 }
 
-body.register-view-v1 .heading-toggle {
+body.register-view-v1 .heading-toggle summary {
   position: relative;
   display: block;
 }
-body.register-view-v1 .heading-toggle::-webkit-details-marker {
+body.register-view-v1 .heading-toggle summary::-webkit-details-marker {
   position: absolute;
   right: 0;
   top: 20px;
+}
+body.register-view-v1 .heading-toggle[open] summary {
+  color: #0b0c0c;
 }
 body.register-view-v1 .heading-toggle .heading-medium {
   padding-top: 15px;
   border-top: 1px dotted #bfc1c3;
 }
-body.register-view-v1 .first-item .heading-toggle .heading-medium {
+body.register-view-v1 .first-item .heading-medium {
   padding-top: 0;
   border-top: 0;
 }
-body.register-view-v1 .first-item .heading-toggle::-webkit-details-marker {
+body.register-view-v1 .first-item summary::-webkit-details-marker {
   top: 10px;
 }
 body.register-view-v1 .summary .lede {
@@ -431,13 +434,10 @@ body.register-view-v1 .title-plan {
   border: 2px solid white;
 }
 body.register-view-v1 .number-flag {
-  font-weight: normal;
-  font-size: 0.75em;
-  position: relative;
-  top: -0.175em;
+  font-size: 0.9em;
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
