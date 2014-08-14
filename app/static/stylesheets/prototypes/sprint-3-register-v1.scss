@@ -5,7 +5,7 @@ body.register-view-v1 {
 
   .heading-toggle {
 
-    summary {
+    & > summary {
       position: relative;
       display: block;
       //color: $black;
@@ -17,8 +17,9 @@ body.register-view-v1 {
       }
     }
 
-    &[open] summary {
+    &[open] > summary {
       color: $black;
+      
     }
 
     .heading-medium {

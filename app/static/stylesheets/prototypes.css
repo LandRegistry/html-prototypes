@@ -401,16 +401,16 @@ nav ol, nav ul {
   font-weight: bold;
 }
 
-body.register-view-v1 .heading-toggle summary {
+body.register-view-v1 .heading-toggle > summary {
   position: relative;
   display: block;
 }
-body.register-view-v1 .heading-toggle summary::-webkit-details-marker {
+body.register-view-v1 .heading-toggle > summary::-webkit-details-marker {
   position: absolute;
   right: 0;
   top: 20px;
 }
-body.register-view-v1 .heading-toggle[open] summary {
+body.register-view-v1 .heading-toggle[open] > summary {
   color: #0b0c0c;
 }
 body.register-view-v1 .heading-toggle .heading-medium {
