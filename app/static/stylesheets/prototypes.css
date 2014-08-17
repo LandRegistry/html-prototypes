@@ -516,3 +516,29 @@ body.register-view-v1 ins {
   text-decoration: none;
   background-color: #e7ebda;
 }
+
+body.register-view-v1a-history .notification {
+  margin: 30px 0;
+  padding: 30px;
+  background-color: #fff2d3;
+}
+body.register-view-v1a-history .notification [class*="heading-"] {
+  margin-top: 0;
+}
+body.register-view-v1a-history .note {
+  border: 0;
+}
+body.register-view-v1a-history ins, body.register-view-v1a-history del {
+  color: #0b0c0c;
+  padding-right: 0.25em;
+}
+body.register-view-v1a-history ins:before {
+  content: '+';
+  display: inline-block;
+  margin: 0 0.1em 0 0.25em;
+}
+body.register-view-v1a-history del:before {
+  content: '-';
+  display: inline-block;
+  margin: 0 0.1em 0 0.25em;
+}
