@@ -50,10 +50,18 @@ body.register-view-v1 {
       @extend %contain-floats;
     }
 
+    .title-plan {
+      img {
+        border: 2px solid $white;
+      }
+    }
+
   }
 
   .title-plan {
-    border: 2px solid $white;
+    img {
+      border: 4px solid $grey-4;
+    }
   }
 
   .number-flag {
