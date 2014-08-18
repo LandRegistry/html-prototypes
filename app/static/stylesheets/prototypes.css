@@ -10,7 +10,7 @@
 @-o-viewport {
   width: device-width;
 }
-.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after {
+.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
   clear: both;
@@ -42,7 +42,7 @@
 @-o-viewport {
   width: device-width;
 }
-.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after {
+.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
   clear: both;
@@ -60,7 +60,7 @@
 @-o-viewport {
   width: device-width;
 }
-.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after {
+.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
   clear: both;
@@ -72,7 +72,7 @@
 @-o-viewport {
   width: device-width;
 }
-.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after {
+.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
   clear: both;
@@ -165,7 +165,7 @@ img {
 .summary .title-flag {
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
@@ -177,12 +177,6 @@ img {
   .summary .title-flag {
     vertical-align: baseline;
   }
-}
-.summary .lede {
-  margin-bottom: 30px;
-  padding: 30px 0;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
 }
 .summary dd {
   font-weight: bold;
@@ -225,7 +219,7 @@ img {
 .change-flag .title-flag {
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
@@ -264,7 +258,7 @@ img {
   text-transform: none;
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
@@ -285,12 +279,6 @@ img {
   .note time {
     vertical-align: baseline;
   }
-}
-
-.title-plan {
-  margin: 30px 0;
-  padding: 7.5px;
-  background-color: #f8f8f8;
 }
 
 .change-controls {
@@ -323,6 +311,18 @@ img {
 a.stop-changes {
   display: inline-block;
   margin-left: 30px;
+}
+
+.register-view-v0 .summary .lede {
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.register-view-v0 .title-plan {
+  margin: 30px 0;
+  padding: 7.5px;
+  background-color: #f8f8f8;
 }
 
 strong, b {
@@ -363,7 +363,7 @@ nav ol, nav ul {
 .complete .title-flag {
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
   letter-spacing: 1px;
@@ -399,4 +399,146 @@ nav ol, nav ul {
 }
 .task-summary dd {
   font-weight: bold;
+}
+
+body.register-view-v1 .heading-toggle > summary {
+  position: relative;
+  display: block;
+}
+body.register-view-v1 .heading-toggle > summary::-webkit-details-marker {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+body.register-view-v1 .heading-toggle[open] > summary {
+  color: #0b0c0c;
+}
+body.register-view-v1 .heading-toggle .heading-medium {
+  padding-top: 15px;
+  border-top: 1px dotted #bfc1c3;
+}
+body.register-view-v1 .first-item .heading-medium {
+  padding-top: 0;
+  border-top: 0;
+}
+body.register-view-v1 .first-item summary::-webkit-details-marker {
+  top: 10px;
+}
+body.register-view-v1 .summary .lede {
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+body.register-view-v1 .summary .title-plan img {
+  border: 2px solid white;
+}
+body.register-view-v1 .title-plan img {
+  border: 4px solid #f8f8f8;
+}
+body.register-view-v1 .number-flag {
+  font-size: 0.9em;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  background-color: #0b0c0c;
+}
+@media (min-width: 641px) {
+  body.register-view-v1 .number-flag {
+    vertical-align: baseline;
+  }
+}
+body.register-view-v1 .footnote {
+  color: #6f777b;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  body.register-view-v1 .footnote {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+body.register-view-v1 .changes {
+  padding-bottom: 30px;
+}
+body.register-view-v1 .changes h3 {
+  padding: 15px 0;
+  border-top: 2px solid #dee0e2;
+}
+body.register-view-v1 .changelog {
+  padding-top: 1em;
+  border-top: 1px dotted #dee0e2;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  body.register-view-v1 .changelog {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+body.register-view-v1 .changelog h4 {
+  font-style: italic;
+}
+body.register-view-v1 .removal,
+body.register-view-v1 .addition {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body.register-view-v1 .removal {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+}
+body.register-view-v1 .addition {
+  float: right;
+  width: 50%;
+  padding-left: 15px;
+}
+body.register-view-v1 del {
+  text-decoration: none;
+  background-color: #f9d6d6;
+}
+body.register-view-v1 ins {
+  text-decoration: none;
+  background-color: #e7ebda;
+}
+
+body.register-view-v1a-history .notification {
+  margin: 30px 0;
+  padding: 30px;
+  background-color: #fff2d3;
+}
+body.register-view-v1a-history .notification [class*="heading-"] {
+  margin-top: 0;
+}
+body.register-view-v1a-history .note {
+  border: 0;
+}
+body.register-view-v1a-history ins, body.register-view-v1a-history del {
+  color: #0b0c0c;
+  padding-right: 0.25em;
+}
+body.register-view-v1a-history ins:before {
+  content: '+';
+  display: inline-block;
+  margin: 0 0.1em 0 0.25em;
+}
+body.register-view-v1a-history del:before {
+  content: '-';
+  display: inline-block;
+  margin: 0 0.1em 0 0.25em;
 }
