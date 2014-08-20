@@ -84,6 +84,10 @@
 @-o-viewport {
   width: device-width;
 }
+.phase-banner .phase-tag {
+  background-color: #912b88;
+}
+
 nav ol, nav ul {
   list-style-type: none;
 }
