@@ -12,6 +12,14 @@
 @import "design-patterns/buttons";
 
 
+// "Discovery" banner - uses govuk_toolkit mixin via elements, just needs:
+// ==========================================================================
+
+.phase-banner .phase-tag {
+  background-color: $fuschia;
+}
+
+
 // Sprint 2 - Prototype 1 - "token"
 // ==========================================================================
 
