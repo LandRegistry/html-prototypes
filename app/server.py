@@ -27,6 +27,10 @@ def sprint_4_reference():
 def sprint_4_citizen_login():
   return render_template('sprint-4/relationship/citizen-login.html')
 
+@app.route('/sprint-4/citizen-confirm')
+def sprint_4_citizen_confirm():
+  return render_template('sprint-4/relationship/citizen-confirm.html')
+
 # Sprint 3, Register view --------------------------
 @app.route('/sprint-3/register-v1')
 def sprint_3_register_v1():

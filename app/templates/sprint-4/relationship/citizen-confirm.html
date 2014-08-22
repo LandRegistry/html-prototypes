@@ -1,0 +1,36 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}Confirm authorisation{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+
+  <div id="content">
+
+    {% include "includes/prototypes_banner.html" %}
+
+    <div class="inner-block">
+
+      <h1 class="heading-xlarge">Authorise Relationship</h1>
+
+      <div class="callout">
+        <p>Please confirm you are authorising ...</p>
+      </div>
+
+      <form action="" method="get" class="form">
+        <div class="form-group">
+          <label for="confirm" class="block-label">
+            <input type="checkbox" id="confirm" name="confirm" />
+            Confirm
+          </label>
+        </div>
+        <button type="submit" id="submit" class="button">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
