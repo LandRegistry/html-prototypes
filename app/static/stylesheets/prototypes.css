@@ -546,3 +546,12 @@ body.register-view-v1a-history del:before {
   display: inline-block;
   margin: 0 0.1em 0 0.25em;
 }
+
+.callout--completion {
+  background: #28a197;
+  color: white;
+  text-align: center;
+}
+.callout--completion a {
+  color: white;
+}
