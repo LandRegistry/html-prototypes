@@ -12,23 +12,23 @@
 
     {% include "includes/prototypes_banner.html" %}
 
-      <div class="inner-block">
+      <div class="inner-block text">
+
+        <h1 class="heading-xlarge">Authorise Relationship</h1>
+
+        <p class="lede">For your conveyancer to work on your behalf you need to authorise your relationship.</p>
+        <p>To do this you will need to enter the authorisation code you will have received from your conveyancer.</p>
 
         <form action="buyer-register" method="get" class="form">
 
-          <h1 class="form-title heading-xlarge">
-            Enter reference code
-          </h1>
-
-          <p>this is where you enter the reference code you've been given by your solicitor</p>
-
           <div class="form-group">
-            <label for="ref-code" class="form-label">Refererence code</label>
+            <label for="ref-code" class="form-label">Authorisation code</label>
+            <span class="form-hint">For example: A1B2C3D4E5</span>
             <input type="password" class="form-control" id="ref-code">
           </div>
 
           <div class="form-group">           
-            <button type="submit" class="button">Next</button>
+            <button type="submit" class="button">Submit</button>
           </div>
 
         </form>
