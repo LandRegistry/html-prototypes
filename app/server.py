@@ -18,10 +18,14 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
-# Sprint 4, Relationship verifier --------------------------
+# Sprint 4, Relationship verifier flow --------------------------
 @app.route('/sprint-4/citizen-reference')
 def sprint_4_reference():
   return render_template('sprint-4/relationship/citizen-reference.html')
+
+@app.route('/sprint-4/citizen-login')
+def sprint_4_citizen_login():
+  return render_template('sprint-4/relationship/citizen-login.html')
 
 # Sprint 3, Register view --------------------------
 @app.route('/sprint-3/register-v1')
