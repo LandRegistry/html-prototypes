@@ -7,3 +7,21 @@
     color: $white;
   }
 }
+
+.change-flag {
+  background: $mauve;
+  border: none;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+.activity-feed, ol.activity-feed li {
+  margin: 0;
+}
+
+.activity-feed time {
+  font-weight: bold;
+}

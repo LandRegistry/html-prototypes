@@ -555,3 +555,20 @@ body.register-view-v1a-history del:before {
 .callout--completion a {
   color: white;
 }
+
+.change-flag {
+  background: #6f72af;
+  border: none;
+  color: #fff;
+}
+.change-flag a {
+  color: #fff;
+}
+
+.activity-feed, ol.activity-feed li {
+  margin: 0;
+}
+
+.activity-feed time {
+  font-weight: bold;
+}

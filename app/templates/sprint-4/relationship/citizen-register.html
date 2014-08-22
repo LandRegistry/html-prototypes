@@ -1,5 +1,11 @@
 {% extends "global/prototypes_base.html" %}
 
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/govuk-elements.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{ prototypes_asset_path }}stylesheets/landregistry-main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{ prototypes_asset_path }}stylesheets/prototypes.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block page_title %}
   Official register of title GHR67834
 {% endblock %}
@@ -19,22 +25,13 @@
 
         <section class="change-flag">
 
-          <h1 class="heading-medium">Active</h1>
-
-              <p>
-                <time datetime="2014-08-12">12 August 2014</time>:
-                Wall &amp; Co Solicitors are authorised on your behalf in relation to the purchase of this property
-                <a href="#" class="stop-changes">Cancel</a>
-              </p>
-
-            <details>
-              <summary>What does this mean</summary>
-              <div class="panel-indent">
-                <p>
-                  Help text to explain.
-                </p>
-              </div>
-            </details>
+          <ol class="activity-feed">
+            <li>
+              <time datetime="2014-08-12">12 August 2014</time>:
+              Wall &amp; Co Solicitors are authorised on your behalf in relation to the purchase of this property
+              <a href="#" class="stop-changes">Cancel</a>
+            </li>
+          </ol>
 
         </section>
 
