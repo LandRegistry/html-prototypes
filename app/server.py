@@ -31,6 +31,10 @@ def sprint_4_citizen_login():
 def sprint_4_citizen_confirm():
   return render_template('sprint-4/relationship/citizen-confirm.html')
 
+@app.route('/sprint-4/citizen-complete')
+def sprint_4_citizen_complete():
+  return render_template('sprint-4/relationship/citizen-complete.html')
+
 # Sprint 3, Register view --------------------------
 @app.route('/sprint-3/register-v1')
 def sprint_3_register_v1():
