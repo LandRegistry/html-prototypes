@@ -18,6 +18,11 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+# Page prototypes, Register View --------------------------
+@app.route('/register-view/register-2.0')
+def register_2_0():
+  return render_template('register-view/register-2.0.html')
+
 # Sprint 4, Relationship verifier flow --------------------------
 @app.route('/sprint-4/citizen-reference')
 def sprint_4_reference():
@@ -64,14 +69,6 @@ def sprint_3_conveyancer_login():
 @app.route('/sprint-3/conveyancer-enter-title')
 def sprint_3_conveyancer_enter_title():
   return render_template('sprint-3/buyer-conveyancer/conveyancer-2-enter-title.html')
-
-# @app.route('/sprint-3/conveyancer-register')
-# def sprint_3_conveyancer_register():
-#   return render_template('sprint-3/buyer-conveyancer/conveyancer-3-register.html')
-
-# @app.route('/sprint-3/select-action')
-# def sprint_3_select_action():
-#   return render_template('sprint-3/buyer-conveyancer/conveyancer-4-select-action.html')
 
 @app.route('/sprint-3/conveyancer-add-buyers')
 def sprint_3_conveyancer_add_buyers():
