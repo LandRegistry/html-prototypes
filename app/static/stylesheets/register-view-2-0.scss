@@ -11,10 +11,18 @@
 @import "design-patterns/alpha-beta";
 @import "design-patterns/buttons";
 
+// Prototype elements
+
+@import "prototypes/navigation";
+@import "prototypes/tags";
+
 
 // "Discovery" banner - uses govuk_toolkit mixin via elements, just needs:
 // ==========================================================================
 
 @import "prototypes/discovery-banner";
 
+@import "prototypes/sprint-2-token";
 @import "prototypes/sprint-3-register-v1";
+
+

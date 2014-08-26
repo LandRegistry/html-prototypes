@@ -14,7 +14,7 @@
   width: device-width;
 }
 
-.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
+.inline:after, .summary:after, .task-summary:after, .change-flag:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
   clear: both;
@@ -54,7 +54,7 @@
   width: device-width;
 }
 
-.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
+.inline:after, .summary:after, .task-summary:after, .change-flag:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
   clear: both;
@@ -76,7 +76,7 @@
   width: device-width;
 }
 
-.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
+.inline:after, .summary:after, .task-summary:after, .change-flag:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
   clear: both;
@@ -90,7 +90,7 @@
   width: device-width;
 }
 
-.inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
+.inline:after, .summary:after, .task-summary:after, .change-flag:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
   clear: both;
@@ -102,6 +102,28 @@
 
 @-o-viewport {
   width: device-width;
+}
+
+nav ol, nav ul {
+  list-style-type: none;
+}
+
+.page-contents {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  .page-contents {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+.page-contents li:before {
+  content: '-';
+  margin-right: 15px;
 }
 
 .phase-banner .phase-tag {
@@ -349,82 +371,6 @@ a.stop-changes {
   background-color: #f8f8f8;
 }
 
-strong, b {
-  font-weight: bold;
-}
-
-nav ol, nav ul {
-  list-style-type: none;
-}
-
-.page-contents {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-}
-@media (max-width: 640px) {
-  .page-contents {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-.page-contents li:before {
-  content: '-';
-  margin-right: 15px;
-}
-
-.complete {
-  margin: 30px 0;
-  padding: 30px;
-  color: white;
-  background-color: #28a197;
-}
-.complete h1, .complete h2 {
-  margin-top: 0;
-}
-.complete .title-flag {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: baseline;
-  margin: 0 8px 0 0;
-  padding: 2px 5px 0;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #2b8cc4;
-  background-color: white;
-}
-@media (min-width: 641px) {
-  .complete .title-flag {
-    vertical-align: baseline;
-  }
-}
-.complete .lede {
-  margin-bottom: 30px;
-  padding: 30px 0;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-.complete dd {
-  font-weight: bold;
-}
-
-.task-summary {
-  margin: 30px;
-  padding: 30px 0;
-  background-color: #f8f8f8;
-}
-.task-summary h1, .task-summary h2 {
-  margin-top: 0;
-}
-.task-summary dl {
-  padding-top: 30px;
-}
-.task-summary dd {
-  font-weight: bold;
-}
-
 body.register-view-v1 .heading-toggle > summary {
   position: relative;
   display: block;
@@ -565,30 +511,4 @@ body.register-view-v1a-history del:before {
   content: '-';
   display: inline-block;
   margin: 0 0.1em 0 0.25em;
-}
-
-.callout--completion {
-  background: #28a197;
-  color: white;
-  text-align: center;
-}
-.callout--completion a {
-  color: white;
-}
-
-.change-flag {
-  background: #6f72af;
-  border: none;
-  color: #fff;
-}
-.change-flag a {
-  color: #fff;
-}
-
-.activity-feed, ol.activity-feed li {
-  margin: 0;
-}
-
-.activity-feed time {
-  font-weight: bold;
 }
