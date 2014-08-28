@@ -18,6 +18,25 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+# ---------------------------------------------------------------------------
+
+# Page prototypes, Register View --------------------------
+@app.route('/register-view/register-2.0')
+def register_2_0():
+  return render_template('register-view/register-2.0.html')
+
+# Page prototypes, Example mortgage agreement  --------------------------
+@app.route('/legal-documents/mortgage-agreement-v1')
+def mortgage_agreement_1():
+  return render_template('legal-documents/mortgage-agreement-v1.html')
+
+# Page prototypes, Example transfer agreement  --------------------------
+@app.route('/legal-documents/transfer-agreement-v1')
+def transfer_agreement_1():
+  return render_template('legal-documents/transfer-agreement-v1.html')
+
+# ---------------------------------------------------------------------------
+
 # Sprint 4, Relationship verifier flow --------------------------
 @app.route('/sprint-4/citizen-reference')
 def sprint_4_reference():
@@ -38,6 +57,8 @@ def sprint_4_citizen_complete():
 @app.route('/sprint-4/citizen-register')
 def sprint_4_citizen_register():
   return render_template('sprint-4/relationship/citizen-register.html')
+
+# ---------------------------------------------------------------------------
 
 # Sprint 3, Register view --------------------------
 @app.route('/sprint-3/register-v1')
@@ -64,14 +85,6 @@ def sprint_3_conveyancer_login():
 @app.route('/sprint-3/conveyancer-enter-title')
 def sprint_3_conveyancer_enter_title():
   return render_template('sprint-3/buyer-conveyancer/conveyancer-2-enter-title.html')
-
-# @app.route('/sprint-3/conveyancer-register')
-# def sprint_3_conveyancer_register():
-#   return render_template('sprint-3/buyer-conveyancer/conveyancer-3-register.html')
-
-# @app.route('/sprint-3/select-action')
-# def sprint_3_select_action():
-#   return render_template('sprint-3/buyer-conveyancer/conveyancer-4-select-action.html')
 
 @app.route('/sprint-3/conveyancer-add-buyers')
 def sprint_3_conveyancer_add_buyers():
@@ -121,7 +134,7 @@ def sprint_3_two_factor():
 def sprint_3_signing_complete():
   return render_template('sprint-3/deed/buyer-3-signing-complete.html')
 
-
+# ---------------------------------------------------------------------------
 
 # Sprint 2, prototype 1: Passing a "token" -----------------------------------------
 @app.route('/sprint-2/token')

@@ -1,5 +1,7 @@
 {% extends "global/prototypes_base.html" %}
 
+{% block body_classes %}prototypes-index{% endblock %}
+
 {% block proposition_header %}
 <div class="header-proposition">
   <div class="content">
@@ -39,49 +41,73 @@
           <p>This page acts as an index to the various prototypes and ideas we’re having.</p>
         </div>
 
-        <h2 class="heading-medium">Sprint 4</h2>
+<!-- ================================= -->
+
+        <h2 class="heading-medium">Transaction flows</h2>
+
+        <h3 class="heading-small">Create a relationship</h3>
         <ul>
-          <li><a href="sprint-4/citizen-reference">Relationship - Citizen</a></li>
+          <li><a href="sprint-3/conveyancer-start">1. Conveyancer starts relationship, generates token</a></li>
+          <li><a href="sprint-4/citizen-reference">2. Citizen enters token and confirms</a></li>
         </ul>
 
-        <h2 class="heading-medium">Sprint 3</h2>
-
-        <h3 class="heading-small">Register view</h3>
-        <ul>
-          <li><a href="sprint-3/register-v1">Register view</a></li>
-          <li><a href="sprint-3/register-v1a-history">Register view: history view (current)</a></li>
-          <li><a href="sprint-3/register-v1a-history-1">Register view: history view (past)</a></li>
-        </ul>
-
-        <h3 class="heading-small">Buyer and conveyancer relationship</h3>
-        <ul>
-          <li><a href="sprint-3/conveyancer-start">Conveyancer flow</a></li>
-          <li><a href="sprint-3/buyer-login">Buyer flow</a></li>
-        </ul>
+        <details>
+          <summary>Older versions</summary>
+          <ul>
+            <li><a href="sprint-2/token">Citizen starts relationship, generates token</a></li>
+            <li><a href="sprint-2/input-token">Conveyancer enters token and confirms</a></li>
+            <li><a href="sprint-2/show-change">Register view during a change</a></li>
+            <li><a href="sprint-3/buyer-login">Buyer agrees to relationship</a></li>
+          </ul>
+        </details>
         
-        <h3 class="heading-small">Sign agreements</h3>
+        <h3 class="heading-small">Signing agreements</h3>
         <ul>
-          <li><a href="sprint-3/buyer-signing-start">Sign agreements</a></li>
-        </ul>
-
-
-        <h2 class="heading-medium">Sprint 2</h2>
-        <h3 class="heading-small">User flow &mdash; token</h3>
-        <ul>
-          <li><a href="sprint-2/token">Citizen flow</a></li>
-          <li><a href="sprint-2/show-change">Register view during change</a></li>
-          <li><a href="sprint-2/input-token">Conveyancer flow</a></li>
-        </ul>
-        <h3 class="heading-small">Deed execution</h3>
-        <ul>
+          <li><a href="sprint-3/buyer-signing-start">Citizen signs transfer and charge</a></li>
           <li><a href="sprint-2/execute-deed">Execute deed</a></li>
         </ul>
 
+        <details>
+          <summary>Older versions</summary>
 
-        <h2 class="heading-medium">Example Templates - for designers</h2>
+        </details>
+
+<!-- ================================= -->
+
+        <h2 class="heading-medium">Individual pages</h2>
+
+        <h3 class="heading-small">The register</h3>
         <ul>
-          <li><a href="examples/example-1">starter example</a></li>
+          <li><a href="register-view/register-2.0">Register view v2.0</a> - history view inline</li>
         </ul>
+
+        <details>
+          <summary>Older versions</summary>
+          <ul>
+            <li><a href="sprint-3/register-v1">Register view</a></li>
+            <li><a href="sprint-3/register-v1a-history">Register view: history view (current)</a></li>
+            <li><a href="sprint-3/register-v1a-history-1">Register view: history view (past)</a></li>
+          </ul>
+        </details>
+
+<!-- ================================= -->
+
+        <h3 class="heading-small">Deeds and legal documents</h3>
+        <ul>
+          <li><a href="legal-documents/mortgage-agreement-v1">Mortgage agreement</a> - an example of a legal document for digital signing</li>
+          <!--<li><a href="legal-documents/transfer-agreement-v1">Example Transfer of whole agreement</a></li>-->
+        </ul>
+
+<!-- ================================= -->
+
+        <details>
+          <summary>The attic</summary>
+
+          <h2 class="heading-medium">Example Templates - for designers</h2>
+          <ul>
+            <li><a href="examples/example-1">starter example</a></li>
+          </ul>
+        </details>
 
       </div>
     </div>

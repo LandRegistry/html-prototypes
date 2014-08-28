@@ -1,0 +1,176 @@
+// includes node_modules/govuk_frontend_toolkit/govuk_frontend_toolkit/stylesheets
+
+// Import GOV.UK frontend toolkit
+
+@import "colours";
+@import "measurements";
+@import "conditionals";
+@import "shims";
+@import "typography";
+@import "css3";
+@import "design-patterns/alpha-beta";
+@import "design-patterns/buttons";
+
+// Import GOV.UK Elements
+// ==========================================================================
+
+@import "govuk-elements";
+
+// Prototype elements
+// ==========================================================================
+
+@import "prototypes/navigation";
+@import "prototypes/tags";
+
+// "Discovery" banner - uses govuk_toolkit mixin via elements, just needs:
+@import "prototypes/discovery-banner";
+
+
+// IMPORTING EXISTING STYLE-GUIDE APP STYLES
+// ==========================================================================
+
+@import "../style-guide/app/static/development/landregistry-elements/typography";
+@import "../style-guide/app/static/development/landregistry-elements/callouts";
+
+
+// NOT YET INTEGRATED
+// ==========================================================================
+
+// a utility class to collapse bottom and top borders, on things like a nested <ul>...?
+.collapse {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.first-item > [class*='heading-'] {
+  margin-top: 0;
+}
+
+.footnote {
+  color: $grey-1;
+  @include core-16;
+}
+
+.register-related-items {
+  margin-top: $gutter;
+  padding-top: $gutter;
+  border-top: 4px solid $light-blue;
+}
+
+.number-flag {
+  @include core-16;
+  @include border-radius(50%);
+  @include box-sizing(border-box);
+
+  font-weight: bold;
+  color: $white;
+  background-color: $light-blue;
+
+  display: inline-block;
+  width: 1.65em;
+  height: 1.65em;
+  margin-left: 0.25em;
+  padding-top: 0.25em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+// in-page changelog
+.changelog {
+  padding-top: 1em;
+  border-top: 1px dotted $grey-3;
+
+  @extend %contain-floats;
+  @include core-16;
+
+  h5 {
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .removal,
+  .addition {
+    @include box-sizing(border-box);
+  }
+
+  .removal {
+    float: left;
+    width: $half;
+    padding-right: $gutter-half;
+  }
+
+  .addition {
+    float: right;
+    width: $half;
+    padding-left: $gutter-half;
+  }
+}
+
+// get into TYPOGRAPHY
+del {
+  text-decoration: none;
+  background-color: $mellow-red-25;
+}
+
+ins {
+  text-decoration: none;
+  background-color: $grass-green-25;
+}
+
+
+// doing <details> without using <details> aaaaaaaaaaargh :S
+.js-enabled {
+
+  .js-faux-details > :first-child {
+    cursor: pointer;
+    position: relative;
+    margin-top: 0;
+    padding-left: 0.8em;
+    
+    &:hover {
+      color: $link-hover-colour;
+    }
+
+    &:focus {
+      outline: 3px solid $yellow;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.2em;
+      border-top: (0.4em * 0.866) solid transparent;
+      border-right: 0.4 solid transparent;
+      border-bottom: (0.4em * 0.866) solid transparent;
+      border-left: 0.4em solid $black;
+    }
+
+  }
+
+  .js-faux-details-wrapper {
+    display: none;
+    margin-bottom: em(25, 19);
+
+    @include media(tablet) {
+      margin-bottom: em(45, 19 );
+    }
+  }
+
+  .js-faux-details--open {
+
+    & > :first-child:before {
+      top: 0.35em;
+      border-top: 0.4em solid $black;
+      border-right: (0.4em * 0.866) solid transparent;
+      border-bottom: 0.4em solid transparent;
+      border-left: (0.4em * 0.866) solid transparent;
+    }
+
+    .js-faux-details-wrapper {
+      display: block;
+    }
+
+  }
+
+}
