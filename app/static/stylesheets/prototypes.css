@@ -1,19 +1,15 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 .inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
@@ -24,36 +20,28 @@
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 .inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
@@ -63,19 +51,15 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 .inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
@@ -85,11 +69,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 .inline:after, .summary:after, .task-summary:after, .change-flag:after, .complete:after, body.register-view-v1 .summary .lede:after, body.register-view-v1 .changelog:after {
   content: "";
   display: block;
@@ -99,11 +81,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 .phase-banner .phase-tag {
   background-color: #912b88;
 }
