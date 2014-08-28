@@ -10,7 +10,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after, .legal-document--item:after {
+#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after {
   content: "";
   display: block;
   clear: both;
@@ -42,7 +42,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after, .legal-document--item:after {
+#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after {
   content: "";
   display: block;
   clear: both;
@@ -60,7 +60,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after, .legal-document--item:after {
+#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after {
   content: "";
   display: block;
   clear: both;
@@ -72,7 +72,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after, .legal-document--item:after {
+#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after {
   content: "";
   display: block;
   clear: both;
@@ -96,7 +96,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after, .legal-document--item:after {
+#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after {
   content: "";
   display: block;
   clear: both;
@@ -128,7 +128,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after, .legal-document--item:after {
+#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after {
   content: "";
   display: block;
   clear: both;
@@ -146,7 +146,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after, .legal-document--item:after {
+#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after {
   content: "";
   display: block;
   clear: both;
@@ -158,7 +158,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after, .legal-document--item:after {
+#content:after, .inline:after, .callout:after, .callout--summary .lede:after, .definition-inline:after {
   content: "";
   display: block;
   clear: both;
@@ -1715,17 +1715,9 @@ pre code {
   border-bottom: 2px solid #2b8cc4;
 }
 
-.legal-document--detail {
-  float: left;
+.legal-document--item {
   width: 66.66667%;
-}
-.legal-document--detail :first-child {
-  margin-top: 0;
-}
-
-.legal-document--notes {
-  float: left;
-  width: 33.33333%;
+  padding-right: 33.33333%;
 }
 
 .legal-document--bordered {

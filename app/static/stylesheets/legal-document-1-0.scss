@@ -66,22 +66,9 @@
 }
 
   .legal-document--item {
-    @extend %contain-floats;
+    width: $two-thirds;
+    padding-right: $one-third;
   }
-
-    .legal-document--detail {
-      float: left;
-      width: $two-thirds;
-
-      :first-child {
-        margin-top: 0;
-      }
-    }
-
-    .legal-document--notes {
-      float: left;
-      width: $one-third;
-    }
 
   .legal-document--bordered {
     margin-top: $gutter;
