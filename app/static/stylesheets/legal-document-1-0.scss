@@ -60,10 +60,9 @@
 }
 
 .legal-document--bounds {
-  margin: em(45, 19) 0;
-  padding: em(45, 19) 0 em(30, 19) 0; 
-  border-top: 2px solid $grey-3;
-  border-bottom: 2px solid $grey-3;
+  padding: $gutter 0; 
+  border-top: 4px solid $light-blue;
+  border-bottom: 2px solid $light-blue;
 }
 
   .legal-document--item {
@@ -73,12 +72,21 @@
     .legal-document--detail {
       float: left;
       width: $two-thirds;
+
+      :first-child {
+        margin-top: 0;
+      }
     }
 
     .legal-document--notes {
       float: left;
       width: $one-third;
     }
+
+  .legal-document--bordered {
+    margin-top: $gutter;
+    border-top: 1px solid $grey-3;
+  }
 
 // THIS IS A PATTERN NOW. THINK ABOUT IF IT'S %notes or not? THIS IS THE SAME AS .footnote
 .legal-document--notes {

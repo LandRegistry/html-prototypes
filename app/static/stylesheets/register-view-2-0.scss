@@ -36,16 +36,6 @@
 // NOT YET INTEGRATED
 // ==========================================================================
 
-// how to show where the Official bit stops?
-.legal-bounds {
-  @include core-16;
-
-  color: $white;
-  margin: $gutter $gutter 0 $gutter;
-  padding: $gutter-one-third;
-  background-color: $light-blue;
-}
-
 // a utility class to collapse bottom and top borders, on things like a nested <ul>...?
 .collapse {
   margin-top: 0;
@@ -59,6 +49,12 @@
 .footnote {
   color: $grey-1;
   @include core-16;
+}
+
+.register-related-items {
+  margin-top: $gutter;
+  padding-top: $gutter;
+  border-top: 4px solid $light-blue;
 }
 
 .number-flag {
@@ -78,6 +74,49 @@
   text-align: center;
   vertical-align: middle;
 }
+
+// in-page changelog
+.changelog {
+  padding-top: 1em;
+  border-top: 1px dotted $grey-3;
+
+  @extend %contain-floats;
+  @include core-16;
+
+  h5 {
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .removal,
+  .addition {
+    @include box-sizing(border-box);
+  }
+
+  .removal {
+    float: left;
+    width: $half;
+    padding-right: $gutter-half;
+  }
+
+  .addition {
+    float: right;
+    width: $half;
+    padding-left: $gutter-half;
+  }
+}
+
+// get into TYPOGRAPHY
+del {
+  text-decoration: none;
+  background-color: $mellow-red-25;
+}
+
+ins {
+  text-decoration: none;
+  background-color: $grass-green-25;
+}
+
 
 // doing <details> without using <details> aaaaaaaaaaargh :S
 .js-enabled {
