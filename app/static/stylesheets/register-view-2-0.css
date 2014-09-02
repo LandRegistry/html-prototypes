@@ -1753,6 +1753,10 @@ pre code {
   }
 }
 
+.title-plan img {
+  border: 3px solid #dee0e2;
+}
+
 .changelog {
   padding-top: 1em;
   border-top: 1px dotted #dee0e2;

@@ -75,6 +75,13 @@
   vertical-align: middle;
 }
 
+.title-plan {
+  img {
+    border: 3px solid $grey-3;
+  }
+}
+
+
 // in-page changelog
 .changelog {
   padding-top: 1em;
