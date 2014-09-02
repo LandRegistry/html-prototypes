@@ -20,6 +20,18 @@ def home():
 
 # ---------------------------------------------------------------------------
 
+# Transaction flows, relationship starts, conveyancer initiates v2.0 --------
+@app.route('/relationship-starts/conveyancer-start')
+def conveyancer_start_2_0():
+  return render_template('relationship-starts/conveyancer-start-2.0.html')
+
+# Transaction flows, relationship starts, citizen confirms v2.0 --------
+@app.route('/relationship-starts/citizen-confirms')
+def citizen_confirms_2_0():
+  return render_template('relationship-starts/citizen-confirms-2.0.html')
+
+# ---------------------------------------------------------------------------
+
 # Page prototypes, Register View --------------------------
 @app.route('/register-view/register-2.0')
 def register_2_0():
