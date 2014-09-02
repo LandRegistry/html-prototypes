@@ -20,6 +20,38 @@ def home():
 
 # ---------------------------------------------------------------------------
 
+# Transfer prototypes, login page
+@app.route('/transfer/login')
+def transfer_login():
+  return render_template('transfer/login.html')
+
+# Transfer prototypes, case-list page
+@app.route('/transfer/caselist')
+def transfer_case_list():
+  return render_template('transfer/case-list.html')
+
+# Transfer prototypes, new provision page
+@app.route('/transfer/new-provisions')
+def transfer_new_provisions():
+  return render_template('transfer/new-provision.html')
+
+# Transfer prototypes, mortgage details page
+@app.route('/transfer/mortgage-details')
+def transfer_mortgage_details():
+  return render_template('transfer/mortgage-details.html')
+
+# Transfer prototypes, confirm page
+@app.route('/transfer/confirm')
+def transfer_confirm():
+  return render_template('transfer/confirm.html')
+
+# Transfer prototypes, done page
+@app.route('/transfer/done')
+def transfer_done():
+  return render_template('transfer/done.html')
+
+# ---------------------------------------------------------------------------
+
 # Page prototypes, Register View --------------------------
 @app.route('/register-view/register-2.0')
 def register_2_0():
