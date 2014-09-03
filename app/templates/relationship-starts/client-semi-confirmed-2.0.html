@@ -1,0 +1,44 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  Relationship token
+{% endblock %}
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/legal-document-1-0.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{ prototypes_asset_path }}stylesheets/relationship-starts-2-0.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main" onclick="javascript:window.location.url='client-email';">
+  <div id="content">
+
+    {% include "includes/prototypes_banner.html" %}
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <div class="callout callout--action-notice callout--generated-token">
+
+          <h1>
+            Relationship confirmed
+          </h1>
+
+        </div>
+
+        <div class="text">
+          <p class="lede">
+            You have confirmed your relationship with Wall &amp; Co Solicitors.
+          </p>
+          <p>For Wall &amp; Co Solicitors to be authorised to act on your behalf, Jennifer Spencer must also complete this process.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</main>
+
+{% endblock %}

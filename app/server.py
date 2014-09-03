@@ -72,6 +72,58 @@ def conveyancer_token_2_0():
 
 # ---------------------------------------------------------------------------
 
+# Transaction flows, relationship starts, client(s) confirm v2.0 --------
+@app.route('/relationship-starts/client-start')
+def client_start_2_0():
+  return render_template('relationship-starts/client-start-2.0.html')
+
+# Step 1 - login with GOV.UK Verify
+@app.route('/relationship-starts/client-login')
+def client_verify_2_0():
+  return render_template('relationship-starts/client-login-2.0.html')
+
+# Step 2 - Client 1 enters token
+@app.route('/relationship-starts/client-enter-token')
+def client_enter_token_2_0():
+  return render_template('relationship-starts/client-enter-token-2.0.html')
+
+# Step 3 - Client 1 confirms
+@app.route('/relationship-starts/client-confirm')
+def client_confirm_2_0():
+  return render_template('relationship-starts/client-confirm-2.0.html')
+
+# Step 4 - Client 1 receives confirmation
+@app.route('/relationship-starts/client-semi-confirmed')
+def client_semi_confirmed_2_0():
+  return render_template('relationship-starts/client-semi-confirmed-2.0.html')
+
+# Step 5 - Client 2 visits start page
+@app.route('/relationship-starts/client-2-start')
+def client_2_start_2_0():
+  return render_template('relationship-starts/client-2-start-2.0.html')
+
+# Step 6 - Client 2 visits start page
+@app.route('/relationship-starts/client-2-login')
+def client_2_verify_2_0():
+  return render_template('relationship-starts/client-2-login-2.0.html')
+
+# Step 7 - Client 2 enters token
+@app.route('/relationship-starts/client-2-enter-token')
+def client_2_enter_token_2_0():
+  return render_template('relationship-starts/client-2-enter-token-2.0.html')
+
+# Step 8 - Client 2 confirms
+@app.route('/relationship-starts/client-2-confirm')
+def client_2_confirm_2_0():
+  return render_template('relationship-starts/client-2-confirm-2.0.html')
+
+# Step 9 - Client 2 receives (all parties) confirmation
+@app.route('/relationship-starts/clients-confirmed')
+def clients_confirmed_2_0():
+  return render_template('relationship-starts/clients-confirmed-2.0.html')
+
+# ---------------------------------------------------------------------------
+
 # Transaction flows, relationship starts, citizen confirms v2.0 --------
 @app.route('/relationship-starts/citizen-confirms')
 def citizen_confirms_2_0():
