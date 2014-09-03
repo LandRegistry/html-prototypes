@@ -25,6 +25,23 @@ def home():
 def conveyancer_start_2_0():
   return render_template('relationship-starts/conveyancer-start-2.0.html')
 
+# Step 1 - login with GOV.UK Verify
+@app.route('/relationship-starts/conveyancer-login')
+def conveyancer_verify_2_0():
+  return render_template('relationship-starts/conveyancer-login-2.0.html')
+
+# Step 2 - find correct property
+@app.route('/relationship-starts/conveyancer-find-property')
+def conveyancer_find_property_2_0():
+  return render_template('relationship-starts/conveyancer-find-property-2.0.html')
+
+# Step 3 - results and select correct property
+@app.route('/relationship-starts/conveyancer-select-property')
+def conveyancer_select_property_2_0():
+  return render_template('relationship-starts/conveyancer-select-property-2.0.html')
+
+# ---------------------------------------------------------------------------
+
 # Transaction flows, relationship starts, citizen confirms v2.0 --------
 @app.route('/relationship-starts/citizen-confirms')
 def citizen_confirms_2_0():
