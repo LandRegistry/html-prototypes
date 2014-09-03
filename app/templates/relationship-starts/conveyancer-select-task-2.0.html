@@ -19,20 +19,29 @@
     <div class="outer-block">
       <div class="inner-block">
 
-        <form class="form" action="conveyancer-select-property" method="get">
+        <form class="form" action="conveyancer-add-clients" method="get">
 
           <h1 class="form-title heading-large">
-            Find property
+            Select task
           </h1>
 
           <div class="form-group">
-            <label class="form-label-bold" for="search">Search the land registry</label>
-            <p class="form-hint">Title number, postcode, city or town, street name, etc.</p>
-            <input type="text" class="form-control" id="search">
+            <label for="radio-inline-1" class="block-label">
+              <input id="radio-inline-1" type="radio" name="task" value="buy-property">
+              Buying this property
+            </label>
+            <label for="radio-inline-2" class="block-label">
+              <input id="radio-inline-2" type="radio" name="task" value="sell-property">
+              Selling this property
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="another-task">Or another task:</label>
+            <input type="text" class="form-control" id="another-task" name="task">
           </div>
 
           <div class="form-group">
-            <input type="submit" class="button" value="Search">
+            <input type="submit" class="button" value="Next">
           </div>
 
         </form>
