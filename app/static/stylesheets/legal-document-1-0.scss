@@ -35,6 +35,40 @@
 // NOT YET INTEGRATED
 // ==========================================================================
 
+// Breadcrumbs
+.global-breadcrumb {
+
+  ol {
+    padding: 0.75em 0;
+    @extend %contain-floats;
+  }
+
+  li {
+    @include core-16;
+    float: left;
+
+    &:before {
+      content: '>';
+      color: $grey-2;
+      display: inline-block;
+      margin: 0 0.5em;
+    }
+
+    &:first-child:before {
+      content: '';
+      margin: 0;
+    }
+  }
+
+  a {
+    color: $text-colour;
+  }
+
+  strong {
+    font-weight: normal;
+  }
+}
+
 // need to redefine the dl .inline class to something useful, like .definition-tabular
 // because of this:
 .definition-inline {

@@ -1,0 +1,62 @@
+// includes node_modules/govuk_frontend_toolkit/govuk_frontend_toolkit/stylesheets
+
+// Import GOV.UK frontend toolkit
+
+@import "colours";
+@import "measurements";
+@import "conditionals";
+@import "shims";
+@import "typography";
+@import "css3";
+@import "design-patterns/alpha-beta";
+@import "design-patterns/buttons";
+
+// THIS CSS FALLS *AFTER* legal-document-1-0.css SO THERE ARE NO IMPORTS
+
+
+// IMPORTING EXISTING STYLE-GUIDE APP STYLES
+// ==========================================================================
+
+@import "../style-guide/app/static/development/landregistry-elements/tags";
+
+// NOT YET INTEGRATED
+// ==========================================================================
+
+// narrower field for simple numeric input
+.field-numeric {
+  width: 6em;
+}
+
+.form-control-1-2 {
+  width: 25%;
+}
+
+.button-edit {
+  @include button($grey-3);
+  @include core-16;
+  margin: 0 $gutter-half $gutter-half 0;
+  padding: em(10) em(15) em(5) em(15);
+  vertical-align: top;
+}
+
+.confirmation-blocks {
+  .inner-block {
+    border-top: 1px solid $grey-3;
+  }
+}
+
+.callout--action-notice {
+  color: $black;
+  background-color: $turquoise;
+
+  .title-flag {
+    @include highlight-tag($white, $black);
+  }
+}
+
+.callout--generated-token {
+  h1 {
+    margin: 0; 
+  }
+  text-align: center;
+}

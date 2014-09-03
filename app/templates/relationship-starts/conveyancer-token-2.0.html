@@ -1,0 +1,43 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  Create a relationship - Property and land registration
+{% endblock %}
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/legal-document-1-0.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{ prototypes_asset_path }}stylesheets/relationship-starts-2-0.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+  <div id="content">
+
+    {% include "includes/prototypes_banner.html" %}
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <div class="callout callout--action-notice callout--generated-token">
+
+          <h1>
+            Relationship token <span class="title-flag">USNV</strong>
+          </h1>
+
+        </div>
+
+        <div class="text">
+          <p class="lede">
+            You must tell your client the authorisation code. They will need this to confirm you can act on their behalf.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</main>
+
+{% endblock %}
