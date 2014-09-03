@@ -19,6 +19,10 @@
     <div class="outer-block">
       <div class="inner-block">
 
+        <div class="callout callout--notice">
+          There are <a href="#changes-to-title">5 pending changes</a> to this register
+        </div>
+
         <div class="callout callout--summary">
 
           <h1 class="heading-large first-heading">
@@ -60,7 +64,7 @@
           </div>
 
           <dl class="inline">
-            <dt>Registered owner(s)</dt>
+            <dt>Owner(s)</dt>
             <dd>
               <!-- if there's only 1 registered owner, don't wrap a <ul> -->
               <ul class="collapse">
@@ -69,7 +73,7 @@
               </ul>
             </dd>
 
-            <dt>Mortgage lender</dt>
+            <dt>Lender(s)</dt>
             <dd>General UK PLC</dd>
 
             <dt>Tenure</dt>
@@ -116,17 +120,17 @@
             <p>
               The Leasehold land shown edged with red on the plan of the above Title filed at the Registry and being Flat 18 Kingman Court, Verdant Road, London SV19 9BT.
             </p>
-            <p class="footnote">See <a href="#">architectural diagram showing first floor flat (pdf, 1.2mb)</a></p>
+            <p class="footnote">See <a href="#">extent of title</a> and <a href="#">architectural diagram showing first floor flat (pdf, 1.2mb)</a></p>
             
             <p>
               As to the part numbered 1 on the title plan only the first floor flat is included in the title.<br>
             </p>
-            <p class="footnote">See <a href="#">architectural diagram showing first floor flat (pdf, 1.2mb)</a></p>
+            <p class="footnote">See <a href="#">title plan</a> and <a href="#">architectural diagram showing first floor flat (pdf, 1.2mb)</a></p>
           
             <p>
               As to the part numbered 2 on the title plan only the first floor flat and ground floor store are included in the title.
             </p>
-            <p class="footnote">See <a href="#">architectural diagram showing first floor flat (pdf, 1.2mb)</a> and <a href="#">architectural diagram showing ground floor store (pdf, 1.2mb)</a></p>
+            <p class="footnote">See <a href="#">title plan</a>, <a href="#">architectural diagram showing first floor flat (pdf, 1.2mb)</a> and <a href="#">architectural diagram showing ground floor store (pdf, 1.2mb)</a></p>
           
             <h3 class="heading-medium">Lease details</h3>
             <dl class="inline">
@@ -147,16 +151,24 @@
             <p class="footnote">
               Unless otherwise mentioned the title includes any legal easements granted by the registered lease(s) but is subject to any rights that it reserves, so far as those easements and rights exist and benefit or affect the registered land.
             </p>
+            <p class="footnote">
+              The lessor’s title is registered.
+            </p>
 
-            <h3 class="heading-medium">Registered owner(s)</h3>
+            <h3 class="heading-medium">Owner(s)</h3>
             <!-- if there's only one registered owner, this needs to be a <p> tag -->
             <ul>
               <li>Matthew Jameson of 118 Leafy Way, Thale, Berks RG12 9AB.</li>
               <li>Jennifer Spencer of 88 Monad Road, Slough, Berks SL20 3JD.</li>
             </ul>
           
-            <h3 class="heading-medium">Mortgage lender</h3>
-            <p>General UK PLC (Co. Regn. No. 2347676) of 12 Trinity Place, Regents Street, London NW10 6TQ.</p>
+            <h3 class="heading-medium">Lender(s)</h3>
+            <ol class="list-number">
+              <li>
+                <p>General UK PLC (Co. Regn. No. 2347676) of 12 Trinity Place, Regents Street, London NW10 6TQ.</p>
+                <p><a href="#">Registered charge</a> dated 26 July 2013</p>
+              </li>
+            </ol>
             
           </section>
 
@@ -205,9 +217,25 @@
 
             <div class="note">
               <p>
-                A Deed dated 11 February 1991 made between Helen Cassidy and Clara Teoh contains restrictive covenants.
+                A Deed dated 11 February 1991 contains restrictive covenants.
               </p>
-              <p class="footnote">Copy filed under <a href="#">L234567</a></p>
+
+              <div class="deed-relationship">
+                <dl>
+                  <dt>Between</dt>
+                  <dd>Helen Cassidy</dd>
+                  <dd>Jerome Hall</dd>
+                </dl>
+                <dl>
+                  <dt>and</dt>
+                  <dd>Clara Teoh</dd>
+                </dl>
+              </div>
+
+              <p class="footnote">
+                See <a href="#">Deed document L234567 (pdf, 450k)</a>.<br>
+                Deed originally filed under title <a href="#">L234567</a>.
+              </p>
             </div>
 
           </section>
@@ -251,10 +279,29 @@
               </div>
             </details>
 
-            <p>
-              A transfer dated 11 February 1991 made between Helen Cassidy and Clara Teoh contains provisions as to light or air, boundary structures and other matters.
-            </p>
-            <p class="footnote">Copy filed under <a href="#">L123456</a></p>
+            <div class="note">
+              <p>
+                A transfer dated 11 February 1991 contains provisions as to light or air, boundary structures and other matters.
+              </p>
+
+              <div class="deed-relationship">
+                <dl>
+                  <dt>Between</dt>
+                  <dd>Helen Cassidy</dd>
+                  <dd>Jerome Hall</dd>
+                </dl>
+                <dl>
+                  <dt>and</dt>
+                  <dd>Clara Teoh</dd>
+                </dl>
+              </div>
+
+              <p class="footnote">
+                See <a href="#">Deed document L123456 (pdf, 450k)</a>.<br>
+                Deed originally filed under title <a href="#">L123456</a>.
+              </p>
+
+            </div>
 
           </section>
 
@@ -262,17 +309,19 @@
 
             <h2 class="heading-medium">Maps and plans</h2>
 
-            <figure class="title-plan">
+            <figure class="maps-and-plans-item">
               <img src="{{ prototypes_asset_path }}images/dummy-title-plan.png" alt="">
               <figcaption>
                 <p>Extent of title GHR67834, subject to <a href="#">general boundaries</a></p>
               </figcaption>
             </figure>
 
-            <ul class="list-bullet">
-              <li><a href="#">Architectural diagram showing ground floor store (pdf, 1.2mb)</a></li>
-              <li><a href="#">Architectural diagram showing first floor flat (pdf, 1.2mb)</a></li>
-            </ul>
+            <figure class="maps-and-plans-item">
+              <img src="{{ prototypes_asset_path }}images/dummy-register-plan.png" alt="">
+              <figcaption>
+                <p>Title plan for GHR67834</p>
+              </figcaption>
+            </figure>
 
           </section>
 
@@ -281,9 +330,11 @@
             <h2 class="heading-medium">Related documents</h2>
 
             <ul class="list-bullet">
+              <li><a href="#">Architectural diagram showing ground floor store (pdf, 1.2mb)</a></li>
+              <li><a href="#">Architectural diagram showing first floor flat (pdf, 1.2mb)</a></li>
               <li><a href="#">Deed document L123456 (pdf, 450k)</a></li>
               <li><a href="#">Deed document L234567 (pdf, 450k)</a></li>
-              <li><a href="#">Deed document #3 (pdf, 450k)</a></li>
+              <li><a href="#">Registered charge dated 26 July 2013 (pdf, 450k)</a></li>
               <li><a href="#">Deed document #4 (pdf, 450k)</a></li>
               <li><a href="#">Deed document #5 (pdf, 450k)</a></li>
             </ul>
@@ -297,48 +348,64 @@
 
             <section class="js-faux-details">
 
-              <h3 class="heading-medium">Historical changes to title GHR67834</h3>
+              <h3 id="changes-to-title" class="heading-medium">Changes to title GHR67834</h3>
+
+              <!-- DAY LIST GOES HERE -->
+              <h4 class="heading-small">Pending changes</h4>
+              <ol class="list-number">
+                <li>A change of some type</li>
+                <li>A change of some type</li>
+                <li>A change of some type</li>
+                <li>A change of some type</li>
+                <li>A change of some type</li>
+              </ol>
+
+              <h4 class="heading-small">Historical changes</h4>
 
               <details>
                 <summary><time datetime="2013-08-07">7 August 2013</time> (3)</summary>
 
-                <h4>Registered owner(s)</h4>
+                <h4>Owner(s)</h4>
 
                 <div class="changelog">
 
                   <div class="removal">
                     <h5>Removed</h5>
                     <p>
-                      <del>Grace Dent</del> of Flat 18 Kingman Court, Verdant Road, London SV19 9BT.
+                      <del>Grace Dent of Flat 18 Kingman Court, Verdant Road, London SV19 9BT.</del>
                     </p>
                   </div>
 
                   <div class="addition">
                     <h5>Added</h5>
                     <ul>
-                      <li><ins>Matthew Jameson</ins> of 118 Leafy Way, Thale, Berks RG12 9AB.</li>
+                      <li><ins>Matthew Jameson of 118 Leafy Way, Thale, Berks RG12 9AB.</ins></li>
                       <li><ins>Jennifer Spencer of 88 Monad Road, Slough, Berks SL20 3JD.</ins></li>
                     </ul>
                   </div>
 
                 </div>
 
-                <h4>Mortgage lender</h4>
+                <h4>Lender(s)</h4>
 
                 <div class="changelog">
 
                   <div class="removal">
                     <h5>Removed</h5>
-                    <p>
-                      <del>Another UK PLC (Co. Regn. No. 2347676)</del> of <del>21 Diam Street, London SE10 4QT</del>
-                    </p>
+                    <ol class="list-number">
+                      <li>
+                        <del>Another UK PLC (Co. Regn. No. 2347676)</del> of <del>21 Diam Street, London SE10 4QT</del>
+                      </li>
+                    </ol>
                   </div>
 
                   <div class="addition">
                     <h5>Added</h5>
-                    <p>
-                      <ins>General UK PLC (Co. Regn. No. 1231234)</ins> of <ins>12 Trinity Place, Regents Street, London NW10 6TQ</ins>
-                    </p>
+                    <ol class="list-number">
+                      <li>
+                        <ins>General UK PLC (Co. Regn. No. 1231234)</ins> of <ins>12 Trinity Place, Regents Street, London NW10 6TQ</ins>
+                      </li>
+                    </ol>
                   </div>
 
                 </div>
@@ -372,12 +439,18 @@
 
               <ul class="list-bullet">
                 <li><a href="#">GHR67827: Kingman Court</a></li>
-                <li><a href="#">GHR67827: Flat 17 Kingman Court</a></li>
-                <li><a href="#">GHR67827: Flat 19 Kingman Court</a></li>
+                <li><a href="#">GHR67678: Flat 17 Kingman Court</a></li>
+                <li><a href="#">GHR78956: Flat 19 Kingman Court</a></li>
               </ul>
 
             </section>
 
+          </div>
+        </div>
+
+        <div class="inner-block">
+          <div class="register-make-change">
+            <a href="#" class="button">Make a change to the register</a>
           </div>
         </div>
 
