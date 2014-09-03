@@ -1,0 +1,116 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  Transfer details
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+
+  <div id="content">
+
+    {% include "includes/prototypes_banner.html" %}
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <form action="relationship-reference" method="get" class="form">
+
+          <h1 class="form-title heading-large">
+            Transfer details
+          </h1>
+
+
+
+          <section class="legal-document--item legal-document--bordered">
+            <h2 class="heading-medium">Property</h2>
+              <dl class="inline">
+                <dt>Address</dt>
+                <dd>
+                  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="address-inline">
+                    <span itemprop="streetAddress">
+                    10 Breville Road
+                    </span>
+                    <span itemprop="addressLocality">Guildford</span>
+                    <span itemprop="postalCode">GU3 9XX</span>
+                  </span>
+                </dd>
+                <dt>Title number</dt>
+                <dd>GHR67834</dd>
+                <dt>Sellers (current proprieters)</dt>
+                <dd>Jessica Emma Hunt, Xi Jenny Koh</dd>
+              </dl>
+            </p>
+
+          </section><!-- end item -->
+
+
+          <section class="legal-document--item legal-document--bordered">
+            <h2 class="heading-medium">Buyer (new proprieters)</h2>
+              <strong>Proprieter 1</strong>
+              <dl class="inline">
+                <dt>Name</dt>
+                <dd>Jason Amilio Smith</dd>
+                <dt>Addresses</dt>
+                <dd>address 1, address 2</dd>
+              </dl>
+
+              <strong>Proprieter 2</strong>
+              <dl class="inline">
+                <dt>Name</dt>
+                <dd>Peter Smith</dd>
+                <dt>Addresses</dt>
+                <dd>address 1, address 2</dd>
+              </dl>
+          </section><!-- end item -->
+          <p>
+          <h2 class="heading-medium">Declaration of trust</h2>
+          Something
+          <p>
+          <h2 class="heading-medium">Stamp duty land tax (SDLT)</h2>
+          Something
+          <p>
+          <h2 class="heading-medium">Compliance with restrictions</h2>
+          Something
+          <p>
+          <h2 class="heading-medium">Transfer</h2>
+	        <div class="form-group">
+	          <label for="full-name" class="form-label">Price paid</label>
+	          <input type="text" class="form-control" id="price-paid">
+	        </div>
+					<fieldset>
+					<legend>Transfer date</legend>
+					<div class='date-of-birth'>
+						<p class='form-hint datefield-hint' id='dobHint'>Must be in the future. For example, 28 4 2015</p>
+						<div class='datefield form-group form-group-day'>
+							<label for='buyer_date_of_birth_day'>Day</label>
+							<input class='form-control' id='buyer_date_of_birth_day' type='number' value=''>
+						</div>
+						<div class='datefield form-group form-group-month'>
+							<label for='buyer_date_of_birth_month'>Month</label>
+							<input class='form-control' id='buyer_date_of_birth_month' type='number' value=''>
+						</div>
+						<div class='datefield form-group form-group-year'>
+							<label for='buyer_date_of_birth_year'>Year</label>
+							<input class='form-control' id='buyer_date_of_birth_year' type='number' value=''>
+						</div>
+					</div>
+					</fieldset>
+          <div class="form-group">           
+            <button type="submit" class="button">Next</button>
+            <p>
+              <a href="select-action">Save draft</a>
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

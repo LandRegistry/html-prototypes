@@ -18,6 +18,23 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+
+
+# ---------------------------------------------------------------------------
+
+# Coneyancer case list --------------------------
+@app.route('/sprint-5/conveyancer-case-list')
+def sprint_5_conveyancer_case_list():
+  return render_template('sprint-5/conveyancer-case-list.html')
+
+
+# Create transfer 1 transfer details--------------------------
+@app.route('/sprint-5/create-transfer-1')
+def sprint_5_create_transfer_1():
+  return render_template('sprint-5/create-transfer-1.html')
+
+
+
 # ---------------------------------------------------------------------------
 
 # Transaction flows, relationship starts, conveyancer initiates v2.0 --------
