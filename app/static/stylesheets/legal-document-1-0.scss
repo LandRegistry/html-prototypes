@@ -69,23 +69,6 @@
   }
 }
 
-// need to redefine the dl .inline class to something useful, like .definition-tabular
-// because of this:
-.definition-inline {
-  @extend %contain-floats;
-  dt {
-    clear: left;
-    float: left;
-    margin-right: 0.2em;
-    &:after {
-      content: ':';
-    }
-  }
-  dd {
-    float: left;
-  }
-}
-
 .address-inline {
   [itemprop]:after {
     content: ', ';
@@ -110,9 +93,3 @@
     margin-top: $gutter;
     border-top: 1px solid $grey-3;
   }
-
-// THIS IS A PATTERN NOW. THINK ABOUT IF IT'S %notes or not? THIS IS THE SAME AS .footnote
-.legal-document--notes {
-  color: $grey-1;
-  @include core-16;
-}

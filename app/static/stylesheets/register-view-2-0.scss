@@ -34,23 +34,8 @@
 // NOT YET INTEGRATED
 // ==========================================================================
 
-.callout--notice {
-  background-color: $yellow-25;
-}
-
-// a utility class to collapse bottom and top borders, on things like a nested <ul>...?
-.collapse {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .first-item > [class*='heading-'] {
   margin-top: 0;
-}
-
-.footnote {
-  color: $grey-1;
-  @include core-16;
 }
 
 .register-related-items {
@@ -63,24 +48,6 @@
   margin-top: $gutter;
   padding-top: $gutter;
   border-top: 2px solid $grey-3;
-}
-
-.number-flag {
-  @include core-16;
-  @include border-radius(50%);
-  @include box-sizing(border-box);
-
-  font-weight: bold;
-  color: $white;
-  background-color: $light-blue;
-
-  display: inline-block;
-  width: 1.65em;
-  height: 1.65em;
-  margin-left: 0.25em;
-  padding-top: 0.25em;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .maps-and-plans-item {
@@ -157,17 +124,6 @@
     width: $half;
     padding-left: $gutter-half;
   }
-}
-
-// get into TYPOGRAPHY
-del {
-  text-decoration: none;
-  background-color: $mellow-red-25;
-}
-
-ins {
-  text-decoration: none;
-  background-color: $grass-green-25;
 }
 
 

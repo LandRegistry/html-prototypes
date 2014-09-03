@@ -66,4 +66,7 @@ module.exports = function(grunt) {
   // 1: Default task - watch for changes in landregistry elements, and serve the app
   grunt.registerTask('default', ['watch']);
 
+  // 2: Build sass manually
+  grunt.registerTask('build', ['sass:dev']);
+
 };
