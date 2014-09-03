@@ -93,6 +93,7 @@
 }
 
 .legal-document--bounds {
+  margin-bottom: $gutter;
   padding: $gutter 0; 
   border-top: 4px solid $light-blue;
   border-bottom: 2px solid $light-blue;
@@ -101,6 +102,8 @@
   .legal-document--item {
     width: $two-thirds;
     padding-right: $one-third;
+
+    @extend %contain-floats;
   }
 
   .legal-document--bordered {

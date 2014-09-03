@@ -185,3 +185,43 @@
 .callout--generated-token h1 {
   margin: 0;
 }
+
+.client-flag {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #0b0c0c;
+  background-color: #fff2d3;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+@media (min-width: 641px) {
+  .client-flag {
+    vertical-align: baseline;
+  }
+}
+
+.client-confirmed-flag {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #0b0c0c;
+  background-color: #cce0d6;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+@media (min-width: 641px) {
+  .client-confirmed-flag {
+    vertical-align: baseline;
+  }
+}
