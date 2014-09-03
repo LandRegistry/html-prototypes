@@ -29,12 +29,14 @@
 // IMPORTING EXISTING STYLE-GUIDE APP STYLES
 // ==========================================================================
 
-@import "../style-guide/app/static/development/landregistry-elements/typography";
-@import "../style-guide/app/static/development/landregistry-elements/callouts";
-
+@import "../style-guide/app/static/development/stylesheets/landregistry-main";
 
 // NOT YET INTEGRATED
 // ==========================================================================
+
+.callout--notice {
+  background-color: $yellow-25;
+}
 
 // a utility class to collapse bottom and top borders, on things like a nested <ul>...?
 .collapse {
@@ -57,6 +59,12 @@
   border-top: 4px solid $light-blue;
 }
 
+.register-make-change {
+  margin-top: $gutter;
+  padding-top: $gutter;
+  border-top: 2px solid $grey-3;
+}
+
 .number-flag {
   @include core-16;
   @include border-radius(50%);
@@ -74,6 +82,51 @@
   text-align: center;
   vertical-align: middle;
 }
+
+.maps-and-plans-item {
+  img {
+    border: 3px solid $grey-3;
+  }
+}
+
+.note {
+  margin: 1em 0;
+  p {
+    margin-bottom: 0.25em;
+  }
+}
+
+.deed-relationship {
+  @extend %contain-floats;
+  margin-bottom: 1em;
+  
+  dt {
+    font-style: italic;
+    padding-bottom: 0.25em;
+  }
+  dd {
+    padding-bottom: 0.25em;
+  }
+
+  @include media(tablet) {
+    dl {
+      float: left;
+      width: $half;
+    }
+    dt {
+      float: left;
+      width: 30%;
+    }
+    dd {
+      float: left;
+      width: 70%;
+      &:not(:first-of-type) {
+        margin-left: 30%;
+      }
+    }
+  }
+}
+
 
 // in-page changelog
 .changelog {
