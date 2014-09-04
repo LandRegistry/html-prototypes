@@ -1,0 +1,58 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  Create a relationship - Property and land registration
+{% endblock %}
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/legal-document-1-0.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{ prototypes_asset_path }}stylesheets/relationship-starts-2-0.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+  <div id="content">
+
+    {% include "includes/prototypes_banner.html" %}
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <div class="global-breadcrumb">
+          <nav role="navigation">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Property and land registration</a></li>
+            </ol>
+          </nav>
+        </div>
+
+        <h1>Create a relationship</h1>
+
+        <div class="text">
+
+          <p class="lede">Generate a token to do this at the land registry. [content to come]</p>
+
+          <p>Use this service when you are a conveyancer who needs to act on behalf of someone else.</p>
+
+          <p>To use this service you’ll need:</p>
+          <ul class="list-bullet">
+            <li>details for the property you wish to act on</li>
+            <li>personal contact details for your client(s)</li>
+          </ul>
+
+        </div>
+
+        <p>
+          <a href="/relationship-starts/conveyancer-login" class="button button-get-started">Start now</a>
+        </p>
+
+      </div>
+    </div>
+
+
+  </div>
+</main>
+
+{% endblock %}

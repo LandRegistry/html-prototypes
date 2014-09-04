@@ -29,27 +29,43 @@
 // IMPORTING EXISTING STYLE-GUIDE APP STYLES
 // ==========================================================================
 
-@import "../style-guide/app/static/development/landregistry-elements/typography";
-@import "../style-guide/app/static/development/landregistry-elements/callouts";
+@import "../style-guide/app/static/development/stylesheets/landregistry-main";
 
 
 // NOT YET INTEGRATED
 // ==========================================================================
 
-// need to redefine the dl .inline class to something useful, like .definition-tabular
-// because of this:
-.definition-inline {
-  @extend %contain-floats;
-  dt {
-    clear: left;
+// Breadcrumbs
+.global-breadcrumb {
+
+  ol {
+    padding: 0.75em 0;
+    @extend %contain-floats;
+  }
+
+  li {
+    @include core-16;
     float: left;
-    margin-right: 0.2em;
-    &:after {
-      content: ':';
+
+    &:before {
+      content: '>';
+      color: $grey-2;
+      display: inline-block;
+      margin: 0 0.5em;
+    }
+
+    &:first-child:before {
+      content: '';
+      margin: 0;
     }
   }
-  dd {
-    float: left;
+
+  a {
+    color: $text-colour;
+  }
+
+  strong {
+    font-weight: normal;
   }
 }
 
@@ -60,6 +76,7 @@
 }
 
 .legal-document--bounds {
+  margin-bottom: $gutter;
   padding: $gutter 0; 
   border-top: 4px solid $light-blue;
   border-bottom: 2px solid $light-blue;
@@ -68,15 +85,11 @@
   .legal-document--item {
     width: $two-thirds;
     padding-right: $one-third;
+
+    @extend %contain-floats;
   }
 
   .legal-document--bordered {
     margin-top: $gutter;
     border-top: 1px solid $grey-3;
   }
-
-// THIS IS A PATTERN NOW. THINK ABOUT IF IT'S %notes or not? THIS IS THE SAME AS .footnote
-.legal-document--notes {
-  color: $grey-1;
-  @include core-16;
-}
