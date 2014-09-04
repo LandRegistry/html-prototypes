@@ -22,22 +22,33 @@
         <form class="form" action="conveyancer-add-clients" method="get">
 
           <h1 class="form-title heading-large">
-            Select task
+            Is your client buying or selling this property?
           </h1>
 
           <div class="form-group">
+
             <label for="radio-inline-1" class="block-label">
               <input id="radio-inline-1" type="radio" name="task" value="buy-property">
               Buying this property
             </label>
+
             <label for="radio-inline-2" class="block-label">
               <input id="radio-inline-2" type="radio" name="task" value="sell-property">
               Selling this property
             </label>
+
+            <p class="form-block">or</p>
+
+            <label for="radio-inline-3" class="block-label">
+              <input id="radio-inline-3" type="radio" name="task" value="another">
+              Another task
+            </label>
+
           </div>
-          <div class="form-group">
-            <label class="form-label" for="another-task">Or another task:</label>
-            <input type="text" class="form-control" id="another-task" name="task">
+
+          <div id="taskDetail" class="panel-indent">
+            <label class="form-label" for="task-detail">please specify:</label>
+            <input type="text" class="form-control" id="task-detail" name="task-detail">
           </div>
 
           <div class="form-group">
@@ -53,4 +64,19 @@
   </div>
 </main>
 
+{% endblock %}
+
+{% block body_end_additional %}
+  <script type="text/javascript">
+    $(function() {
+      $('#taskDetail').hide();
+      $(':radio[name="task"]').on('change', function() {
+        if ($(this).is(':checked') && $(this).val() === "another") {
+          $('#taskDetail').show();
+        } else {
+          $('#taskDetail').hide();
+        }
+      });
+    });
+  </script>
 {% endblock %}
