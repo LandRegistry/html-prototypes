@@ -68,15 +68,16 @@
 
 {% block body_end_additional %}
   <script type="text/javascript">
+  
     $(function() {
-      $('#taskDetail').hide();
       $(':radio[name="task"]').on('change', function() {
         if ($(this).is(':checked') && $(this).val() === "another") {
           $('#taskDetail').show();
         } else {
           $('#taskDetail').hide();
         }
-      });
+      }).trigger('change');
     });
+
   </script>
 {% endblock %}
