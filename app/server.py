@@ -20,6 +20,38 @@ def home():
 
 # ---------------------------------------------------------------------------
 
+# Transaction flows, citizens sign transfer and charge v2.0 -----------------
+@app.route('/transfer-and-charge/citizen-1-start')
+def transfer_and_charge_citizen_1_start_2_0():
+  return render_template('transfer-and-charge/citizen-1-start-2.0.html')
+
+# Step 1 - login with GOV.UK Verify
+@app.route('/transfer-and-charge/citizen-1-login')
+def transfer_and_charge_citizen_1_login_2_0():
+  return render_template('transfer-and-charge/citizen-1-login-2.0.html')
+
+# Step 2 - Client 1 enters token
+@app.route('/transfer-and-charge/citizen-1-enter-token')
+def transfer_and_charge_citizen_1_enter_token_2_0():
+  return render_template('transfer-and-charge/citizen-1-enter-token-2.0.html')
+
+# Step 3 - Client 1 signs mortgage deed
+@app.route('/transfer-and-charge/citizen-1-sign-mortgage')
+def transfer_and_charge_citizen_1_sign_mortgage_2_0():
+  return render_template('transfer-and-charge/citizen-1-sign-mortgage-2.0.html')
+
+# Step 4 - Client 1 signs transfer
+@app.route('/transfer-and-charge/citizen-1-sign-transfer')
+def transfer_and_charge_citizen_1_sign_transfer_2_0():
+  return render_template('transfer-and-charge/citizen-1-sign-transfer-2.0.html')
+
+# Step 5 - Client 1 - semi confirmation
+@app.route('/transfer-and-charge/citizen-1-semi-confirmed')
+def transfer_and_charge_citizen_1_semi_confirmed_2_0():
+  return render_template('transfer-and-charge/citizen-1-semi-confirmed-2.0.html')
+
+# ---------------------------------------------------------------------------
+
 # Transaction flows, relationship starts, conveyancer initiates v2.0 --------
 @app.route('/relationship-starts/conveyancer-start')
 def conveyancer_start_2_0():
