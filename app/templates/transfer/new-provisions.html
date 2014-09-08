@@ -1,0 +1,78 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  Provisions
+{% endblock %}
+
+{% block content %}
+
+<main id="wrapper" role="main">
+
+  <div id="content">
+
+    {% include "includes/prototypes_banner.html" %}
+
+    <div class="inner-block">
+
+        <form action="mortgage-details" method="get" class="form">
+
+          <h1 class="form-title heading-large">
+            Provisions
+          </h1>
+
+
+
+          <div class="form-group">
+
+            <label for="radio-inline-1" class="block-label">
+              <input id="radio-inline-1" type="radio" name="input-style" value="use-templates">
+              Use provision templates
+            </label>
+
+            <label for="radio-inline-2" class="block-label">
+              <input id="radio-inline-2" type="radio" name="input-style" value="free-text">
+              Enter provision text --make this selected by default--
+            </label>
+
+          </div>
+
+          <div id="taskDetail" class="panel-indent">
+            <label class="form-label" for="task-detail">Definitions</label>
+            <textarea class="form-control" id="definitions-text" name="definitions-text" rows="6"></textarea>
+          </div>
+
+          <div id="taskDetail" class="panel-indent">
+            <label class="form-label" for="task-detail">Easements</label>
+            <textarea class="form-control" id="easements-text" name="easements-text" rows="6"></textarea>
+          </div>
+          <div id="taskDetail" class="panel-indent">
+            <label class="form-label" for="task-detail">Covenants</label>
+            <textarea class="form-control" id="covenants-text" name="covenants-text" rows="6"></textarea>
+          </div>
+          <div id="taskDetail" class="panel-indent">
+            <label class="form-label" for="task-detail">Other provisions</label>
+            <textarea class="form-control" id="provisions-text" name="provisions-text" rows="6"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="button">Next</button>
+            <p>
+              <a href="conveyancer-case-list">Save draft</a>
+            </p>
+          </div>
+
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

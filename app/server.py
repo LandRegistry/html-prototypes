@@ -25,15 +25,20 @@ def home():
 def transfer_login():
   return render_template('transfer/login.html')
 
-# Transfer prototypes, case-list page
-@app.route('/transfer/caselist')
-def transfer_case_list():
-  return render_template('transfer/case-list.html')
+# Transfer prototypes, conveyancer-case-list page
+@app.route('/transfer/conveyancer-case-list')
+def conveyancer_case_list():
+  return render_template('transfer/conveyancer-case-list.html')
 
-# Transfer prototypes, new provision page
+# Transfer prototypes, conveyancer-case-list page
+@app.route('/transfer/create-transfer')
+def create_transfer():
+  return render_template('transfer/create-transfer.html')
+
+# Transfer prototypes, new provisions page
 @app.route('/transfer/new-provisions')
 def transfer_new_provisions():
-  return render_template('transfer/new-provision.html')
+  return render_template('transfer/new-provisions.html')
 
 # Transfer prototypes, mortgage details page
 @app.route('/transfer/mortgage-details')
