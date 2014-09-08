@@ -50,4 +50,8 @@ summary::-webkit-details-marker {
   details summary:focus {
     outline: none;
   }
+
+  .case-list__delete {
+    color: $error-colour;
+  }
 }
