@@ -5,6 +5,10 @@
   Page title
   <!-- -->
 {% endblock %}
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/transfer.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
   
 {% block content %}
 
@@ -25,7 +29,7 @@
 
           <section class="legal-document--item legal-document--bordered">
             <h2 class="heading-medium">Property</h2>
-              <dl class="inline">
+              <dl class="definition-tabular">
                 <dt>Address</dt>
                 <dd>
                   <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="address-inline">
@@ -49,7 +53,7 @@
           <section class="legal-document--item legal-document--bordered">
             <h2 class="heading-medium">Buyer (new proprieters)</h2>
               <strong>Proprieter 1</strong>
-              <dl class="inline">
+              <dl class="definition-tabular">
                 <dt>Name</dt>
                 <dd>Jason Amilio Smith</dd>
                 <dt>Addresses</dt>
@@ -57,7 +61,7 @@
               </dl>
 
               <strong>Proprieter 2</strong>
-              <dl class="inline">
+              <dl class="definition-tabular">
                 <dt>Name</dt>
                 <dd>Peter Smith</dd>
                 <dt>Addresses</dt>
@@ -68,8 +72,7 @@
           <h2 class="heading-medium">Declaration of trust</h2>
           Something
           <p>
-          <h2 class="heading-medium">Stamp duty land tax (SDLT)</h2>
-          Something
+
           <p>
           <h2 class="heading-medium">Compliance with restrictions</h2>
           Something
@@ -79,6 +82,11 @@
             <label for="full-name" class="form-label">Price paid</label>
             <input type="text" class="form-control" id="price-paid">
           </div>
+          <div class="panel-indent stamp-duty__message">
+            <p>SDLT (Stamp Duty Land Tax) receipt received</p>
+            <p>URN: 1937485936</p>
+          </div>
+
           <fieldset>
             <legend>Transfer date</legend>
             <div class='date-of-birth'>
