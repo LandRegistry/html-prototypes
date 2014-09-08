@@ -41,3 +41,13 @@
 .case-list__item--border {
   border-top: 1px solid $panel-colour;
 }
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.case-list {
+  details summary:focus {
+    outline: none;
+  }
+}
