@@ -63,3 +63,12 @@ summary::-webkit-details-marker {
 p.radio-group {
   margin-bottom: em(5, 16 );
 }
+
+.dec-trust__hidden {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .dec-trust__hidden {
+  display: block;
+  width: 30em;
+}
