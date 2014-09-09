@@ -1,0 +1,74 @@
+// includes node_modules/govuk_frontend_toolkit/govuk_frontend_toolkit/stylesheets
+
+// Import GOV.UK frontend toolkit
+
+@import "colours";
+@import "measurements";
+@import "conditionals";
+@import "shims";
+@import "typography";
+@import "css3";
+@import "design-patterns/alpha-beta";
+@import "design-patterns/buttons";
+
+// Import GOV.UK Elements
+// ==========================================================================
+
+@import "govuk-elements";
+
+// Prototype elements
+// ==========================================================================
+
+@import "prototypes/navigation";
+@import "prototypes/tags";
+
+// "Discovery" banner - uses govuk_toolkit mixin via elements, just needs:
+@import "prototypes/discovery-banner";
+
+
+// IMPORTING EXISTING STYLE-GUIDE APP STYLES
+// ==========================================================================
+
+@import "../style-guide/app/static/development/stylesheets/landregistry-main";
+
+// NOT YET INTEGRATED
+// ==========================================================================
+
+.case-list__item {
+  margin-top: $gutter;
+}
+
+.case-list__item--border {
+  border-top: 1px solid $panel-colour;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.case-list {
+  details summary:focus {
+    outline: none;
+  }
+
+  .case-list__delete {
+    color: $error-colour;
+  }
+}
+
+.stamp-duty__message {
+  border-color: #28a197;
+}
+
+p.radio-group {
+  margin-bottom: em(5, 16 );
+}
+
+.dec-trust__hidden {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .dec-trust__hidden {
+  display: block;
+  width: 30em;
+}

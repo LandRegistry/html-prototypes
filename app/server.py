@@ -20,6 +20,43 @@ def home():
 
 # ---------------------------------------------------------------------------
 
+# Transfer prototypes, login page
+@app.route('/transfer/login')
+def transfer_login():
+  return render_template('transfer/login.html')
+
+# Transfer prototypes, conveyancer-case-list page
+@app.route('/transfer/conveyancer-case-list')
+def conveyancer_case_list():
+  return render_template('transfer/conveyancer-case-list.html')
+
+# Transfer prototypes, conveyancer-case-list page
+@app.route('/transfer/create-transfer')
+def create_transfer():
+  return render_template('transfer/create-transfer.html')
+
+# Transfer prototypes, new provisions page
+@app.route('/transfer/new-provisions')
+def transfer_new_provisions():
+  return render_template('transfer/new-provisions.html')
+
+# Transfer prototypes, mortgage details page
+@app.route('/transfer/mortgage-details')
+def transfer_mortgage_details():
+  return render_template('transfer/mortgage-details.html')
+
+# Transfer prototypes, confirm page
+@app.route('/transfer/confirm')
+def transfer_confirm():
+  return render_template('transfer/confirm.html')
+
+# Transfer prototypes, done page
+@app.route('/transfer/done')
+def transfer_done():
+  return render_template('transfer/done.html')
+
+# ---------------------------------------------------------------------------
+
 # Transaction flows, citizens sign transfer and charge v2.0 -----------------
 @app.route('/transfer-and-charge/citizen-1-start')
 def transfer_and_charge_citizen_1_start_2_0():
