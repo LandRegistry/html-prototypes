@@ -72,3 +72,8 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   display: block;
   width: 30em;
 }
+
+.supporting-uploads__remove {
+  color: $link-colour;
+  margin-left: $gutter;
+}
