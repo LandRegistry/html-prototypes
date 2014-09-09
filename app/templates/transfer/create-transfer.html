@@ -1,0 +1,136 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block page_title %}
+  <!-- insert page title here -->
+  Page title
+  <!-- -->
+{% endblock %}
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/transfer.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+
+  <div id="content">
+
+    {% include "includes/prototypes_banner.html" %}
+
+    <div class="inner-block">
+
+
+        <form action="new-provisions" method="get" class="form">
+
+          <h1 class="form-title heading-large">
+            Transfer details
+          </h1>
+
+          <section class="legal-document--item legal-document--bordered">
+            <h2 class="heading-medium">Property</h2>
+              <dl class="definition-tabular">
+                <dt>Address</dt>
+                <dd>
+                  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="address-inline">
+                    <span itemprop="streetAddress">
+                    10 Breville Road
+                    </span>
+                    <span itemprop="addressLocality">Guildford</span>
+                    <span itemprop="postalCode">GU3 9XX</span>
+                  </span>
+                </dd>
+                <dt>Title number</dt>
+                <dd>GHR67834</dd>
+                <dt>Sellers (current proprieters)</dt>
+                <dd>Jessica Emma Hunt, Xi Jenny Koh</dd>
+              </dl>
+            </p>
+
+          </section><!-- end item -->
+
+          <section class="legal-document--item legal-document--bordered">
+            <h2 class="heading-medium">Buyer (new proprieters)</h2>
+              <strong>Proprieter 1</strong>
+              <dl class="definition-tabular">
+                <dt>Name</dt>
+                <dd>Jason Amilio Smith</dd>
+                <dt>Addresses</dt>
+                <dd>address 1, address 2</dd>
+              </dl>
+
+              <strong>Proprieter 2</strong>
+              <dl class="definition-tabular">
+                <dt>Name</dt>
+                <dd>Peter Smith</dd>
+                <dt>Addresses</dt>
+                <dd>address 1, address 2</dd>
+              </dl>
+          </section><!-- end item -->
+
+          <section>
+            <h2 class="heading-medium">Declaration of trust</h2>
+            <form action="">
+              <fieldset>
+                <legend>The transferee is more than one person and</legend>
+                <div class="form-group">
+                  <label for="joint-tenants" class="block-label"><input id="joint-tenants" type="radio" name="dec-of-trust-radio" />they are to hold the property on trust for themselves as joint tenants</label>
+                  <label for="equal-tenants" class="block-label"><input id="equal-tenants" type="radio" name="dec-of-trust-radio" />they are to hold the property on trust for themselves as tenants in common in equal shares</label>
+                  <p class="form-block radio-group">
+                    or
+                  </p>
+                  <label for="trust-tenants" class="block-label"><input id="trust-tenants" type="radio" name="dec-of-trust-radio" />they are to hold the property on trust:
+                    <textarea class="dec-trust__hidden" name="" id="" cols="30" rows="10"></textarea></label>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+
+          <p>
+          <h2 class="heading-medium">Compliance with restrictions</h2>
+          Something
+          <p>
+          <h2 class="heading-medium">Transfer</h2>
+          <div class="form-group">
+            <label for="full-name" class="form-label">Price paid</label>
+            <input type="text" class="form-control" id="price-paid">
+          </div>
+          <div class="panel-indent stamp-duty__message">
+            <p>SDLT (Stamp Duty Land Tax) receipt received</p>
+            <p>URN: 1937485936</p>
+          </div>
+
+          <fieldset>
+            <legend>Transfer date</legend>
+            <div class='date-of-birth'>
+              <p class='form-hint datefield-hint' id='dobHint'>Must be in the future. For example, 28 4 2015</p>
+              <div class='datefield form-group form-group-day'>
+                <label for='buyer_date_of_birth_day'>Day</label>
+                <input class='form-control' id='buyer_date_of_birth_day' type='number' value=''>
+              </div>
+              <div class='datefield form-group form-group-month'>
+                <label for='buyer_date_of_birth_month'>Month</label>
+                <input class='form-control' id='buyer_date_of_birth_month' type='number' value=''>
+              </div>
+              <div class='datefield form-group form-group-year'>
+                <label for='buyer_date_of_birth_year'>Year</label>
+                <input class='form-control' id='buyer_date_of_birth_year' type='number' value=''>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <button type="submit" class="button">Next</button>
+            <p>
+              <a href="conveyancer-case-list">Save draft</a>
+            </p>
+          </div>
+
+        </form>
+
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
