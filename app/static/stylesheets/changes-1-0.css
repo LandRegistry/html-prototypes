@@ -108,7 +108,7 @@
 }
 .register-changes details[open] {
   padding-bottom: 15px;
-  border-bottom: 4px solid #bfc1c3;
+  border-bottom: 4px solid #6f72af;
 }
 
 .register-changes--pending {
@@ -119,8 +119,8 @@
 }
 
 .register-changes--previous {
-  border-left-color: #bfc1c3;
+  border-left-color: #6f72af;
 }
 .register-changes--previous time:before {
-  border-top-color: #bfc1c3;
+  border-top-color: #6f72af;
 }
