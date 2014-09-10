@@ -93,6 +93,7 @@
 }
 .register-changes li {
   padding: 15px;
+  padding-left: 30px;
 }
 .register-changes time {
   display: block;
@@ -101,9 +102,9 @@
 .register-changes time:before {
   content: '';
   position: absolute;
-  left: -15px;
+  left: -30px;
   top: 7.5px;
-  width: 7.5px;
+  width: 15px;
   border-top: 5px solid;
 }
 .register-changes details[open] {

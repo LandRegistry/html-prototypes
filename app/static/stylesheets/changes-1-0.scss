@@ -32,6 +32,7 @@ $previous: $mauve;
     @extend %contain-floats;
 
     padding: $gutter-half;
+    padding-left: $gutter;
   }
 
   time {
@@ -43,9 +44,9 @@ $previous: $mauve;
     &:before {
       content: '';
       position: absolute;
-      left: -$gutter-half;
+      left: -$gutter;
       top: $gutter-one-quarter;
-      width: $gutter-one-quarter;
+      width: $gutter-half;
       border-top: 5px solid;
     }
   }
