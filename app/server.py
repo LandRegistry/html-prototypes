@@ -209,6 +209,21 @@ def citizen_confirms_2_0():
 @app.route('/register-view/register-2.0')
 def register_2_0():
   return render_template('register-view/register-2.0.html')
+@app.route('/register-view/register-2.1')
+def register_2_1():
+  return render_template('register-view/register-2.1.html')
+@app.route('/register-view/register-3.0')
+def register_3_0():
+  return render_template('register-view/register-3.0.html')
+
+# ---------------------------------------------------------------------------
+
+# Page prototypes, Register Changes View --------------------------
+@app.route('/changes-view/changes-1.0')
+def changes_1_0():
+  return render_template('changes-view/changes-1.0.html')
+
+# ---------------------------------------------------------------------------
 
 # Page prototypes, Example mortgage agreement  --------------------------
 @app.route('/legal-documents/mortgage-agreement-v1')

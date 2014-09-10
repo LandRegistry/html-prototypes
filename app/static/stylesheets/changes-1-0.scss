@@ -1,0 +1,88 @@
+// includes node_modules/govuk_frontend_toolkit/govuk_frontend_toolkit/stylesheets
+
+// Import GOV.UK frontend toolkit
+
+@import "colours";
+@import "measurements";
+@import "conditionals";
+@import "shims";
+@import "typography";
+@import "css3";
+@import "design-patterns/alpha-beta";
+@import "design-patterns/buttons";
+
+// THIS CSS FALLS *AFTER* legal-document-1-0.css SO THERE ARE NO IMPORTS
+
+// NOT YET INTEGRATED
+// ==========================================================================
+
+.breadcumb-reverse {
+  margin-top: $gutter;
+}
+
+// Register changes items
+
+$pending: $turquoise;
+$previous: $mauve;
+
+.register-changes {
+  margin-top: 0;
+  border-left: 5px solid; 
+
+  li {
+    @extend %contain-floats;
+
+    padding: $gutter-half;
+    padding-left: $gutter;
+  }
+
+  time {
+    //@include core-16;
+
+    display: block;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -$gutter;
+      top: $gutter-one-quarter;
+      width: $gutter-half;
+      border-top: 5px solid;
+    }
+  }
+
+  details[open] {
+    padding-bottom: $gutter-half;
+    border-bottom: 1px dotted $grey-2;
+  }
+
+}
+
+.register-changes-heading {
+  @include bold-24();
+
+  margin-bottom: 0;
+  padding: $gutter-half;
+  padding-left: $gutter;
+  padding-top: 0;
+  border-left: 5px solid;
+  border-top: 5px solid $white;
+}
+
+.register-changes--pending,
+.register-changes-heading--pending {
+  border-left-color: $pending;
+  time:before {
+    border-top-color: $pending;
+  }
+}
+
+.register-changes--previous,
+.register-changes-heading--previous {
+  border-left-color: $previous;
+  time:before {
+    border-top-color: $previous;
+  }
+}
+
