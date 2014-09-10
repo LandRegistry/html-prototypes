@@ -4,6 +4,10 @@
   Provisions
 {% endblock %}
 
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/transfer.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block content %}
 
 <main id="wrapper" role="main">
@@ -14,60 +18,35 @@
 
     <div class="inner-block">
 
-        <form action="mortgage-details" method="get" class="form">
+      <h1 class="heading-large">New provisions</h1>
 
-          <h1 class="form-title heading-large">
-            Provisions
-          </h1>
+      <p class="lede text">Add new provisions using the free text boxes below. Or use the <a href="">provision templates</a>.</p>
 
+      <form action="mortgage-details" method="get" class="form new-provisions text">
+        <details open>
+          <summary><label class="form-label" for="definitions-text">Definitions</label></summary>
+          <textarea class="form-control" id="definitions-text" name="definitions-text" rows="6"></textarea>
+        </details>
 
+        <details>
+          <summary><label class="form-label" for="easements-text">Easements</label></summary>
+          <textarea class="form-control" id="easements-text" name="easements-text" rows="6"></textarea>
+        </details>
 
-          <div class="form-group">
+        <details>
+          <summary><label class="form-label" for="covenants-text">Covenants</label></summary>
+          <textarea class="form-control" id="covenants-text" name="covenants-text" rows="6"></textarea>
+        </details>
 
-            <label for="radio-inline-1" class="block-label">
-              <input id="radio-inline-1" type="radio" name="input-style" value="use-templates">
-              Use provision templates
-            </label>
+        <details>
+          <summary><label class="form-label" for="other-text">Other provisions</label></summary>
+          <textarea class="form-control" id="other-text" name="other-text" rows="6"></textarea>
+        </details>
 
-            <label for="radio-inline-2" class="block-label">
-              <input id="radio-inline-2" type="radio" name="input-style" value="free-text">
-              Enter provision text --make this selected by default--
-            </label>
+        <button type="submit" class="button new-provisions__submit">Next</button>
+        <p><a href="conveyancer-case-list">Save draft</a></p>
 
-          </div>
-
-          <div id="taskDetail" class="panel-indent">
-            <label class="form-label" for="task-detail">Definitions</label>
-            <textarea class="form-control" id="definitions-text" name="definitions-text" rows="6"></textarea>
-          </div>
-
-          <div id="taskDetail" class="panel-indent">
-            <label class="form-label" for="task-detail">Easements</label>
-            <textarea class="form-control" id="easements-text" name="easements-text" rows="6"></textarea>
-          </div>
-          <div id="taskDetail" class="panel-indent">
-            <label class="form-label" for="task-detail">Covenants</label>
-            <textarea class="form-control" id="covenants-text" name="covenants-text" rows="6"></textarea>
-          </div>
-          <div id="taskDetail" class="panel-indent">
-            <label class="form-label" for="task-detail">Other provisions</label>
-            <textarea class="form-control" id="provisions-text" name="provisions-text" rows="6"></textarea>
-          </div>
-
-          <div class="form-group">
-            <a href="mortgage-details" class="button">Next</a>
-            <p>
-              <a href="conveyancer-case-list">Save draft</a>
-            </p>
-          </div>
-
-        </form>
-
-
-
-
-
-
+      </form>
 
     </div>
 

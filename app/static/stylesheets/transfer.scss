@@ -42,11 +42,11 @@
   border-top: 1px solid $panel-colour;
 }
 
-summary::-webkit-details-marker {
-  display: none
-}
-
 .case-list {
+  summary::-webkit-details-marker {
+    display: none
+  }
+
   details summary:focus {
     outline: none;
   }
@@ -85,4 +85,20 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 
 .document-section--bordered {
   border-top: 1px solid $grey-3;
+}
+
+.new-provisions {
+  label {
+    display: inline;
+  }
+  textarea {
+    width: 100%;
+  }
+  summary:focus {
+    outline: none;
+  }
+}
+
+.new-provisions__submit {
+  margin-top: $gutter;
 }
