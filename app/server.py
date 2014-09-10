@@ -220,6 +220,21 @@ def transfer_agreement_1():
 
 # ---------------------------------------------------------------------------
 
+# Reserve Priority (Freeze register)  ---------------------------------------
+@app.route('/reserve-priority/select')
+def reserve_priority_1_select():
+  return render_template('reserve-priority/protect-what.html')
+
+@app.route('/reserve-priority/confirm')
+def reserve_priority_2_confirm():
+  return render_template('reserve-priority/protect-confirm.html')
+
+@app.route('/reserve-priority/confirmed')
+def reserve_priority_3_confirmed():
+  return render_template('reserve-priority/protect-confirmed.html')
+
+# ---------------------------------------------------------------------------
+
 # Sprint 4, Relationship verifier flow --------------------------
 @app.route('/sprint-4/citizen-reference')
 def sprint_4_reference():
