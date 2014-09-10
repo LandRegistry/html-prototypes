@@ -30,7 +30,7 @@ def transfer_login():
 def conveyancer_case_list():
   return render_template('transfer/conveyancer-case-list.html')
 
-# Transfer prototypes, conveyancer-case-list page
+# Transfer prototypes, create transfer page
 @app.route('/transfer/create-transfer')
 def create_transfer():
   return render_template('transfer/create-transfer.html')
@@ -44,6 +44,11 @@ def transfer_new_provisions():
 @app.route('/transfer/mortgage-details')
 def transfer_mortgage_details():
   return render_template('transfer/mortgage-details.html')
+
+# Transfer prototypes, mortgage details entered page
+@app.route('/transfer/mortgage-details-entered')
+def transfer_mortgage_details_entered():
+  return render_template('transfer/mortgage-details-entered.html')
 
 # Transfer prototypes, confirm page
 @app.route('/transfer/confirm')

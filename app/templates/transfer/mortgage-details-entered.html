@@ -5,6 +5,10 @@
   Page title
   <!-- -->
 {% endblock %}
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/transfer.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
   
 {% block content %}
 
@@ -23,8 +27,27 @@
         <div class="form-group">
           <label for="mortgage-ref" class="form-label">MD Reference</label>
           <p class='form-hint'>E.g. MD1234F</p>
-          <input type="text" class="form-control" id="mortgage-ref">
+          <input type="text" class="form-control" id="mortgage-ref" value="MD98537F">
         </div>
+
+        <section class="panel-indent">
+          <h2 class="heading-medium">Mortgage lender</h2>
+
+          <p itemscope="" itemtype="http://schema.org/Corporation">
+            <span itemprop="name">General UK PLC</span><br>
+            <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="address-inline">
+              <span itemprop="streetAddress">12 Trinity Place, Regents Street</span>
+              <span itemprop="addressLocality">London</span>
+              <span itemprop="postalCode">NW10 6TQ</span>
+            </span>
+          </p>
+          <dl class="definition-inline">
+            <dt>Company registration number</dt>
+            <dd>2347676</dd>
+            <dt>Account number</dt>
+            <dd>1007-789654</dd>
+          </dl>
+        </section>
 
         <fieldset>
           <legend>Mortgage date</legend>
@@ -45,7 +68,7 @@
           </div>
         </fieldset>
 
-        <a href="mortgage-details-entered" class="button final-btn">Submit</a>
+        <a href="confirm" class="button final-btn">Submit</a>
 
       </form>
 
