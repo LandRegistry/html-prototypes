@@ -1,0 +1,108 @@
+// includes node_modules/govuk_frontend_toolkit/govuk_frontend_toolkit/stylesheets
+
+// Import GOV.UK frontend toolkit
+
+@import "colours";
+@import "measurements";
+@import "conditionals";
+@import "shims";
+@import "typography";
+@import "css3";
+@import "design-patterns/alpha-beta";
+@import "design-patterns/buttons";
+
+// THIS CSS FALLS *AFTER* legal-document-1-0.css SO THERE ARE NO IMPORTS
+
+// NOT YET INTEGRATED
+// ==========================================================================
+
+// Breadcrumbs
+.global-breadcrumb {
+
+  ol {
+    padding: 0.75em 0;
+    @extend %contain-floats;
+  }
+
+  li {
+    @include core-16;
+    float: left;
+
+    &:before {
+      content: '>';
+      color: $grey-2;
+      display: inline-block;
+      margin: 0 0.5em;
+    }
+
+    &:first-child:before {
+      content: '';
+      margin: 0;
+    }
+
+    &.reverse:first-child:before {
+      content: '<';
+      margin: 0 0.5em;
+    }
+  }
+
+  a {
+    color: $text-colour;
+  }
+
+  strong {
+    font-weight: normal;
+  }
+}
+
+// Register changes items
+
+$pending: $turquoise;
+$previous: $grey-2;
+
+.register-changes {
+  border-left: 5px solid; 
+
+  li {
+    @extend %contain-floats;
+
+    padding: $gutter-half;
+  }
+
+  time {
+    //@include core-16;
+
+    display: block;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -$gutter-half;
+      top: $gutter-one-quarter;
+      width: $gutter-one-quarter;
+      border-top: 5px solid;
+    }
+  }
+
+  details[open] {
+    padding-bottom: $gutter-half;
+    border-bottom: 4px solid $previous;
+  }
+
+}
+
+.register-changes--pending {
+  border-left-color: $pending;
+  time:before {
+    border-top-color: $pending;
+  }
+}
+
+.register-changes--previous {
+  border-left-color: $previous;
+  time:before {
+    border-top-color: $previous;
+  }
+}
+

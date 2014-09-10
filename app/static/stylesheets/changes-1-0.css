@@ -1,0 +1,160 @@
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+.global-breadcrumb ol:after, .register-changes li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+.global-breadcrumb ol:after, .register-changes li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+.global-breadcrumb ol:after, .register-changes li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+.global-breadcrumb ol:after, .register-changes li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+.global-breadcrumb ol {
+  padding: 0.75em 0;
+}
+.global-breadcrumb li {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  float: left;
+}
+@media (max-width: 640px) {
+  .global-breadcrumb li {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+.global-breadcrumb li:before {
+  content: '>';
+  color: #bfc1c3;
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.global-breadcrumb li:first-child:before {
+  content: '';
+  margin: 0;
+}
+.global-breadcrumb li.reverse:first-child:before {
+  content: '<';
+  margin: 0 0.5em;
+}
+.global-breadcrumb a {
+  color: #0b0c0c;
+}
+.global-breadcrumb strong {
+  font-weight: normal;
+}
+
+.register-changes {
+  border-left: 5px solid;
+}
+.register-changes li {
+  padding: 15px;
+}
+.register-changes time {
+  display: block;
+  position: relative;
+}
+.register-changes time:before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 7.5px;
+  width: 7.5px;
+  border-top: 5px solid;
+}
+.register-changes details[open] {
+  padding-bottom: 15px;
+  border-bottom: 4px solid #bfc1c3;
+}
+
+.register-changes--pending {
+  border-left-color: #28a197;
+}
+.register-changes--pending time:before {
+  border-top-color: #28a197;
+}
+
+.register-changes--previous {
+  border-left-color: #bfc1c3;
+}
+.register-changes--previous time:before {
+  border-top-color: #bfc1c3;
+}
