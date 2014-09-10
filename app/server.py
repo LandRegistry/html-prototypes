@@ -30,7 +30,7 @@ def transfer_login():
 def conveyancer_case_list():
   return render_template('transfer/conveyancer-case-list.html')
 
-# Transfer prototypes, conveyancer-case-list page
+# Transfer prototypes, create transfer page
 @app.route('/transfer/create-transfer')
 def create_transfer():
   return render_template('transfer/create-transfer.html')
