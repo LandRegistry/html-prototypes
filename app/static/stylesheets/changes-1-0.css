@@ -89,6 +89,7 @@
 }
 
 .register-changes {
+  margin-top: 0;
   border-left: 5px solid;
 }
 .register-changes li {
@@ -109,19 +110,44 @@
 }
 .register-changes details[open] {
   padding-bottom: 15px;
-  border-bottom: 4px solid #6f72af;
+  border-bottom: 1px dotted #bfc1c3;
 }
 
-.register-changes--pending {
+.register-changes-heading {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding: 15px;
+  padding-left: 30px;
+  padding-top: 0;
+  border-left: 5px solid;
+  border-top: 5px solid white;
+}
+@media (max-width: 640px) {
+  .register-changes-heading {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.register-changes--pending,
+.register-changes-heading--pending {
   border-left-color: #28a197;
 }
-.register-changes--pending time:before {
+.register-changes--pending time:before,
+.register-changes-heading--pending time:before {
   border-top-color: #28a197;
 }
 
-.register-changes--previous {
+.register-changes--previous,
+.register-changes-heading--previous {
   border-left-color: #6f72af;
 }
-.register-changes--previous time:before {
+.register-changes--previous time:before,
+.register-changes-heading--previous time:before {
   border-top-color: #6f72af;
 }

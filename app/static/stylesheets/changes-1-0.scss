@@ -26,6 +26,7 @@ $pending: $turquoise;
 $previous: $mauve;
 
 .register-changes {
+  margin-top: 0;
   border-left: 5px solid; 
 
   li {
@@ -53,19 +54,32 @@ $previous: $mauve;
 
   details[open] {
     padding-bottom: $gutter-half;
-    border-bottom: 4px solid $previous;
+    border-bottom: 1px dotted $grey-2;
   }
 
 }
 
-.register-changes--pending {
+.register-changes-heading {
+  @include bold-24();
+
+  margin-bottom: 0;
+  padding: $gutter-half;
+  padding-left: $gutter;
+  padding-top: 0;
+  border-left: 5px solid;
+  border-top: 5px solid $white;
+}
+
+.register-changes--pending,
+.register-changes-heading--pending {
   border-left-color: $pending;
   time:before {
     border-top-color: $pending;
   }
 }
 
-.register-changes--previous {
+.register-changes--previous,
+.register-changes-heading--previous {
   border-left-color: $previous;
   time:before {
     border-top-color: $previous;
