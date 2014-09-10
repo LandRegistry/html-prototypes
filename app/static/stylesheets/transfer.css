@@ -3526,3 +3526,17 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   display: block;
   width: 30em;
 }
+
+.supporting-uploads__remove {
+  color: #005ea5;
+  margin-left: 30px;
+}
+
+.document-section {
+  margin: 30px 0;
+  clear: both;
+}
+
+.document-section--bordered {
+  border-top: 1px solid #dee0e2;
+}
