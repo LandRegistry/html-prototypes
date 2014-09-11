@@ -171,14 +171,17 @@
 
           <section class="document-section document-section--bordered">
             <h2 class="heading-medium">Compliance with restrictions</h2>
-            <div class="panel-indent text">
+            <div class="panel-indent text restriction-panel">
               <p>RESTRICTION: No disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by Moon Properties Limited of 3 Fleet Street, London E1 3BC.</p>
-              <form action="">
-                <div class="form-group">
-                  <label for="confirm" class="block-label"><input type="checkbox" id="confirm" />I / we certify that we have evidence to comply with this restriction</label>
-                </div>
-              </form>
             </div>
+            <form action="">
+              <div class="form-group">
+                <label for="defer" class="block-label">
+                  <input type="radio" id="defer" name="evidence-provided" />Defer until evidence has been provided</label>
+                <label for="confirm" class="block-label">
+                  <input type="radio" id="confirm" name="evidence-provided" />I / we certify that we have evidence to comply with this restriction</label>
+              </div>
+            </form>
             <button class="button">Upload supporting evidence</button>
             <ul class="supporting-uploads text">
               <li>Document uploaded. <b>Smithton-Klein.pdf</b><a class="supporting-uploads__remove">(remove)</a></li>
