@@ -71,7 +71,7 @@ p.radio-group {
 
 input[type="radio"]:checked ~ .dec-trust__hidden {
   display: block;
-  width: 30em;
+  width: 25em;
 }
 
 .supporting-uploads__remove {
@@ -107,6 +107,10 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   margin-top: 0;
 }
 
+.document-section__help-def {
+  margin-bottom: $gutter;
+}
+
 .new-provisions {
   label {
     display: inline;
@@ -125,4 +129,8 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 
 .panel-indent h2 {
   margin-top: 0;
+}
+
+.restriction-panel {
+  margin-bottom: 15px;
 }
