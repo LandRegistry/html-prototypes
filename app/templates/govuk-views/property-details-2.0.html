@@ -1,0 +1,171 @@
+{% extends "global/prototypes_base.html" %}
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/property-view-2-0.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block page_title %}
+  Details of title GHR67834
+{% endblock %}
+  
+{% block content %}
+
+<main id="wrapper" role="main">
+
+  <div id="content">
+
+    {% include "includes/prototypes_banner.html" %}
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <div class="global-breadcrumb">
+          <nav role="navigation">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Property and land</a></li>
+              <li><strong>Title GHR67834</strong></li>
+            </ol>
+          </nav>
+        </div>
+
+        <h1 class="property-details-title-prefix">Property details</h1>
+
+      </div>
+    </div>
+
+    <div class="grid-wrapper">
+
+      <div class="grid grid-1-2">
+        <div class="inner-block">
+
+          <div class="property-details-title-address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">
+              Flat 18 Kingman Court<br>
+              Verdant Road<br>
+            </span>
+            <span itemprop="addressLocality">London</span><br>
+            <span itemprop="postalCode">SV19 9BT</span>
+          </div>
+
+          <dl class="definition-tabular">
+            <dt>Property type</dt>
+            <dd>Flat</dd>
+
+            <dt>Tenure type</dt>
+            <dd>Leasehold</dd>
+
+            <dt>Title number</dt>
+            <dd>GHR67834</dd>
+
+            <dt>Price paid</dt>
+            <dd>&pound;450,000 on 26 July 2013</dd>
+
+            <dt>Council</dt>
+            <dd>London Borough of Brent</dd>
+          </dl>
+
+        </div>
+      </div>
+      <div class="grid grid-1-2">
+        <div class="inner-block">
+
+          <div class="title-plan">
+            <a href="#maps-plans"><img src="{{ prototypes_asset_path }}images/dummy-title-plan.png" alt=""></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid-wrapper">
+
+      <div class="grid grid-1-4">
+        <div class="inner-block">
+          <dl>
+            <dt>Council tax band</dt>
+            <dd>A</dd>
+          </dl>
+          <p>
+            <a href="#">Link</a>
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-1-4">
+        <div class="inner-block">
+          <dl>
+            <dt>Flood risk</dt>
+            <dd>low</dd>
+          </dl>
+          <p>
+            <a href="#">View flood warnings</a>
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-1-4">
+        <div class="inner-block">
+          <dl>
+            <dt>Energy performance</dt>
+            <dd>E</dd>
+          </dl>
+          <p>
+            <a href="#">View flood warnings</a>
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-1-4">
+        <div class="inner-block">
+          <dl>
+            <dt>Refuse collection</dt>
+            <dd>Tuesday</dd>
+          </dl>
+          <p>
+            <a href="#">Link</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+        <div class="text">
+          <h2 class="heading-medium">Things that affect this property</h2>
+          <ul class="list-bullet">
+            <li>There are three restrictions (restrictive covenants) affecting the property.</li>
+            <li>There are rights of way affecting this property.</li>
+            <li>This property has a right of way over another property.</li>
+            <li>The current lease started on 11 February 1991 and is for 125 years.</li>
+            <li>Consent to purchase will be required from Weyford Building Society.</li>
+            <li>This is a listed building, so there may be restrictions on what can be done with it. See local authority for details</li>
+            <li>There is a proposed tree preservation order on a tree in your garden. See local authority for details</li>
+            <li>This property is in a conservation area so there may be restrictions on what can be done with it. See local authority</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="outer-block">
+      <div class="inner-block">
+
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
+
+{% block body_end %}
+  <script src="{{ prototypes_asset_path }}javascripts/vendor/jquery-1.11.1.min.js"></script>
+  <script src="{{ prototypes_asset_path }}javascripts/govuk-elements.js"></script>
+  <script src="{{ prototypes_asset_path }}javascripts/stick-at-top-when-scrolling.js"></script>
+  <script src="{{ prototypes_asset_path }}javascripts/stop-scrolling-at-footer.js"></script>
+
+  <script src="{{ prototypes_asset_path }}javascripts/lr-faux-details.js"></script>
+  <script src="{{ prototypes_asset_path }}javascripts/register-view-2-0.js"></script>
+{% endblock %}
