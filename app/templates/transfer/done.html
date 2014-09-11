@@ -5,6 +5,10 @@
   Page title
   <!-- -->
 {% endblock %}
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/transfer.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
   
 {% block content %}
 
@@ -15,6 +19,16 @@
     {% include "includes/prototypes_banner.html" %}
 
     <div class="inner-block">
+
+      <div class="callout callout--action-notice callout--generated-token">
+        <h1>Transfer created</h1>
+      </div>
+
+      <div class="text">
+        <h2 class="heading-medium">What happens next</h2>
+        <p>The other parties involved need to review the transfer and sign it.</p>
+        <p>The transfer will only be confirmed once all parties on the transaction have agreed and signed it.</p>
+      </div>
 
     </div>
 
