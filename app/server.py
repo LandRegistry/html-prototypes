@@ -62,6 +62,28 @@ def transfer_done():
 
 # ---------------------------------------------------------------------------
 
+# Transfer prototypes - 2nd conveyancer, Step 1 - login page
+@app.route('/transfer-2nd-con/login')
+def transfer_2nd_conveyancer_login():
+  return render_template('transfer-2nd-conveyancer/login.html')
+
+# Transfer prototypes - 2nd conveyancer, Step 2 - conveyancer-case-list
+@app.route('/transfer-2nd-con/conveyancer-case-list')
+def transfer_2nd_conveyancer_case_list():
+  return render_template('transfer-2nd-conveyancer/conveyancer-case-list.html')
+
+# Transfer prototypes - 2nd conveyancer, Step 3 - confirm page
+@app.route('/transfer-2nd-con/review-transfer')
+def transfer_2nd_conveyancer_review_transfer():
+  return render_template('transfer-2nd-conveyancer/review-transfer.html')
+
+# Transfer prototypes - 2nd conveyancer, Step 4 - transfer ready to sign
+@app.route('/transfer-2nd-con/marked-ready')
+def transfer_2nd_conveyancer_marked_ready():
+  return render_template('transfer-2nd-conveyancer/marked-ready.html')
+
+# ---------------------------------------------------------------------------
+
 # Transaction flows, citizens sign transfer and charge v2.0 -----------------
 @app.route('/transfer-and-charge/citizen-1-start')
 def transfer_and_charge_citizen_1_start_2_0():
