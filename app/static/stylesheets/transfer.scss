@@ -134,3 +134,10 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 .restriction-panel {
   margin-bottom: 15px;
 }
+
+.form-control--shorten {
+  width: 100%;
+  @include media(tablet) {
+    width: 30%;
+  }
+}
