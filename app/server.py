@@ -50,10 +50,10 @@ def transfer_mortgage_details():
 def transfer_mortgage_details_entered():
   return render_template('transfer/mortgage-details-entered.html')
 
-# Transfer prototypes, confirm page
-@app.route('/transfer/confirm')
-def transfer_confirm():
-  return render_template('transfer/confirm.html')
+# Transfer prototypes, summary page
+@app.route('/transfer/summary')
+def transfer_summary():
+  return render_template('transfer/summary.html')
 
 # Transfer prototypes, done page
 @app.route('/transfer/done')
