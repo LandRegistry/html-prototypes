@@ -75,7 +75,7 @@ def transfer_2nd_conveyancer_case_list():
 # Transfer prototypes - 2nd conveyancer, Step 3 - confirm page
 @app.route('/transfer-2nd-con/review-transfer')
 def transfer_2nd_conveyancer_review_transfer():
-  return render_template('transfer-2nd-conveyancer/review-transfer.html')
+  return render_template('transfer-2nd-conveyancer/review-transfer.html', editable=False)
 
 # Transfer prototypes - 2nd conveyancer, Step 4 - transfer ready to sign
 @app.route('/transfer-2nd-con/marked-ready')
