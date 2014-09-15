@@ -4,14 +4,19 @@
   $(function() {
     var target_provision = window.location.hash.substr(1).split('?')[0];
 
-    if( $('#' + target_provision + '-text') ) {
+    if( $('#' + target_provision + '-text').length ) {
       var $details = $('details');
       $details.removeAttr('open');
 
-      $('#' + target_provision + '-text')
+      var test = $('#' + target_provision + '-text')
         .parents('details')
-        .attr('open', 'true');
+          .attr('open', 'true')
+          .end()
+        .focus();
+    } else {
+      $('#definitions-text').focus();
     }
+
   });
 
 }(jQuery));
