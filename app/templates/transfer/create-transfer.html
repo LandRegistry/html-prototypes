@@ -166,7 +166,7 @@
                 <p class="form-block radio-group">
                     or
                 </p>
-                <label for="trust-tenants" class="block-label"><input id="trust-tenants" type="radio" name="dec-of-trust-radio" />they are to hold the property on trust:
+                <label for="trust-tenants" class="block-label"><input id="trust-tenants" type="radio" name="dec-of-trust-radio" />they are to hold the property on trust
                   <textarea class="dec-trust__hidden" name="" id="" rows="10"></textarea>
                 </label>
               </fieldset>
@@ -177,9 +177,9 @@
             <h2 class="heading-medium">Compliance with restrictions</h2>
             <details class="document-section__help-def">
               <summary>What are restrictions?</summary>
-                <p>A restriction limits the powers of a registered owner to deal with or dispose of the registered land. It may also limit the powers of a chargee to dispose of a charge.</p>
+                <p class="panel-indent text">A restriction limits the powers of a registered owner to deal with or dispose of the registered land. It may also limit the powers of a chargee to dispose of a charge.</p>
             </details>
-            <div class="panel-indent text restriction-panel">
+            <div class="text restriction-panel">
               <p>RESTRICTION: No disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by Moon Properties Limited of 3 Fleet Street, London E1 3BC.</p>
             </div>
             <form action="">
@@ -190,7 +190,7 @@
                   <input type="radio" id="confirm" name="evidence-provided" />I / we certify that we have evidence to comply with this restriction</label>
               </div>
             </form>
-            <button class="button">Upload supporting evidence</button>
+            <button class="button-secondary">Upload supporting evidence</button>
             <ul class="supporting-uploads text">
               <li>Document uploaded. <b>Smithton-Klein.pdf</b><a class="supporting-uploads__remove">(remove)</a></li>
             </ul>
@@ -198,16 +198,18 @@
 
           <section class="document-section document-section--bordered">
             <h2 class="heading-medium">Transfer</h2>
-            <div class="form-group">
-              <label for="full-name" class="form-label">Price paid</label>
-              <input type="text" class="form-control" id="price-paid">
-            </div>
-            <div class="panel-indent stamp-duty__message">
-              <p>SDLT (Stamp Duty Land Tax) receipt received</p>
-              <p>URN: 1937485936</p>
-            </div>
+            <form class="text">
+              <div class="form-group">
+                <label for="full-name" class="form-label">Price paid</label>
+                <input type="text" class="form-control form-control--shorten" id="price-paid">
+              </div>
+              <div class="panel-indent stamp-duty__message">
+                <p>SDLT (Stamp Duty Land Tax) receipt received</p>
+                <p>URN: 1937485936</p>
+              </div>
+            </form>
 
-            <form class="form">
+            <form>
               <fieldset>
                 <legend>Transfer date</legend>
                 <div class='date-of-birth'>

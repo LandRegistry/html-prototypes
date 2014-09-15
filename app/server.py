@@ -50,10 +50,10 @@ def transfer_mortgage_details():
 def transfer_mortgage_details_entered():
   return render_template('transfer/mortgage-details-entered.html')
 
-# Transfer prototypes, confirm page
-@app.route('/transfer/confirm')
-def transfer_confirm():
-  return render_template('transfer/confirm.html')
+# Transfer prototypes, summary page
+@app.route('/transfer/summary')
+def transfer_summary():
+  return render_template('transfer/summary.html', editable=True)
 
 # Transfer prototypes, done page
 @app.route('/transfer/done')
@@ -75,7 +75,7 @@ def transfer_2nd_conveyancer_case_list():
 # Transfer prototypes - 2nd conveyancer, Step 3 - confirm page
 @app.route('/transfer-2nd-con/review-transfer')
 def transfer_2nd_conveyancer_review_transfer():
-  return render_template('transfer-2nd-conveyancer/review-transfer.html')
+  return render_template('transfer-2nd-conveyancer/review-transfer.html', editable=False)
 
 # Transfer prototypes - 2nd conveyancer, Step 4 - transfer ready to sign
 @app.route('/transfer-2nd-con/marked-ready')

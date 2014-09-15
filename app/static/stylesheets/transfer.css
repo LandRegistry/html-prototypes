@@ -3549,8 +3549,15 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 }
 
 .document-section {
-  margin: 30px 0;
   clear: both;
+  padding: 30px 0;
+}
+.document-section h2 {
+  margin-top: 15px;
+}
+.document-section .button-secondary {
+  margin-bottom: 0;
+  margin-top: -0.25em;
 }
 
 .document-section--bordered {
@@ -3600,4 +3607,13 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 
 .restriction-panel {
   margin-bottom: 15px;
+}
+
+.form-control--shorten {
+  width: 100%;
+}
+@media (min-width: 641px) {
+  .form-control--shorten {
+    width: 30%;
+  }
 }

@@ -1,7 +1,9 @@
 {% extends "global/prototypes_base.html" %}
 
 {% block page_title %}
-  Review transfer
+  <!-- insert page title here -->
+  Page title
+  <!-- -->
 {% endblock %}
 
 {% block head %}
@@ -17,17 +19,17 @@
     {% include "includes/prototypes_banner.html" %}
 
     <div class="inner-block">
-      <h1 class="heading-large">Review transfer details</h1>
+      <h1 class="heading-large">Confirm transfer details</h1>
 
       <p class="lede text">Before confirming the transfer please read through the details below.</p>
 
       {% include "transfer/partials/_transfer-summary.html" %}
 
-      <form action="marked-ready" method="get" class="form">
+      <form action="done" method="get" class="form">
         <div class="form-group">
           <label for="check-1" class="block-label">
             <input id="check-1" type="checkbox" name="agree-execution">
-            I confirm the above is correct and mark as ready to sign
+            I confirm the above is correct
           </label>
         </div>
         <div class="form-group">
