@@ -58,7 +58,12 @@ def transfer_summary():
 # Transfer prototypes, summary page
 @app.route('/transfer/transfer-withdrawn')
 def transfer_withdrawn():
-  return render_template('transfer/transfer-withdrawn.html', editable=False)
+  return render_template('transfer/transfer-withdrawn.html', editable=True)
+
+# Transfer prototypes, summary page
+@app.route('/transfer/summary-withdraw-option')
+def transfer_withdraw_option():
+  return render_template('transfer/summary-withdraw-option.html', editable=False)
 
 # Transfer prototypes, done page
 @app.route('/transfer/done')
