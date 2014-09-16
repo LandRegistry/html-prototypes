@@ -1,6 +1,6 @@
 <article class="legal-document--bounds">
   <section class="document-section">
-    <h2 class="heading-medium document-section__heading">Property</h2>
+    <h2 class="heading-medium document-section__heading">Property{% if conveyancer == "seller" %} <span class="alert-flag">selling</span>{% endif %}</h2>
 
     <div class="grid-wrapper">
       <div class="grid grid-1-4">
@@ -59,7 +59,7 @@
   </section><!--  end property section -->
 
   <section class="document-section document-section--bordered">
-    <h2 class="heading-medium">Buyers</h2>
+    <h2 class="heading-medium">Buyers{% if conveyancer == "buyer" %} <span class="alert-flag">working on behalf of</span>{% endif %}</h2>
 
     <div class="grid-wrapper document-section__item">
       <div class="grid grid-1-4">
