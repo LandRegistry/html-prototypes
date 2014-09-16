@@ -67,15 +67,37 @@ def transfer_mortgage_details():
 def transfer_mortgage_details_entered():
   return render_template('transfer/mortgage-details-entered.html')
 
-# Transfer prototypes, confirm page
-@app.route('/transfer/confirm')
-def transfer_confirm():
-  return render_template('transfer/confirm.html')
+# Transfer prototypes, summary page
+@app.route('/transfer/summary')
+def transfer_summary():
+  return render_template('transfer/summary.html', editable=True)
 
 # Transfer prototypes, done page
 @app.route('/transfer/done')
 def transfer_done():
   return render_template('transfer/done.html')
+
+# ---------------------------------------------------------------------------
+
+# Transfer prototypes - 2nd conveyancer, Step 1 - login page
+@app.route('/transfer-2nd-con/login')
+def transfer_2nd_conveyancer_login():
+  return render_template('transfer-2nd-conveyancer/login.html')
+
+# Transfer prototypes - 2nd conveyancer, Step 2 - conveyancer-case-list
+@app.route('/transfer-2nd-con/conveyancer-case-list')
+def transfer_2nd_conveyancer_case_list():
+  return render_template('transfer-2nd-conveyancer/conveyancer-case-list.html')
+
+# Transfer prototypes - 2nd conveyancer, Step 3 - confirm page
+@app.route('/transfer-2nd-con/review-transfer')
+def transfer_2nd_conveyancer_review_transfer():
+  return render_template('transfer-2nd-conveyancer/review-transfer.html', editable=False)
+
+# Transfer prototypes - 2nd conveyancer, Step 4 - transfer ready to sign
+@app.route('/transfer-2nd-con/marked-ready')
+def transfer_2nd_conveyancer_marked_ready():
+  return render_template('transfer-2nd-conveyancer/marked-ready.html')
 
 # ---------------------------------------------------------------------------
 

@@ -1,9 +1,7 @@
 {% extends "global/prototypes_base.html" %}
 
 {% block page_title %}
-
 Case List
-
 {% endblock %}
 
 {% block head %}
@@ -25,7 +23,7 @@ Case List
       <div class="grid-wrapper">
         <div class="grid grid-1-2">
           <div class="inner-block">
-            <a href="../relationship-starts/conveyancer-start" class="button">Add new case</a>
+            <button class="button">Add new case</button>
           </div>
         </div>
         <div class="grid grid-1-2">
@@ -55,16 +53,12 @@ Case List
               </summary>
               <div class="inner-block">
                 <ul>
-                  <li>Client: Jason Amilio Smith</li>
-                  <li>Client: Peter Smith</li>
+                  <li>Client: Joe Bloggs</li>
+                  <li>Client: Alice Bond</li>
                 </ul>
                 <div>
                   <h4>Transfer</h4>
-                  <a href="create-transfer">create transfer</a>
-                </div>
-                <div>
-                  <h4>Priority reservation</h4>
-                  <a href="/reserve-priority/select">reserve priority</a>
+                  <a href="review-transfer">review transfer</a>
                 </div>
                 <a class="case-list__delete" href="">delete case</a>
               </div>
@@ -86,11 +80,7 @@ Case List
                 </ul>
                 <div>
                   <h4>Transfer</h4>
-                  <a href="create-transfer">create transfer</a>
-                </div>
-                <div>
-                  <h4>Property reservation</h4>
-                  <a href="/reserve-priority/select">reserve priority</a>
+                  <a href="review-transfer">review transfer</a>
                 </div>
                 <a class="case-list__delete" href="">delete case</a>
               </div>
@@ -112,11 +102,7 @@ Case List
                 </ul>
                 <div>
                   <h4>Transfer</h4>
-                  <a href="create-transfer">create transfer</a>
-                </div>
-                <div>
-                  <h4>Property reservation</h4>
-                  <a href="/reserve-priority/select">reserve priority</a>
+                  <a href="review-transfer">review transfer</a>
                 </div>
                 <a class="case-list__delete" href="">delete case</a>
               </div>

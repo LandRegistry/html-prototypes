@@ -25,9 +25,41 @@
 $pending: $turquoise;
 $previous: $mauve;
 
-.register-changes {
+.register-changes-pending {
+  counter-reset: li-counter;
+
+  & li {
+    position: relative;
+    padding-left: $gutter + 5;
+  }
+  & li:before {
+    content: counter(li-counter);
+    counter-increment: li-counter;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include core-16;
+    @include border-radius(50%);
+    @include box-sizing(border-box);
+
+    font-weight: bold;
+    background-color: $pending;
+
+    display: inline-block;
+    width: 1.65em;
+    height: 1.65em;
+    padding-top: 0.25em;
+    text-align: center;
+    vertical-align: middle;
+
+  }
+}
+
+.register-changes-previous {
   margin-top: 0;
-  border-left: 5px solid; 
+  border-left: 5px solid $previous; 
 
   li {
     @extend %contain-floats;
@@ -37,7 +69,6 @@ $previous: $mauve;
   }
 
   time {
-    //@include core-16;
 
     display: block;
     position: relative;
@@ -48,41 +79,15 @@ $previous: $mauve;
       left: -$gutter;
       top: $gutter-one-quarter;
       width: $gutter-half;
-      border-top: 5px solid;
+      border-top: 5px solid $previous;
     }
   }
 
   details[open] {
+    margin-bottom: $gutter-half;
     padding-bottom: $gutter-half;
     border-bottom: 1px dotted $grey-2;
   }
 
-}
-
-.register-changes-heading {
-  @include bold-24();
-
-  margin-bottom: 0;
-  padding: $gutter-half;
-  padding-left: $gutter;
-  padding-top: 0;
-  border-left: 5px solid;
-  border-top: 5px solid $white;
-}
-
-.register-changes--pending,
-.register-changes-heading--pending {
-  border-left-color: $pending;
-  time:before {
-    border-top-color: $pending;
-  }
-}
-
-.register-changes--previous,
-.register-changes-heading--previous {
-  border-left-color: $previous;
-  time:before {
-    border-top-color: $previous;
-  }
 }
 

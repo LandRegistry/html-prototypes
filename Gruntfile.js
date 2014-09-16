@@ -18,6 +18,10 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    jshint: {
+      all: ['Gruntfile.js', 'app/static/javascripts/create-transfer.js']
+    },
+
     sass: {
       dev: {
         options: {
@@ -60,6 +64,9 @@ module.exports = function(grunt) {
 
   // watch task. Does what it says on the tin: https://github.com/gruntjs/grunt-contrib-watch
   grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // js hint task: https://github.com/gruntjs/grunt-contrib-jshint
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Register the various Grunt commands:
 

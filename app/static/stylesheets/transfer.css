@@ -3540,7 +3540,7 @@ p.radio-group {
 
 input[type="radio"]:checked ~ .dec-trust__hidden {
   display: block;
-  width: 30em;
+  width: 25em;
 }
 
 .supporting-uploads__remove {
@@ -3549,8 +3549,15 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 }
 
 .document-section {
-  margin: 30px 0;
   clear: both;
+  padding: 30px 0;
+}
+.document-section h2 {
+  margin-top: 15px;
+}
+.document-section .button-secondary {
+  margin-bottom: 0;
+  margin-top: -0.25em;
 }
 
 .document-section--bordered {
@@ -3567,9 +3574,17 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     margin-bottom: 1.05263em;
   }
 }
+.document-section__item .button-secondary {
+  margin-bottom: 0;
+  margin-top: -0.25em;
+}
 
 .document-section__heading {
   margin-top: 0;
+}
+
+.document-section__help-def {
+  margin-bottom: 30px;
 }
 
 .new-provisions label {
@@ -3588,4 +3603,17 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 
 .panel-indent h2 {
   margin-top: 0;
+}
+
+.restriction-panel {
+  margin-bottom: 15px;
+}
+
+.form-control--shorten {
+  width: 100%;
+}
+@media (min-width: 641px) {
+  .form-control--shorten {
+    width: 30%;
+  }
 }

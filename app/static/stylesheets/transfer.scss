@@ -71,7 +71,7 @@ p.radio-group {
 
 input[type="radio"]:checked ~ .dec-trust__hidden {
   display: block;
-  width: 30em;
+  width: 25em;
 }
 
 .supporting-uploads__remove {
@@ -80,8 +80,17 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 }
 
 .document-section {
-  margin: $gutter 0;
   clear: both;
+  padding: $gutter 0;
+
+  h2 {
+    margin-top: 15px;
+  }
+
+  .button-secondary {
+    margin-bottom: 0;
+    margin-top: -0.25em;
+  }
 }
 
 .document-section--bordered {
@@ -96,10 +105,19 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     margin-top: em(5);
     margin-bottom: em(20);
   }
+
+  .button-secondary {
+    margin-bottom: 0;
+    margin-top: -0.25em;
+  }
 }
 
 .document-section__heading {
   margin-top: 0;
+}
+
+.document-section__help-def {
+  margin-bottom: $gutter;
 }
 
 .new-provisions {
@@ -120,4 +138,15 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 
 .panel-indent h2 {
   margin-top: 0;
+}
+
+.restriction-panel {
+  margin-bottom: 15px;
+}
+
+.form-control--shorten {
+  width: 100%;
+  @include media(tablet) {
+    width: 30%;
+  }
 }
