@@ -118,8 +118,8 @@ def transfer_and_charge_citizen_1_semi_confirmed_2_0():
 
 # Transaction flows, relationship starts, conveyancer initiates v2.0 --------
 @app.route('/relationship-starts/conveyancer-start')
-def conveyancer_start_2_0():
-  return render_template('relationship-starts/conveyancer-start-2.0.html')
+def conveyancer_start_2_1():
+  return render_template('relationship-starts/conveyancer-start-2.1.html')
 
 # Step 1 - login with GOV.UK Verify
 @app.route('/relationship-starts/conveyancer-login')
