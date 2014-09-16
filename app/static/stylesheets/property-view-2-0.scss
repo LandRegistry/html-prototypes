@@ -25,6 +25,11 @@
 // "Discovery" banner - uses govuk_toolkit mixin via elements, just needs:
 @import "prototypes/discovery-banner";
 
+// Import GOV.UK styles (ripped from https://github.com/alphagov/static/)
+// ==========================================================================
+
+@import "prototypes/alphagov-static";
+
 
 // IMPORTING EXISTING STYLE-GUIDE APP STYLES
 // ==========================================================================
