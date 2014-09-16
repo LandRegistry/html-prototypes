@@ -3991,6 +3991,30 @@ form .notification {
   margin-top: 0;
 }
 
+.property-sign-in {
+  margin: 30px 0;
+}
+
+.property-flags {
+  margin-top: 30px;
+}
+.property-flags dd {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1.04167;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+@media (max-width: 640px) {
+  .property-flags dd {
+    font-size: 32px;
+    line-height: 1.09375;
+  }
+}
+
 .definition-tabular dt {
   width: 33.33333%;
 }
