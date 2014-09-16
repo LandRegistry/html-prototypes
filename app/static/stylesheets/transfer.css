@@ -3629,3 +3629,10 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     width: 30%;
   }
 }
+
+.no-mortgage {
+  color: #6f777b;
+}
+.no-mortgage label[for="nomortgagecheck"] {
+  color: #0b0c0c;
+}

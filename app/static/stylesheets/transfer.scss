@@ -166,3 +166,11 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     width: 30%;
   }
 }
+
+.no-mortgage {
+  color: $grey-1;
+
+  label[for="nomortgagecheck"] {
+    color: $black;
+  }
+}
