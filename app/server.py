@@ -20,6 +20,23 @@ def home():
 
 # ---------------------------------------------------------------------------
 
+# GOV.UK pages, search / start v2.0 -----------------
+@app.route('/govuk/search-2.0')
+def govuk_search_2_0():
+  return render_template('govuk-views/search-2.0.html')
+
+# GOV.UK pages, results listing v2.0 -----------------
+@app.route('/govuk/results-2.0')
+def govuk_results_2_0():
+  return render_template('govuk-views/results-2.0.html')
+
+# GOV.UK pages, property details v2.0 -----------------
+@app.route('/govuk/property-details-2.0')
+def govuk_property_details_2_0():
+  return render_template('govuk-views/property-details-2.0.html')
+
+# ---------------------------------------------------------------------------
+
 # Transfer prototypes, login page
 @app.route('/transfer/login')
 def transfer_login():
