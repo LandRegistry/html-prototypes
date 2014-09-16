@@ -55,6 +55,11 @@ def transfer_mortgage_details_entered():
 def transfer_summary():
   return render_template('transfer/summary.html', editable=True)
 
+# Transfer prototypes, summary page
+@app.route('/transfer/transfer-withdrawn')
+def transfer_withdrawn():
+  return render_template('transfer/transfer-withdrawn.html', editable=False)
+
 # Transfer prototypes, done page
 @app.route('/transfer/done')
 def transfer_done():
