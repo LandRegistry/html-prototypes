@@ -150,18 +150,18 @@ def relationship_starts_verify_experian_sign_in_2nd_part_1():
 
 # Step 2 - find correct property
 @app.route('/relationship-starts/conveyancer-find-property')
-def conveyancer_find_property_2_0():
-  return render_template('relationship-starts/conveyancer-find-property-2.0.html')
+def conveyancer_find_property_2_1():
+  return render_template('relationship-starts/conveyancer-find-property-2.1.html')
 
 # Step 3 - results and select correct property
 @app.route('/relationship-starts/conveyancer-select-property')
-def conveyancer_select_property_2_0():
-  return render_template('relationship-starts/conveyancer-select-property-2.0.html')
+def conveyancer_select_property_2_1():
+  return render_template('relationship-starts/conveyancer-select-property-2.1.html')
 
 # Step 4 - select associated task
 @app.route('/relationship-starts/conveyancer-select-task')
-def conveyancer_select_task_2_0():
-  return render_template('relationship-starts/conveyancer-select-task-2.0.html')
+def conveyancer_select_task_2_1():
+  return render_template('relationship-starts/conveyancer-select-task-2.1.html')
 
 # Step 5 - set the number of clients
 @app.route('/relationship-starts/conveyancer-add-clients')
