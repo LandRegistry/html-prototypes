@@ -18,6 +18,7 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+
 # ---------------------------------------------------------------------------
 
 # Transfer prototypes, login page
@@ -121,10 +122,31 @@ def transfer_and_charge_citizen_1_semi_confirmed_2_0():
 def conveyancer_start_2_1():
   return render_template('relationship-starts/conveyancer-start-2.1.html')
 
-# Step 1 - login with GOV.UK Verify
-@app.route('/relationship-starts/conveyancer-login')
-def conveyancer_verify_2_0():
-  return render_template('relationship-starts/conveyancer-login-2.0.html')
+# Step 1 - login with GOV.UK Verify - use sub flow...
+
+#       Sub flow - GOV.UK Verification ---------------------
+
+# GOV.UK verify - Sub flow Step 1 - for conveyancer create relationship flow
+@app.route('/relationship-starts/login')
+def relationship_starts_login_1():
+  return render_template('relationship-starts/verify-subflow/verify-intro.html')
+
+# GOV.UK verify -  Sub flow Step 2 - who verified you
+@app.route('/relationship-starts/who-verified-you')
+def relationship_starts_verify_who_1():
+  return render_template('relationship-starts/verify-subflow/verify-who.html')
+
+# GOV.UK verify - Sub flow Step 3 - experian sign in
+@app.route('/relationship-starts/experian-sign-in')
+def relationship_starts_verify_experian_sign_in_1():
+  return render_template('relationship-starts/verify-subflow/verify-sign-in.html')
+
+# GOV.UK verify - Sub flow Step 4 - experian 2nd phase sign in
+@app.route('/relationship-starts/experian-sign-in-part-2')
+def relationship_starts_verify_experian_sign_in_2nd_part_1():
+  return render_template('relationship-starts/verify-subflow/verify-sign-in-2.html')
+
+#       end Sub flow - GOV.UK Verification ---------------------
 
 # Step 2 - find correct property
 @app.route('/relationship-starts/conveyancer-find-property')
