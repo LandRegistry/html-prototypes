@@ -1,4 +1,5 @@
 import os
+import json
 
 from flask import Flask, render_template
 from flask.ext.assets import Environment
@@ -70,7 +71,9 @@ def transfer_mortgage_details_entered():
 # Transfer prototypes, summary page
 @app.route('/transfer/summary')
 def transfer_summary():
-  return render_template('transfer/summary.html', editable=True, conveyancer="buyer")
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/summary.html', editable=True, conveyancer="buyer", data=data)
 
 # Transfer prototypes, summary page
 @app.route('/transfer/transfer-withdrawn')
