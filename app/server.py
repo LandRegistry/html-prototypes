@@ -175,8 +175,8 @@ def conveyancer_add_client_1_2_1():
 
 # Step 7 - add 2nd client
 @app.route('/relationship-starts/conveyancer-add-client-2')
-def conveyancer_add_client_2_2_0():
-  return render_template('relationship-starts/conveyancer-add-client-2-2.0.html')
+def conveyancer_add_client_2_2_1():
+  return render_template('relationship-starts/conveyancer-add-client-2-2.1.html')
 
 # Step 8 - confirmation
 @app.route('/relationship-starts/conveyancer-confirm')

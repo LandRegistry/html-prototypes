@@ -27,7 +27,12 @@
 
           <div class="form-group">
             <label class="form-label-bold" for="full-name">Full name</label>
-            <input type="number" class="form-control" id="full-name" name="full-name">
+            <input type="text" class="form-control" id="full-name" name="full-name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-bold" for="gender">Gender</label>
+            <input type="text" class="form-control form-control-1-2" id="gender" name="gender">
           </div>
 
           <!-- Date of birth -->
@@ -60,10 +65,28 @@
             </fieldset>
           </div>
 
+
+          <!-- Address -->
           <div class="form-group">
-            <label class="form-label-bold" for="address">Address</label>
-            <textarea class="form-control" id="address" name="address" rows="6"></textarea>
+            <fieldset>
+              <legend class='form-label-bold'>Address</legend>
+
+              <div class="form-group">
+                <label for="check-inline-1" class="block-label">
+                  <input id="check-inline-1" type="checkbox" checked name="is-it-same-address" value="same-address-as-previous">
+                Same as first client
+                </label>
+              </div>
+
+              <div id="taskDetail" class="panel-indent">
+                <label class="form-label" for="address">please specify address:</label>
+                <textarea class="form-control" id="address" name="address" rows="6"></textarea>
+              </div>
+
+            </fieldset>
           </div>
+
+
 
           <div class="form-group">
             <label class="form-label-bold" for="tel">Telephone</label>
@@ -88,4 +111,20 @@
   </div>
 </main>
 
+{% endblock %}
+
+{% block body_end_additional %}
+  <script type="text/javascript">
+  
+    $(function() {
+      $(':checkbox[name="is-it-same-address"]').on('change', function() {
+        if ($(this).is(':checked')) {
+          $('#taskDetail').hide();
+        } else {
+          $('#taskDetail').show();
+        }
+      }).trigger('change');
+    });
+
+  </script>
 {% endblock %}
