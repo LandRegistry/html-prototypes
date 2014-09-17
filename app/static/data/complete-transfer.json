@@ -71,6 +71,7 @@
   },
   "provisions": {
     "definitions": true,
+    "restrictions": false,
     "easements": false,
     "covenants": true,
     "other": false

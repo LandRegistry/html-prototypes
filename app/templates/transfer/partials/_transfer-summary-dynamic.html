@@ -203,6 +203,18 @@
     </div>
     <div class="grid-wrapper document-section__item ">
       <div class="grid grid-1-2">
+        <div class="inner-block">{% if data.provisions.restrictions %}New restrictions added{% else %}No new restrictions added{% endif %}</div>
+      </div>
+      {% if editable %}
+      <div class="grid grid-1-4">
+        <div class="inner-block">
+          <a href="new-provisions#restrictions" class="button-secondary">{% if data.provisions.restrictions %}Change{% else %}Add{% endif %}<span class="visuallyhidden"> details of the additional restrictions</span></a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="grid-wrapper document-section__item ">
+      <div class="grid grid-1-2">
         <div class="inner-block">{% if data.provisions.easements %}New easements added{% else %}No new easements added{% endif %}</div>
       </div>
       {% if editable %}
