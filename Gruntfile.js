@@ -22,6 +22,12 @@ module.exports = function(grunt) {
       all: ['Gruntfile.js', 'app/static/javascripts/new-provisions.js', 'app/static/javascripts/mortgage-details.js']
     },
 
+    jsonlint: {
+      protodata: {
+        src: [ 'app/static/data/complete-transfer.json' ]
+      }
+    },
+
     sass: {
       dev: {
         options: {
@@ -67,6 +73,9 @@ module.exports = function(grunt) {
 
   // js hint task: https://github.com/gruntjs/grunt-contrib-jshint
   grunt.loadNpmTasks('grunt-contrib-jshint');
+
+  // json lint task: check json for syntax errors
+  grunt.loadNpmTasks('grunt-jsonlint');
 
   // Register the various Grunt commands:
 
