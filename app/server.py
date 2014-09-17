@@ -165,8 +165,8 @@ def conveyancer_select_task_2_0():
 
 # Step 5 - set the number of clients
 @app.route('/relationship-starts/conveyancer-add-clients')
-def conveyancer_add_clients_2_0():
-  return render_template('relationship-starts/conveyancer-add-clients-2.0.html')
+def conveyancer_add_clients_2_1():
+  return render_template('relationship-starts/conveyancer-add-clients-2.1.html')
 
 # Step 6 - add 1st client
 @app.route('/relationship-starts/conveyancer-add-client-1')
