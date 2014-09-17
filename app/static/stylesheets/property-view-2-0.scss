@@ -82,6 +82,21 @@
   margin-top: 0;
 }
 
+.vcard {
+  @include core-16;
+  /*&:before {
+    content: ' ';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.3em;
+    background-image: url('/static/images/icons/icon-vcard.svg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+  }*/
+}
+
 .property-sign-in {
   margin: $gutter 0;
 }
