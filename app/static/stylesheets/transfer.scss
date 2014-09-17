@@ -100,10 +100,6 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     margin-top: -0.25em;
   }
 
-  ul, p {
-    margin-top: 0;
-  }
-
   .alert-flag {
     font-size: 1.6rem;
   }
@@ -125,6 +121,10 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   .button-secondary {
     margin-bottom: 0;
     margin-top: -0.25em;
+  }
+
+  ul, p {
+    margin-top: 0;
   }
 }
 
