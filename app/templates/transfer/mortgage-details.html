@@ -1,11 +1,13 @@
 {% extends "global/prototypes_base.html" %}
 
 {% block page_title %}
-  <!-- insert page title here -->
-  Page title
-  <!-- -->
+  Mortgage details | Create transfer
 {% endblock %}
-  
+
+{% block head %}
+  <link href="{{ prototypes_asset_path }}stylesheets/transfer.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block content %}
 
 <main id="wrapper" role="main">
@@ -18,7 +20,7 @@
 
       <h1 class="heading-xlarge">Mortgage Details</h1>
 
-      <form action="citizen-confirm" method="get" class="form">
+      <form action="mortgage-details-entered" data-alternative-action="summary" method="get" class="form mortgage-details-form">
 
         <div class="form-group">
           <label for="mortgage-ref" class="form-label">MD Reference</label>
@@ -45,7 +47,15 @@
           </div>
         </fieldset>
 
-        <a href="mortgage-details-entered" class="button final-btn">Submit</a>
+        <div class="form-group panel-indent">
+          <label for="nomortgagecheck" class="block-label">
+            <input id="nomortgagecheck" type="checkbox" name="no-mortgage-checkbox">
+            If a mortgage is not required please tick here
+          </label>
+        </div>
+
+        <button class="button final-btn">Confirm mortgage details</button>
+        <p><a href="conveyancer-case-list">Save draft</a></p>
 
       </form>
 
@@ -55,4 +65,8 @@
 
 </main>
 
+{% endblock %}
+
+{% block body_end_additional %}
+  <script src="{{ prototypes_asset_path }}javascripts/mortgage-details.js"></script>
 {% endblock %}

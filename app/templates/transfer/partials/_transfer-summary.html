@@ -1,6 +1,6 @@
 <article class="legal-document--bounds">
-  <section>
-    <h2 class="heading-medium document-section__heading">Property</h2>
+  <section class="document-section">
+    <h2 class="heading-medium document-section__heading">Property{% if conveyancer == "seller" %} <span class="alert-flag">selling</span>{% endif %}</h2>
 
     <div class="grid-wrapper">
       <div class="grid grid-1-4">
@@ -50,7 +50,7 @@
       {% if editable %}
       <div class="grid grid-1-4">
         <div class="inner-block">
-          <a href="create-transfer" class="button-secondary">Change<span class="visuallyhidden"> evidence provided for relevant restrictions</span></a>
+          <a href="create-transfer#restrictions" class="button-secondary">Change<span class="visuallyhidden"> evidence provided for relevant restrictions</span></a>
         </div>
       </div>
       {% endif %}
@@ -59,7 +59,7 @@
   </section><!--  end property section -->
 
   <section class="document-section document-section--bordered">
-    <h2 class="heading-medium">Buyers</h2>
+    <h2 class="heading-medium">Buyers{% if conveyancer == "buyer" %} <span class="alert-flag">working on behalf of</span>{% endif %}</h2>
 
     <div class="grid-wrapper document-section__item">
       <div class="grid grid-1-4">
@@ -153,7 +153,7 @@
       {% if editable %}
       <div class="grid grid-1-4">
         <div class="inner-block">
-          <a href="create-transfer" class="button-secondary">Change<span class="visuallyhidden"> declaration of trust</span></a>
+          <a href="create-transfer#declaration" class="button-secondary">Change<span class="visuallyhidden"> declaration of trust</span></a>
         </div>
       </div>
       {% endif %}
@@ -173,7 +173,7 @@
       {% if editable %}
       <div class="grid grid-1-4">
         <div class="inner-block">
-          <a href="create-transfer" class="button-secondary">Change<span class="visuallyhidden"> price paid value</span></a>
+          <a href="create-transfer#pricedetails" class="button-secondary">Change<span class="visuallyhidden"> price paid value</span></a>
         </div>
       </div>
       {% endif %}
@@ -189,7 +189,7 @@
       {% if editable %}
       <div class="grid grid-1-4">
         <div class="inner-block">
-          <a href="create-transfer" class="button-secondary">Change<span class="visuallyhidden"> date of the transfer</span></a>
+          <a href="create-transfer#pricedetails" class="button-secondary">Change<span class="visuallyhidden"> date of the transfer</span></a>
         </div>
       </div>
       {% endif %}
