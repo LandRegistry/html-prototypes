@@ -180,8 +180,8 @@ def conveyancer_add_client_2_2_1():
 
 # Step 8 - confirmation
 @app.route('/relationship-starts/conveyancer-confirm')
-def conveyancer_confirm_2_0():
-  return render_template('relationship-starts/conveyancer-confirm-2.0.html')
+def conveyancer_confirm_2_1():
+  return render_template('relationship-starts/conveyancer-confirm-2.1.html')
 
 # Step 9 - generated token
 @app.route('/relationship-starts/conveyancer-token')
