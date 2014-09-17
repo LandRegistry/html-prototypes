@@ -97,6 +97,11 @@
   }*/
 }
 
+.roman {
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+}
+
 .property-sign-in {
   margin: $gutter 0;
 }
@@ -107,6 +112,9 @@
     @include bold-48;
     text-transform: uppercase;
     margin-top: $gutter-one-third;
+  }
+  a {
+    @include core-16;
   }
 }
 
