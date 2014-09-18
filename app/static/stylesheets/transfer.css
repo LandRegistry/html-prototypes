@@ -3384,9 +3384,6 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   margin-bottom: 0;
   margin-top: -0.25em;
 }
-.document-section ul, .document-section p {
-  margin-top: 0;
-}
 .document-section .alert-flag {
   font-size: 1.6rem;
 }
@@ -3408,6 +3405,9 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 .document-section__item .button-secondary {
   margin-bottom: 0;
   margin-top: -0.25em;
+}
+.document-section__item ul, .document-section__item p {
+  margin-top: 0;
 }
 
 .document-section__heading {
@@ -3454,4 +3454,32 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 }
 .no-mortgage label[for="nomortgagecheck"] {
   color: #0b0c0c;
+}
+
+.empty-state {
+  border-left: 3px solid #df3034;
+  background: #fef7f7;
+  padding-left: 10px;
+  margin-left: -13px;
+}
+.empty-state .form-hint {
+  color: #0b0c0c;
+}
+@media (min-width: 641px) {
+  .empty-state {
+    border-right: 0;
+    margin-left: -18px;
+    padding-left: 15px;
+  }
+}
+
+.document-section .document-section__item.empty-state {
+  padding: 10px 0;
+  margin-left: -13px;
+  margin-right: 0;
+}
+@media (min-width: 641px) {
+  .document-section .document-section__item.empty-state {
+    margin-left: -18px;
+  }
 }

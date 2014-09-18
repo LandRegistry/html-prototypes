@@ -100,10 +100,6 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     margin-top: -0.25em;
   }
 
-  ul, p {
-    margin-top: 0;
-  }
-
   .alert-flag {
     font-size: 1.6rem;
   }
@@ -125,6 +121,10 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   .button-secondary {
     margin-bottom: 0;
     margin-top: -0.25em;
+  }
+
+  ul, p {
+    margin-top: 0;
   }
 }
 
@@ -172,5 +172,30 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 
   label[for="nomortgagecheck"] {
     color: $black;
+  }
+}
+
+// empty state highlighting
+.empty-state {
+  border-left: 3px solid $error-colour;
+  background: $error-background;
+  padding-left: 10px;
+  margin-left: -13px;
+  .form-hint {
+    color: $black;
+  }
+  @include media(tablet) {
+    border-right: 0;
+    margin-left: -18px;
+    padding-left: $gutter-half;
+  }
+}
+
+.document-section .document-section__item.empty-state {
+  padding: 10px 0;
+  margin-left: -13px;
+  margin-right: 0;
+  @include media(tablet) {
+    margin-left: -18px;
   }
 }
