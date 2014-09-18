@@ -112,6 +112,10 @@
     @include bold-48;
     text-transform: uppercase;
     margin-top: $gutter-one-third;
+    &.no-data {
+      text-transform: inherit;
+      color: $grey-1;
+    }
   }
   a {
     @include core-16;
