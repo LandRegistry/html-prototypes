@@ -64,7 +64,6 @@
   border-top: 1px solid #dee0e2;
 }
 
-/* add the below to scss */
 .info-notice::after {
   content: "";
   display: block;
