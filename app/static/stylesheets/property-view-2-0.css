@@ -3991,6 +3991,36 @@ form .notification {
   margin-top: 0;
 }
 
+.vcard {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  /*&:before {
+    content: ' ';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.3em;
+    background-image: url('/static/images/icons/icon-vcard.svg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+  }*/
+}
+@media (max-width: 640px) {
+  .vcard {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+
+.roman {
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+}
+
 .property-sign-in {
   margin: 30px 0;
 }
@@ -4012,6 +4042,19 @@ form .notification {
   .property-flags dd {
     font-size: 32px;
     line-height: 1.09375;
+  }
+}
+.property-flags a {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  .property-flags a {
+    font-size: 14px;
+    line-height: 1.14286;
   }
 }
 
