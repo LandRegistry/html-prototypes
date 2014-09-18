@@ -11,7 +11,8 @@
       "postcode": "SV19 9BT"
     },
     "title": "GHR67834",
-    "sellers": ["Jessica Emma Hunt", "Xi Jenny Koh"]
+    "sellers": ["Jessica Emma Hunt", "Xi Jenny Koh"],
+    "restrictions": true
   },
   "buyers": [
     {
@@ -48,6 +49,7 @@
       ]
     }
   ],
+  "declaration": "Equal share",
   "transfer": {
     "price": "190000",
     "date": "15th December 2014",

@@ -91,6 +91,13 @@ def transfer_withdraw_option():
   data = json.load(json_data)
   return render_template('transfer/summary-withdraw-option.html', editable=False, data=data)
 
+# Transfer prototypes, summary with empty states
+@app.route('/transfer/transfer-empty-states')
+def transfer_empty_states():
+  json_data=open('app/static/data/incomplete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/transfer-empty-states.html', editable=True, data=data)
+
 # Transfer prototypes, done page
 @app.route('/transfer/done')
 def transfer_done():

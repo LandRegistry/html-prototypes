@@ -3636,3 +3636,30 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 .no-mortgage label[for="nomortgagecheck"] {
   color: #0b0c0c;
 }
+
+.empty-state {
+  border-left: 3px solid #df3034;
+  background: #fef7f7;
+  padding-left: 10px;
+  margin-left: -13px;
+}
+.empty-state .form-hint {
+  color: #0b0c0c;
+}
+@media (min-width: 641px) {
+  .empty-state {
+    border-right: 0;
+    margin-left: -18px;
+    padding-left: 15px;
+  }
+}
+
+.document-section .document-section__item.empty-state {
+  padding: 10px 0;
+  margin-left: -13px;
+}
+@media (min-width: 641px) {
+  .document-section .document-section__item.empty-state {
+    margin-left: -18px;
+  }
+}

@@ -41,13 +41,18 @@
       </div>
     </div>
 
-    <div class="grid-wrapper document-section__item">
+    <div class="grid-wrapper document-section__item {% if not data.property.restrictions %}empty-state{% endif %}">
       <div class="grid grid-1-4">
         <div class="inner-block">Restrictions</div>
       </div>
       <div class="grid grid-1-2">
+        {% if data.property.restrictions %}
         <div class="inner-block">you have provided evidence to comply with the relevant restrictions</div>
+        {% else %}
+        <div class="inner-block">evidence not provided</div>
+        {% endif %}
       </div>
+
       {% if editable %}
       <div class="grid grid-1-4">
         <div class="inner-block">
@@ -61,13 +66,13 @@
 
   {% include "transfer/partials/_buyers-section.html" %}
 
-  <section class="document-section document-section--bordered">
+  <section class="document-section document-section--bordered {% if data.declaration is undefined %}empty-state{% endif %}">
     <div class="grid-wrapper">
       <div class="grid grid-1-4">
         <div class="inner-block">Declaration of trust</div>
       </div>
       <div class="grid grid-1-4">
-        <div class="inner-block">Equal share</div>
+        <div class="inner-block">{{ data.declaration }}</div>
       </div>
       {% if editable %}
       <div class="grid grid-1-4">
@@ -82,7 +87,7 @@
   <section class="document-section document-section--bordered">
     <h2 class="heading-medium">Transfer</h2>
 
-    <div class="grid-wrapper document-section__item ">
+    <div class="grid-wrapper document-section__item {% if data.transfer.price is undefined %}empty-state{% endif %}">
       <div class="grid grid-1-4">
         <div class="inner-block">Price paid</div>
       </div>

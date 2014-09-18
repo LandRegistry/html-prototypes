@@ -52,7 +52,7 @@
     {% endif %}
   </div>
 
-  <div class="grid-wrapper document-section__item">
+  <div class="grid-wrapper document-section__item {% if buyer.addresses|length == 0 %}empty-state{% endif %}">
     <div class="grid grid-1-4">
       <div class="inner-block">Address(es)</div>
     </div>

@@ -174,3 +174,27 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     color: $black;
   }
 }
+
+// empty state highlighting
+.empty-state {
+  border-left: 3px solid $error-colour;
+  background: $error-background;
+  padding-left: 10px;
+  margin-left: -13px;
+  .form-hint {
+    color: $black;
+  }
+  @include media(tablet) {
+    border-right: 0;
+    margin-left: -18px;
+    padding-left: $gutter-half;
+  }
+}
+
+.document-section .document-section__item.empty-state {
+  padding: 10px 0;
+  margin-left: -13px;
+  @include media(tablet) {
+    margin-left: -18px;
+  }
+}
