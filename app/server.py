@@ -77,14 +77,14 @@ def transfer_summary():
   data = json.load(json_data)
   return render_template('transfer/summary.html', editable=True, conveyancer="buyer", data=data)
 
-# Transfer prototypes, summary page
+# Transfer prototypes, transfer that has been withdrawn
 @app.route('/transfer/transfer-withdrawn')
 def transfer_withdrawn():
   json_data=open('app/static/data/complete-transfer.json', "r")
   data = json.load(json_data)
   return render_template('transfer/transfer-withdrawn.html', editable=True, data=data)
 
-# Transfer prototypes, summary page
+# Transfer prototypes, summary with option to withdraw
 @app.route('/transfer/summary-withdraw-option')
 def transfer_withdraw_option():
   json_data=open('app/static/data/complete-transfer.json', "r")
