@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 
     jsonlint: {
       protodata: {
-        src: [ 'app/static/data/complete-transfer.json' ]
+        src: [ 'app/static/data/*.json' ]
       }
     },
 
