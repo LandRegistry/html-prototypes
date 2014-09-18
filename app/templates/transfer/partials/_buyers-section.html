@@ -58,12 +58,9 @@
     </div>
     {% for addr in buyer.addresses  %}
     <div class="grid grid-1-4">
-      <p itemscope="" itemtype="http://schema.org/PostalAddress" class="inner-block">
-        <span itemprop="streetAddress">{{ addr.address_line_1 }} {{ addr.address_line_2 }}</span><br>
-        <span itemprop="addressLocality">{{ addr.city }}</span><br>
-        <span itemprop="">{{ addr.county }}</span><br>
-        <span itemprop="postalCode">{{ addr.postcode }}</span>
-      </p>
+      <div class="inner-block">
+        {{ common.address(addr) }}
+      </div>
       {% if editable %}
       <div class="inner-block">
         <a href="#" class="button-secondary">Change<span class="visuallyhidden"> address details</span></a>
