@@ -255,30 +255,35 @@ def client_confirm_2_0():
 
 # Step 4 - Client 1 receives confirmation
 @app.route('/relationship-starts/client-semi-confirmed')
-def client_semi_confirmed_2_0():
-  return render_template('relationship-starts/client-semi-confirmed-2.0.html')
+def client_semi_confirmed_2_1():
+  return render_template('relationship-starts/client-semi-confirmed-2.1.html')
 
-# Step 5 - Client 2 visits start page
+# Step 5 - Client can now view the register if they want to.
+@app.route('/relationship-starts/client-view-register')
+def client_view_register_2_1():
+  return render_template('relationship-starts/register-2.1-no-pending.html')
+
+# Step 6 - Client 2 visits start page
 @app.route('/relationship-starts/client-2-start')
 def client_2_start_2_0():
   return render_template('relationship-starts/client-2-start-2.0.html')
 
-# Step 6 - Client 2 visits start page
+# Step 7 - Client 2 visits start page
 @app.route('/relationship-starts/client-2-login')
 def client_2_verify_2_0():
   return render_template('relationship-starts/client-2-login-2.0.html')
 
-# Step 7 - Client 2 enters token
+# Step 8 - Client 2 enters token
 @app.route('/relationship-starts/client-2-enter-token')
 def client_2_enter_token_2_0():
   return render_template('relationship-starts/client-2-enter-token-2.0.html')
 
-# Step 8 - Client 2 confirms
+# Step 9 - Client 2 confirms
 @app.route('/relationship-starts/client-2-confirm')
 def client_2_confirm_2_0():
   return render_template('relationship-starts/client-2-confirm-2.0.html')
 
-# Step 9 - Client 2 receives (all parties) confirmation
+# Step 10 - Client 2 receives (all parties) confirmation
 @app.route('/relationship-starts/clients-confirmed')
 def clients_confirmed_2_0():
   return render_template('relationship-starts/clients-confirmed-2.0.html')
