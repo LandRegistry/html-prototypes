@@ -1,4 +1,5 @@
 import os
+import json
 
 from flask import Flask, render_template
 from flask.ext.assets import Environment
@@ -50,7 +51,9 @@ def conveyancer_case_list():
 # Transfer prototypes, create transfer page
 @app.route('/transfer/create-transfer')
 def create_transfer():
-  return render_template('transfer/create-transfer.html')
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/create-transfer.html', editable=True, data=data)
 
 # Transfer prototypes, new provisions page
 @app.route('/transfer/new-provisions')
@@ -70,17 +73,30 @@ def transfer_mortgage_details_entered():
 # Transfer prototypes, summary page
 @app.route('/transfer/summary')
 def transfer_summary():
-  return render_template('transfer/summary.html', editable=True, conveyancer="buyer")
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/summary.html', editable=True, conveyancer="buyer", data=data)
 
-# Transfer prototypes, summary page
+# Transfer prototypes, transfer that has been withdrawn
 @app.route('/transfer/transfer-withdrawn')
 def transfer_withdrawn():
-  return render_template('transfer/transfer-withdrawn.html', editable=True)
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/transfer-withdrawn.html', editable=True, data=data)
 
-# Transfer prototypes, summary page
+# Transfer prototypes, summary with option to withdraw
 @app.route('/transfer/summary-withdraw-option')
 def transfer_withdraw_option():
-  return render_template('transfer/summary-withdraw-option.html', editable=False)
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/summary-withdraw-option.html', editable=False, data=data)
+
+# Transfer prototypes, summary with empty states
+@app.route('/transfer/transfer-empty-states')
+def transfer_empty_states():
+  json_data=open('app/static/data/incomplete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/transfer-empty-states.html', editable=True, data=data)
 
 # Transfer prototypes, done page
 @app.route('/transfer/done')

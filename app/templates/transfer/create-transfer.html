@@ -65,95 +65,13 @@
 
           </section><!--  end property section -->
 
-          <section class="document-section document-section--bordered">
-            <h2 class="heading-medium">Buyer (new proprieters)</h2>
-              <div class="grid-wrapper document-section__item">
-                <div class="grid">
-                  <p class="inner-block"><b>Buyer 1</b></p>
-                </div>
-              </div>
-              <div class="grid-wrapper document-section__item">
-                <div class="grid grid-1-4">
-                  <div class="inner-block">Name</div>
-                </div>
-                <div class="grid grid-1-4">
-                  <p class="inner-block">Jason Amilio Smith</p>
-                </div>
-              </div>
-              <div class="grid-wrapper document-section__item">
-                <div class="grid grid-1-4">
-                  <div class="inner-block">Address(es)</div>
-                </div>
-                <div class="grid grid-1-4">
-                  <p class="inner-block">
-                    118 Leafy Way,<br>
-                    Thale,<br>
-                    Berks<br>
-                    RG12 9AB
-                  </p>
-                  <div class="inner-block">
-                    <a href="#" class="button-secondary">Change<span class="visuallyhidden"> address details</span></a>
-                  </div>
-                </div>
-                <div class="grid grid-1-4">
-                  <div class="inner-block">
-                    <a href="#" class="button-secondary">Add<span class="visuallyhidden"> another</span> address</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-wrapper document-section__item">
-                <div class="grid">
-                  <p class="inner-block"><b>Buyer 2</b></p>
-                </div>
-              </div>
-              <div class="grid-wrapper document-section__item">
-                <div class="grid grid-1-4">
-                  <div class="inner-block">Name</div>
-                </div>
-                <div class="grid grid-1-4">
-                  <div class="inner-block">Peter Smith</div>
-                </div>
-              </div>
-              <div class="grid-wrapper document-section__item">
-                <div class="grid grid-1-4">
-                  <div class="inner-block">Address(es)</div>
-                </div>
-                <div class="grid grid-1-4">
-                  <p class="inner-block">
-                    118 Leafy Way,<br>
-                    Thale,<br>
-                    Berks<br>
-                    RG12 9AB
-                  </p>
-                  <div class="inner-block">
-                    <a href="#" class="button-secondary">Change<span class="visuallyhidden"> address details</span></a>
-                  </div>
-                </div>
-                <div class="grid grid-1-4">
-                  <p class="inner-block">
-                    12 Spring Road,<br>
-                    Wakefield,<br>
-                    Yorks<br>
-                    WK12 9AB
-                  </p>
-                  <div class="inner-block">
-                    <a href="#" class="button-secondary">Change<span class="visuallyhidden"> address details</span></a>
-                  </div>
-                </div>
-                <div class="grid grid-1-4">
-                  <div class="inner-block">
-                    <a href="#" class="button-secondary">Add<span class="visuallyhidden"> another</span> address</a>
-                  </div>
-                </div>
-              </div>
-          </section><!-- end buyers section -->
+          {% include "transfer/partials/_buyers-section.html" %}
 
           <section id="declaration" class="document-section document-section--bordered">
             <h2 class="heading-medium">Declaration of trust</h2>
             <details class="document-section__help-def">
               <summary>What is a declaration of trust?</summary>
-                <p>An explanation.</p>
+                <p class="text panel-indent">A declaration of trust is a legally binding document which records the financial agreement between joint owners of a property.</p>
             </details>
 
             <form action="" class="form text">
