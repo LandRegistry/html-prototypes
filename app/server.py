@@ -160,7 +160,7 @@ def transfer_and_charge_citizen_1_semi_confirmed_2_0():
 
 # ---------------------------------------------------------------------------
 
-# Transaction flows, relationship starts, conveyancer initiates v2.0 --------
+# Transaction flows, relationship starts, conveyancer initiates v2.1 --------
 @app.route('/relationship-starts/conveyancer-start')
 def conveyancer_start_2_1():
   return render_template('relationship-starts/conveyancer-start-2.1.html')
@@ -233,10 +233,10 @@ def conveyancer_token_2_1():
 
 # ---------------------------------------------------------------------------
 
-# Transaction flows, relationship starts, client(s) confirm v2.0 --------
+# Transaction flows, relationship starts, client(s) confirm v2.1 --------
 @app.route('/relationship-starts/client-start')
-def client_start_2_0():
-  return render_template('relationship-starts/client-start-2.0.html')
+def client_start_2_1():
+  return render_template('relationship-starts/client-start-2.1.html')
 
 # Step 1 - login with GOV.UK Verify
 @app.route('/relationship-starts/client-login')
@@ -245,8 +245,8 @@ def client_verify_2_0():
 
 # Step 2 - Client 1 enters token
 @app.route('/relationship-starts/client-enter-token')
-def client_enter_token_2_0():
-  return render_template('relationship-starts/client-enter-token-2.0.html')
+def client_enter_token_2_1():
+  return render_template('relationship-starts/client-enter-token-2.1.html')
 
 # Step 3 - Client 1 confirms
 @app.route('/relationship-starts/client-confirm')
