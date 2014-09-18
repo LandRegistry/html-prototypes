@@ -250,8 +250,8 @@ def client_enter_token_2_1():
 
 # Step 3 - Client 1 confirms
 @app.route('/relationship-starts/client-confirm')
-def client_confirm_2_0():
-  return render_template('relationship-starts/client-confirm-2.0.html')
+def client_confirm_2_1():
+  return render_template('relationship-starts/client-confirm-2.1.html')
 
 # Step 4 - Client 1 receives confirmation
 @app.route('/relationship-starts/client-semi-confirmed')
