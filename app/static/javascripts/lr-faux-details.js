@@ -1,7 +1,7 @@
 // This is essentially to make a <section> > <h*> pattern into a kind of <details>
 // THIS WILL NEED AN ACCESSIBILITY REVIEW!!!!
 (function () {
-  "use strict"
+  "use strict";
   var root = this,
       $ = root.jQuery;
   if(typeof root.LR === 'undefined') { root.LR = {}; }
