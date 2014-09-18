@@ -51,7 +51,9 @@ def conveyancer_case_list():
 # Transfer prototypes, create transfer page
 @app.route('/transfer/create-transfer')
 def create_transfer():
-  return render_template('transfer/create-transfer.html')
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/create-transfer.html', editable=True, data=data)
 
 # Transfer prototypes, new provisions page
 @app.route('/transfer/new-provisions')
@@ -78,12 +80,16 @@ def transfer_summary():
 # Transfer prototypes, summary page
 @app.route('/transfer/transfer-withdrawn')
 def transfer_withdrawn():
-  return render_template('transfer/transfer-withdrawn.html', editable=True)
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/transfer-withdrawn.html', editable=True, data=data)
 
 # Transfer prototypes, summary page
 @app.route('/transfer/summary-withdraw-option')
 def transfer_withdraw_option():
-  return render_template('transfer/summary-withdraw-option.html', editable=False)
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/summary-withdraw-option.html', editable=False, data=data)
 
 # Transfer prototypes, done page
 @app.route('/transfer/done')

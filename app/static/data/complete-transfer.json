@@ -27,6 +27,7 @@
     },
     {
       "name": "Peter Smith",
+      "email": "p.smithy@aol.com",
       "addresses": [
         {
           "address_line_1": "118",
