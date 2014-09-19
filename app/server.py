@@ -160,7 +160,7 @@ def transfer_and_charge_citizen_1_semi_confirmed_2_0():
 
 # ---------------------------------------------------------------------------
 
-# Transaction flows, relationship starts, conveyancer initiates v2.0 --------
+# Transaction flows, relationship starts, conveyancer initiates v2.1 --------
 @app.route('/relationship-starts/conveyancer-start')
 def conveyancer_start_2_1():
   return render_template('relationship-starts/conveyancer-start-2.1.html')
@@ -172,22 +172,22 @@ def conveyancer_start_2_1():
 # GOV.UK verify - Sub flow Step 1 - for conveyancer create relationship flow
 @app.route('/relationship-starts/login')
 def relationship_starts_login_1():
-  return render_template('relationship-starts/verify-subflow/verify-intro.html')
+  return render_template('relationship-starts/verify-subflow-conveyancer/verify-intro.html')
 
 # GOV.UK verify -  Sub flow Step 2 - who verified you
 @app.route('/relationship-starts/who-verified-you')
 def relationship_starts_verify_who_1():
-  return render_template('relationship-starts/verify-subflow/verify-who.html')
+  return render_template('relationship-starts/verify-subflow-conveyancer/verify-who.html')
 
 # GOV.UK verify - Sub flow Step 3 - experian sign in
 @app.route('/relationship-starts/experian-sign-in')
 def relationship_starts_verify_experian_sign_in_1():
-  return render_template('relationship-starts/verify-subflow/verify-sign-in.html')
+  return render_template('relationship-starts/verify-subflow-conveyancer/verify-sign-in.html')
 
 # GOV.UK verify - Sub flow Step 4 - experian 2nd phase sign in
 @app.route('/relationship-starts/experian-sign-in-part-2')
 def relationship_starts_verify_experian_sign_in_2nd_part_1():
-  return render_template('relationship-starts/verify-subflow/verify-sign-in-2.html')
+  return render_template('relationship-starts/verify-subflow-conveyancer/verify-sign-in-2.html')
 
 #       end Sub flow - GOV.UK Verification ---------------------
 
@@ -233,52 +233,78 @@ def conveyancer_token_2_1():
 
 # ---------------------------------------------------------------------------
 
-# Transaction flows, relationship starts, client(s) confirm v2.0 --------
+# Transaction flows, relationship starts, client(s) confirm v2.1 --------
 @app.route('/relationship-starts/client-start')
-def client_start_2_0():
-  return render_template('relationship-starts/client-start-2.0.html')
+def client_start_2_1():
+  return render_template('relationship-starts/client-start-2.1.html')
 
-# Step 1 - login with GOV.UK Verify
+# Step 1 - login with GOV.UK Verify - use sub flow...
+
+#       Sub flow - GOV.UK Verification ---------------------
+
+# GOV.UK verify - Sub flow Step 1 - for conveyancer create relationship flow
 @app.route('/relationship-starts/client-login')
-def client_verify_2_0():
-  return render_template('relationship-starts/client-login-2.0.html')
+def client_verify_2_1():
+  return render_template('relationship-starts/verify-subflow-client-1/verify-intro.html')
+
+# GOV.UK verify -  Sub flow Step 2 - who verified you
+@app.route('/relationship-starts/client-who-verified-you')
+def relationship_starts_client_verify_who_1():
+  return render_template('relationship-starts/verify-subflow-client-1/verify-who.html')
+
+# GOV.UK verify - Sub flow Step 3 - experian sign in
+@app.route('/relationship-starts/client-experian-sign-in')
+def relationship_starts_client_verify_experian_sign_in_1():
+  return render_template('relationship-starts/verify-subflow-client-1/verify-sign-in.html')
+
+# GOV.UK verify - Sub flow Step 4 - experian 2nd phase sign in
+@app.route('/relationship-starts/client-experian-sign-in-part-2')
+def relationship_starts_client_verify_experian_sign_in_2nd_part_1():
+  return render_template('relationship-starts/verify-subflow-client-1/verify-sign-in-2.html')
+
+#       end Sub flow - GOV.UK Verification ---------------------
 
 # Step 2 - Client 1 enters token
 @app.route('/relationship-starts/client-enter-token')
-def client_enter_token_2_0():
-  return render_template('relationship-starts/client-enter-token-2.0.html')
+def client_enter_token_2_1():
+  return render_template('relationship-starts/client-enter-token-2.1.html')
 
 # Step 3 - Client 1 confirms
 @app.route('/relationship-starts/client-confirm')
-def client_confirm_2_0():
-  return render_template('relationship-starts/client-confirm-2.0.html')
+def client_confirm_2_1():
+  return render_template('relationship-starts/client-confirm-2.1.html')
 
 # Step 4 - Client 1 receives confirmation
 @app.route('/relationship-starts/client-semi-confirmed')
-def client_semi_confirmed_2_0():
-  return render_template('relationship-starts/client-semi-confirmed-2.0.html')
+def client_semi_confirmed_2_1():
+  return render_template('relationship-starts/client-semi-confirmed-2.1.html')
 
-# Step 5 - Client 2 visits start page
+# Step 5 - Client can now view the register if they want to.
+@app.route('/relationship-starts/client-view-register')
+def client_view_register_2_1():
+  return render_template('relationship-starts/register-2.1-no-pending.html')
+
+# Step 6 - Client 2 visits start page
 @app.route('/relationship-starts/client-2-start')
 def client_2_start_2_0():
   return render_template('relationship-starts/client-2-start-2.0.html')
 
-# Step 6 - Client 2 visits start page
+# Step 7 - Client 2 visits start page
 @app.route('/relationship-starts/client-2-login')
 def client_2_verify_2_0():
   return render_template('relationship-starts/client-2-login-2.0.html')
 
-# Step 7 - Client 2 enters token
+# Step 8 - Client 2 enters token
 @app.route('/relationship-starts/client-2-enter-token')
 def client_2_enter_token_2_0():
   return render_template('relationship-starts/client-2-enter-token-2.0.html')
 
-# Step 8 - Client 2 confirms
+# Step 9 - Client 2 confirms
 @app.route('/relationship-starts/client-2-confirm')
 def client_2_confirm_2_0():
   return render_template('relationship-starts/client-2-confirm-2.0.html')
 
-# Step 9 - Client 2 receives (all parties) confirmation
+# Step 10 - Client 2 receives (all parties) confirmation
 @app.route('/relationship-starts/clients-confirmed')
 def clients_confirmed_2_0():
   return render_template('relationship-starts/clients-confirmed-2.0.html')
