@@ -199,3 +199,21 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     margin-left: -18px;
   }
 }
+
+.transferees {
+  margin-top: $gutter-half;
+}
+
+.signees {
+  padding: 10px $gutter-half 0 $gutter-half;
+  @extend %contain-floats;
+}
+
+.document-section--flush {
+  padding-top: 0;
+}
+
+.confirm-flag--block {
+  display: block;
+  text-align: center;
+}

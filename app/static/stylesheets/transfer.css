@@ -10,7 +10,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -42,7 +42,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -60,7 +60,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -72,7 +72,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -96,7 +96,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -128,7 +128,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -146,7 +146,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -158,7 +158,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -1627,7 +1627,7 @@ nav ol, nav ul {
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -1659,7 +1659,7 @@ nav ol, nav ul {
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -1677,7 +1677,7 @@ nav ol, nav ul {
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -1689,7 +1689,7 @@ nav ol, nav ul {
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -3482,4 +3482,21 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   .document-section .document-section__item.empty-state {
     margin-left: -18px;
   }
+}
+
+.transferees {
+  margin-top: 15px;
+}
+
+.signees {
+  padding: 10px 15px 0 15px;
+}
+
+.document-section--flush {
+  padding-top: 0;
+}
+
+.confirm-flag--block {
+  display: block;
+  text-align: center;
 }
