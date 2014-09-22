@@ -17,6 +17,7 @@
   "buyers": [
     {
       "name": "Jason Amilio Smith",
+      "isuser": true,
       "addresses": [{
         "address_line_1": "118",
         "address_line_2": "Leafy Way",

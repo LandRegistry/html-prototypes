@@ -74,6 +74,14 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   width: 25em;
 }
 
+.supporting-uploads {
+  margin-top: 0;
+  padding-bottom: 0;
+  li {
+    margin: 5px 0;
+  }
+}
+
 .supporting-uploads__remove {
   color: $link-colour;
   margin-left: $gutter;
@@ -82,6 +90,7 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 .document-section {
   clear: both;
   padding: $gutter 0;
+  @extend %contain-floats;
 
   &:first-child {
     padding-top: 0;
@@ -136,6 +145,15 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   margin-bottom: $gutter;
 }
 
+.document-section__form--collapse {
+  margin-bottom: $gutter-half;
+  @extend %contain-floats;
+
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
 .new-provisions {
   label {
     display: inline;
@@ -170,7 +188,7 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 .no-mortgage {
   color: $grey-1;
 
-  label[for="nomortgagecheck"] {
+  .nomortgagecheck {
     color: $black;
   }
 }
@@ -198,4 +216,22 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   @include media(tablet) {
     margin-left: -18px;
   }
+}
+
+.transferees {
+  margin-top: $gutter-half;
+}
+
+.signees {
+  padding: 10px $gutter-half 0 $gutter-half;
+  @extend %contain-floats;
+}
+
+.document-section--flush {
+  padding-top: 0;
+}
+
+.confirm-flag--block {
+  display: block;
+  text-align: center;
 }

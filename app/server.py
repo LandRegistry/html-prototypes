@@ -104,6 +104,13 @@ def transfer_empty_states():
 def transfer_done():
   return render_template('transfer/done.html')
 
+# Transfer prototypes, signing the transfer page
+@app.route('/transfer/transfer-signing')
+def transfer_signing():
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/transfer-signing.html', editable=False, data=data)
+
 # ---------------------------------------------------------------------------
 
 # Transfer prototypes - 2nd conveyancer, Step 1 - login page
