@@ -78,6 +78,13 @@ def transfer_summary():
   data = json.load(json_data)
   return render_template('transfer/summary.html', editable=True, conveyancer="buyer", data=data)
 
+# Transfer prototypes, summary with no mortgage details page
+@app.route('/transfer/summary-no-mortgage')
+def transfer_summary_no_mortgage():
+  json_data=open('app/static/data/no-mortgage.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/summary-no-mortgage.html', editable=True, conveyancer="buyer", data=data)
+
 # Transfer prototypes, transfer that has been withdrawn
 @app.route('/transfer/transfer-withdrawn')
 def transfer_withdrawn():
