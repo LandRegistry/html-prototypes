@@ -3410,10 +3410,6 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
     margin-bottom: 1.05263em;
   }
 }
-.document-section__item .button-secondary {
-  margin-bottom: 0;
-  margin-top: -0.25em;
-}
 .document-section__item ul, .document-section__item p {
   margin-top: 0;
 }
