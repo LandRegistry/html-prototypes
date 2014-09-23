@@ -17,6 +17,7 @@
   "buyers": [
     {
       "name": "Jason Amilio Smith",
+      "email": "jasmith@gmail.com",
       "isuser": true,
       "addresses": [{
         "address_line_1": "118",
@@ -52,7 +53,7 @@
   ],
   "declaration": "Equal share",
   "transfer": {
-    "price": "190000",
+    "price": "190,000",
     "date": "15th December 2014",
     "stamp_duty": {
       "received": true,

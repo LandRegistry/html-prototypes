@@ -100,39 +100,6 @@
       {% endif %}
     </div>
 
-    <div class="grid-wrapper document-section__item ">
-      <div class="grid grid-1-4">
-        <div class="inner-block">Transfer date</div>
-      </div>
-      <div class="grid grid-1-4">
-        <div class="inner-block">{{ data.transfer.date }}</div>
-      </div>
-      {% if editable %}
-      <div class="grid grid-1-4">
-        <div class="inner-block">
-          <a href="create-transfer#pricedetails" class="button-secondary">Change<span class="visuallyhidden"> date of the transfer</span></a>
-        </div>
-      </div>
-      {% endif %}
-    </div>
-
-    <div class="grid-wrapper document-section__item ">
-      <div class="grid grid-1-4">
-        <div class="inner-block">SDLT</div>
-      </div>
-      <div class="grid grid-1-4">
-        <div class="inner-block">URN: {{ data.transfer.stamp_duty.urn }}</div>
-      </div>
-      <div class="grid grid-1-4">
-        <div class="inner-block">
-          {% if data.transfer.stamp_duty.received %}
-          Received
-          {% else %}
-          Not received
-          {% endif %}
-        </div>
-      </div>
-    </div>
   </section><!-- end transfer section -->
 
   <section class="document-section document-section--bordered">

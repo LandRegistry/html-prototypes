@@ -116,7 +116,7 @@ def transfer_done():
 def transfer_signing():
   json_data=open('app/static/data/complete-transfer.json', "r")
   data = json.load(json_data)
-  return render_template('transfer/transfer-signing.html', editable=False, data=data)
+  return render_template('transfer/transfer-signing.html', editable=False, data=data, citizen="seller")
 
 # ---------------------------------------------------------------------------
 
