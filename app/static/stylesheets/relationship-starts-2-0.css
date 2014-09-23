@@ -70,8 +70,8 @@
   clear: both;
 }
 
-p+.info-notice {
-  margin-top:2em;
+p + .info-notice {
+  margin-top: 2em;
 }
 
 .info-notice {
@@ -81,5 +81,5 @@ p+.info-notice {
 }
 
 .application-notice {
-  padding:0.1em 0 0.1em 1em;
+  padding: 0.1em 0 0.1em 1em;
 }
