@@ -194,6 +194,11 @@ def transfer_and_charge_citizen_1_enter_token_3_0():
 def transfer_and_charge_citizen_1_sign_mortgage_3_0():
   return render_template('transfer-and-charge/citizen-1-sign-mortgage-2.0.html', next_page="/transfer/transfer-signing")
 
+# Step 4 - Client 1 2 factor authentication
+@app.route('/transfer-and-charge-v3/citizen-1-2-factor-auth')
+def transfer_and_charge_citizen_1_2_factor_auth():
+  return render_template('transfer-and-charge/citizen-1-2-factor.html', next_page="/transfer-and-charge-v3/citizen-1-semi-confirmed")
+
 # Step 5 - Client 1 - semi confirmation
 @app.route('/transfer-and-charge-v3/citizen-1-semi-confirmed')
 def transfer_and_charge_citizen_1_semi_confirmed_3_0():
