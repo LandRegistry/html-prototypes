@@ -184,11 +184,10 @@ def transfer_and_charge_citizen_1_start_3_0():
 def transfer_and_charge_citizen_1_login_3_0():
   return render_template('transfer-and-charge/citizen-1-login-2.0.html', next_page="citizen-1-email")
 
-# Step 1a - show user email
+# Step 1a - external process step - show user email
 @app.route('/transfer-and-charge-v3/citizen-1-email')
 def transfer_and_charge_citizen_1_email_3_0():
   return render_template('transfer-and-charge/citizen-1-email-2.0.html', next_page="citizen-1-enter-token")
-
 
 # Step 2 - Client 1 enters token
 @app.route('/transfer-and-charge-v3/citizen-1-enter-token')
@@ -199,6 +198,11 @@ def transfer_and_charge_citizen_1_enter_token_3_0():
 @app.route('/transfer-and-charge-v3/citizen-1-sign-mortgage')
 def transfer_and_charge_citizen_1_sign_mortgage_3_0():
   return render_template('transfer-and-charge/citizen-1-sign-mortgage-2.0.html', next_page="/transfer/transfer-signing")
+
+# Step 3a - external process step - show user sms message
+@app.route('/transfer-and-charge-v3/citizen-1-sms')
+def transfer_and_charge_citizen_1_sms_3_0():
+  return render_template('transfer-and-charge/citizen-1-sms-2.0.html', next_page="citizen-1-2-factor-auth")
 
 # Step 4 - Client 1 2 factor authentication
 @app.route('/transfer-and-charge-v3/citizen-1-2-factor-auth')
