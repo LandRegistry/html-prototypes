@@ -182,7 +182,13 @@ def transfer_and_charge_citizen_1_start_3_0():
 # Step 1 - login with GOV.UK Verify
 @app.route('/transfer-and-charge-v3/citizen-1-login')
 def transfer_and_charge_citizen_1_login_3_0():
-  return render_template('transfer-and-charge/citizen-1-login-2.0.html', next_page="citizen-1-enter-token")
+  return render_template('transfer-and-charge/citizen-1-login-2.0.html', next_page="citizen-1-email")
+
+# Step 1a - show user email
+@app.route('/transfer-and-charge-v3/citizen-1-email')
+def transfer_and_charge_citizen_1_email_3_0():
+  return render_template('transfer-and-charge/citizen-1-email-2.0.html', next_page="citizen-1-enter-token")
+
 
 # Step 2 - Client 1 enters token
 @app.route('/transfer-and-charge-v3/citizen-1-enter-token')
