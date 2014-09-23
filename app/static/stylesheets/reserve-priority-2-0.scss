@@ -39,8 +39,8 @@
 // indented panel when presented in a list of checkboxes
 
 .panel-indent--checkbox-list {
-  @include contain-floats;
-  clear: both;
+  @extend %contain-floats;
+
   border-left: 4px solid $border-colour;
 
   padding: 10px 0 10px $gutter-half;
