@@ -17,11 +17,11 @@
     {% include "includes/prototypes_banner.html" %}
 
     <div class="inner-block">
-      <h1 class="heading-large">Signing the transfer</h1>
+      <h1 class="heading-large">Transfer deed</h1>
 
-      <p class="lede text">Before signing the transfer please read through all the details.</p>
+      <p class="lede text">Please check all the details carefully before signing.</p>
 
-      {% include "transfer/partials/_transfer-summary-dynamic.html" %}
+      {% include "transfer/partials/_transfer-summary-dynamic-v1.5.html" %}
 
       <section class="document-section document-section--flush text">
         <h2 class="heading-medium">The transferors agree to transfer ownership of the property to the transferees.</h2>
@@ -50,7 +50,7 @@
 
       </section>
 
-      <form action="done" method="get" class="form">
+      <form action="/transfer-and-charge-v3/citizen-1-semi-confirmed" method="get" class="form">
         <div class="form-group">
           <label for="check-1" class="block-label">
             <input id="check-1" type="checkbox" name="agree-execution">

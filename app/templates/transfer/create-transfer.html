@@ -98,21 +98,22 @@
             </details>
             <div class="text restriction-panel">
               <p>RESTRICTION: No disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by Moon Properties Limited of 3 Fleet Street, London E1 3BC.</p>
+
+              <form class="document-section__form--collapse" action="">
+                <div class="form-group">
+                  <label for="defer" class="block-label">
+                    <input type="radio" id="defer" name="evidence-provided" value="defer" />Defer until evidence has been provided</label>
+                  <label for="confirm" class="block-label">
+                    <input type="radio" id="confirm" name="evidence-provided" class="confirm-evidence" value="confirm" />I / we certify that we have evidence to comply with this restriction</label>
+                </div>
+                <div class="panel-indent form-group supporting-uploads">
+                  <button class="button-secondary">Upload supporting evidence</button>
+                  <ul class="text collapse">
+                    <li>Document uploaded. <b>Smithton-Klein.pdf</b><a class="supporting-uploads__remove">(remove)</a></li>
+                  </ul>
+                </div>
+              </form>
             </div>
-            <form class="document-section__form--collapse" action="">
-              <div class="form-group">
-                <label for="defer" class="block-label">
-                  <input type="radio" id="defer" name="evidence-provided" />Defer until evidence has been provided</label>
-                <label for="confirm" class="block-label">
-                  <input type="radio" id="confirm" name="evidence-provided" />I / we certify that we have evidence to comply with this restriction</label>
-              </div>
-              <div class="panel-indent form-group supporting-uploads">
-                <button class="button-secondary">Upload supporting evidence</button>
-                <ul class="text collapse">
-                  <li>Document uploaded. <b>Smithton-Klein.pdf</b><a class="supporting-uploads__remove">(remove)</a></li>
-                </ul>
-              </div>
-            </form>
           </section>
 
           <section id="pricedetails" class="document-section document-section--bordered">
@@ -161,4 +162,8 @@
 
 </main>
 
+{% endblock %}
+
+{% block body_end_additional %}
+  <script src="{{ prototypes_asset_path }}javascripts/lr-create-transfer.js"></script>
 {% endblock %}

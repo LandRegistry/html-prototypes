@@ -17,7 +17,6 @@
   "buyers": [
     {
       "name": "Jason Amilio Smith",
-      "email": "jasmith@gmail.com",
       "isuser": true,
       "addresses": [{
         "address_line_1": "118",
@@ -53,26 +52,12 @@
   ],
   "declaration": "Equal share",
   "transfer": {
-    "price": "190,000",
+    "price": "190000",
     "date": "15th December 2014",
     "stamp_duty": {
       "received": true,
       "urn": "1937485936"
     }
-  },
-  "mortgage": {
-    "mdreference": "MD1234F",
-    "lender": {
-      "name": "Nationwide",
-      "address": {
-        "address_line_1": "Nationwide Building Society",
-        "address_line_2": "Nationwide House",
-        "address_line_3": "Pipers Way",
-        "city": "Swindon",
-        "postcode": "SN38 1NW"
-      }
-    },
-    "date": "24 July 2015"
   },
   "provisions": {
     "definitions": true,
