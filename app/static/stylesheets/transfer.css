@@ -10,7 +10,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -42,7 +42,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -60,7 +60,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -72,7 +72,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -96,7 +96,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -128,7 +128,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -146,7 +146,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -158,7 +158,7 @@
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -294,7 +294,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 @media (max-width: 640px) {
   .font-medium {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -317,7 +317,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 640px) {
@@ -331,9 +331,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-xxlarge {
@@ -346,9 +345,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-xlarge {
@@ -361,9 +359,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-large {
@@ -376,13 +373,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-medium {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -391,9 +387,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-small {
@@ -406,9 +401,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-xsmall {
@@ -421,9 +415,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 0.46875em;
   margin-bottom: 0.9375em;
 }
@@ -450,7 +443,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 @media (max-width: 640px) {
   .heading-xlarge .heading-secondary, h1 .heading-secondary {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.11111;
   }
 }
@@ -459,9 +452,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 1.04167em;
   margin-bottom: 0.41667em;
 }
@@ -482,15 +474,14 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 1.25em;
   margin-bottom: 0.5em;
 }
 @media (max-width: 640px) {
   .heading-medium, h3 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -505,9 +496,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 0.625em;
   margin-bottom: 0.3125em;
 }
@@ -543,7 +533,7 @@ p {
 }
 @media (max-width: 640px) {
   .lede {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -615,7 +605,7 @@ code {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 640px) {
@@ -633,9 +623,8 @@ code {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -815,15 +804,14 @@ fieldset {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   display: block;
   margin-bottom: 0;
 }
 @media (max-width: 640px) {
   .form-label-bold {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -961,7 +949,7 @@ fieldset {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 640px) {
@@ -990,7 +978,7 @@ fieldset {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   color: #df3034;
 }
@@ -1097,7 +1085,7 @@ table td {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   padding: 0.73684em 1.05263em 0.52632em 0;
   text-align: left;
@@ -1207,9 +1195,8 @@ table th {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   background-image: url("../images/icons/icon-pointer.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -1217,7 +1204,7 @@ table th {
 }
 @media (max-width: 640px) {
   .button-get-started {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -1580,7 +1567,7 @@ nav ol, nav ul {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 640px) {
@@ -1627,7 +1614,7 @@ nav ol, nav ul {
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -1659,7 +1646,7 @@ nav ol, nav ul {
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -1677,7 +1664,7 @@ nav ol, nav ul {
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -1689,7 +1676,7 @@ nav ol, nav ul {
 @-o-viewport {
   width: device-width;
 }
-#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
+#content:after, .legal-document--item:after, .definition-tabular:after, .definition-inline:after, .deed-relationship:after, .callout:after, .callout--summary .lede:after, .result:after, .document-section:after, .document-section__form--collapse:after, .signees:after {
   content: "";
   display: block;
   clear: both;
@@ -1825,7 +1812,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 @media (max-width: 640px) {
   .font-medium {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -1848,7 +1835,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 640px) {
@@ -1862,9 +1849,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-xxlarge {
@@ -1877,9 +1863,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-xlarge {
@@ -1892,9 +1877,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-large {
@@ -1907,13 +1891,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-medium {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -1922,9 +1905,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-small {
@@ -1937,9 +1919,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
 }
 @media (max-width: 640px) {
   .bold-xsmall {
@@ -1952,9 +1933,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 0.46875em;
   margin-bottom: 0.9375em;
 }
@@ -1981,7 +1961,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 @media (max-width: 640px) {
   .heading-xlarge .heading-secondary, h1 .heading-secondary {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.11111;
   }
 }
@@ -1990,9 +1970,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 1.04167em;
   margin-bottom: 0.41667em;
 }
@@ -2013,15 +1992,14 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 1.25em;
   margin-bottom: 0.5em;
 }
 @media (max-width: 640px) {
   .heading-medium, h3 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -2036,9 +2014,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 0.625em;
   margin-bottom: 0.3125em;
 }
@@ -2074,7 +2051,7 @@ p {
 }
 @media (max-width: 640px) {
   .lede {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -2150,7 +2127,7 @@ code {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 640px) {
@@ -2168,9 +2145,8 @@ code {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -2350,15 +2326,14 @@ fieldset {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   display: block;
   margin-bottom: 0;
 }
 @media (max-width: 640px) {
   .form-label-bold {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -2496,7 +2471,7 @@ fieldset {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 640px) {
@@ -2525,7 +2500,7 @@ fieldset {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   color: #df3034;
 }
@@ -2632,7 +2607,7 @@ table td {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   padding: 0.73684em 1.05263em 0.52632em 0;
   text-align: left;
@@ -2742,9 +2717,8 @@ table th {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   background-image: url("../images/icons/icon-pointer.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -2752,7 +2726,7 @@ table th {
 }
 @media (max-width: 640px) {
   .button-get-started {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
   }
 }
@@ -2848,265 +2822,6 @@ ol li {
   margin-bottom: 0;
 }
 
-.icon {
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.icon-calendar {
-  background-image: url("../images/icons/icon-calendar.png");
-  width: 27px;
-  height: 27px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-calendar {
-    background-image: url("../images/icons/icon-calendar-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-download {
-  background-image: url("../images/icons/icon-file-download.png");
-  width: 30px;
-  height: 39px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-download {
-    background-image: url("../images/icons/icon-file-download-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-important {
-  background-image: url("../images/icons/icon-important.png");
-  width: 34px;
-  height: 34px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-important {
-    background-image: url("../images/icons/icon-important-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-information {
-  background-image: url("../images/icons/icon-information.png");
-  width: 27px;
-  height: 27px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-information {
-    background-image: url("../images/icons/icon-information-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-locator {
-  background-image: url("../images/icons/icon-locator.png");
-  width: 26px;
-  height: 36px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-locator {
-    background-image: url("../images/icons/icon-locator-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-search {
-  background-image: url("../images/icons/icon-search.png");
-  width: 30px;
-  height: 22px;
-  background-color: black;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-search {
-    background-image: url("../images/icons/icon-search-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-pointer {
-  background-image: url("../images/icons/icon-pointer.png");
-  width: 30px;
-  height: 19px;
-  background-color: black;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-pointer {
-    background-image: url("../images/icons/icon-pointer-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-pointer-black {
-  background-image: url("../images/icons/icon-pointer-black.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-pointer-black {
-    background-image: url("../images/icons/icon-pointer-black-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-1 {
-  background-image: url("../images/icons/icon-steps/icon-step-1.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-1 {
-    background-image: url("../images/icons/icon-steps/icon-step-1-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-2 {
-  background-image: url("../images/icons/icon-steps/icon-step-2.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-2 {
-    background-image: url("../images/icons/icon-steps/icon-step-2-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-3 {
-  background-image: url("../images/icons/icon-steps/icon-step-3.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-3 {
-    background-image: url("../images/icons/icon-steps/icon-step-3-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-4 {
-  background-image: url("../images/icons/icon-steps/icon-step-4.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-4 {
-    background-image: url("../images/icons/icon-steps/icon-step-4-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-5 {
-  background-image: url("../images/icons/icon-steps/icon-step-5.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-5 {
-    background-image: url("../images/icons/icon-steps/icon-step-5-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-6 {
-  background-image: url("../images/icons/icon-steps/icon-step-6.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-6 {
-    background-image: url("../images/icons/icon-steps/icon-step-6-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-7 {
-  background-image: url("../images/icons/icon-steps/icon-step-7.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-7 {
-    background-image: url("../images/icons/icon-steps/icon-step-7-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-8 {
-  background-image: url("../images/icons/icon-steps/icon-step-8.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-8 {
-    background-image: url("../images/icons/icon-steps/icon-step-8-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-9 {
-  background-image: url("../images/icons/icon-steps/icon-step-9.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-9 {
-    background-image: url("../images/icons/icon-steps/icon-step-9-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-10 {
-  background-image: url("../images/icons/icon-steps/icon-step-10.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-10 {
-    background-image: url("../images/icons/icon-steps/icon-step-10-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-11 {
-  background-image: url("../images/icons/icon-steps/icon-step-11.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-11 {
-    background-image: url("../images/icons/icon-steps/icon-step-11-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-12 {
-  background-image: url("../images/icons/icon-steps/icon-step-12.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-12 {
-    background-image: url("../images/icons/icon-steps/icon-step-12-2x.png");
-    background-size: 100%;
-  }
-}
-
-.icon-step-13 {
-  background-image: url("../images/icons/icon-steps/icon-step-13.png");
-  width: 23px;
-  height: 23px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-step-13 {
-    background-image: url("../images/icons/icon-steps/icon-step-13-2x.png");
-    background-size: 100%;
-  }
-}
-
 /* dd */
 @media (min-width: 641px) {
   .definition-tabular dt {
@@ -3142,6 +2857,50 @@ ol li {
   float: left;
 }
 
+/*
+// Deed relationship definition lists - i.e. "lessors" followed by "lessees"
+
+<div class="deed-relationship">
+  <dl>
+    <dt>Between</dt>
+    <dd>Helen Cassidy</dd>
+    <dd>Jerome Hall</dd>
+  </dl>
+  <dl>
+    <dt>and</dt>
+    <dd>Clara Teoh</dd>
+  </dl>
+</div>
+
+*/
+.deed-relationship {
+  margin-bottom: 1em;
+}
+.deed-relationship dt {
+  font-style: italic;
+  padding-bottom: 0.25em;
+}
+.deed-relationship dd {
+  padding-bottom: 0.25em;
+}
+@media (min-width: 641px) {
+  .deed-relationship dl {
+    float: left;
+    width: 50%;
+  }
+  .deed-relationship dt {
+    float: left;
+    width: 30%;
+  }
+  .deed-relationship dd {
+    float: left;
+    width: 70%;
+  }
+  .deed-relationship dd:not(:first-of-type) {
+    margin-left: 30%;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -3159,7 +2918,7 @@ small {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 640px) {
@@ -3179,11 +2938,15 @@ ins {
   background-color: #e7ebda;
 }
 
+abbr {
+  border-bottom: 1px dotted;
+}
+
 .footnote {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   color: #6f777b;
 }
@@ -3243,7 +3006,7 @@ pre code {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -3383,7 +3146,7 @@ pre code {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   margin: 0 15px 15px 0;
   padding: 0.52632em 0.78947em 0.26316em 0.78947em;
@@ -3449,6 +3212,36 @@ pre code {
 .collapse {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.collapse-top {
+  margin-top: 0;
+}
+
+.collapse-bottom {
+  margin-bottom: 0;
+}
+
+nav ol, nav ul {
+  list-style-type: none;
+}
+
+.page-contents {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  .page-contents {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+.page-contents li:before {
+  content: '-';
+  margin-right: 15px;
 }
 
 .content-title {

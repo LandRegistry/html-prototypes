@@ -359,16 +359,16 @@ def transfer_agreement_1():
 
 # Reserve Priority (Freeze register)  ---------------------------------------
 @app.route('/reserve-priority/select')
-def reserve_priority_1_select():
-  return render_template('reserve-priority/protect-what.html')
+def reserve_priority_1_select_2_0():
+  return render_template('reserve-priority/protect-what-2.0.html')
 
 @app.route('/reserve-priority/confirm')
-def reserve_priority_2_confirm():
-  return render_template('reserve-priority/protect-confirm.html')
+def reserve_priority_2_confirm_2_0():
+  return render_template('reserve-priority/protect-confirm-2.0.html')
 
 @app.route('/reserve-priority/confirmed')
-def reserve_priority_3_confirmed():
-  return render_template('reserve-priority/protect-confirmed.html')
+def reserve_priority_3_confirmed_2_0():
+  return render_template('reserve-priority/protect-confirmed-2.0.html')
 
 # ---------------------------------------------------------------------------
 
