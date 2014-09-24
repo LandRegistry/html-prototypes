@@ -266,7 +266,7 @@ def conveyancer_confirm_2_1():
 # Step 9 - generated token
 @app.route('/relationship-starts/conveyancer-token')
 def conveyancer_token_2_1():
-  return render_template('relationship-starts/conveyancer-token-2.1.html')
+  return render_template('relationship-starts/conveyancer-token-2.2.html')
 
 # ---------------------------------------------------------------------------
 
