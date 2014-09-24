@@ -231,7 +231,7 @@ def relationship_starts_login_2_2():
 # Step 2 - find correct property
 @app.route('/relationship-starts/conveyancer-find-property')
 def conveyancer_find_property_2_1():
-  return render_template('relationship-starts/conveyancer-find-property-2.1.html')
+  return render_template('relationship-starts/conveyancer-find-property-2.2.html')
 
 # Step 3 - results and select correct property
 @app.route('/relationship-starts/conveyancer-select-property')
