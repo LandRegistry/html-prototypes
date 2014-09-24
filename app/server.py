@@ -241,7 +241,7 @@ def conveyancer_select_property_2_1():
 # Step 4 - select associated task
 @app.route('/relationship-starts/conveyancer-select-task')
 def conveyancer_select_task_2_1():
-  return render_template('relationship-starts/conveyancer-select-task-2.1.html')
+  return render_template('relationship-starts/conveyancer-select-task-2.2.html')
 
 # Step 5 - set the number of clients
 @app.route('/relationship-starts/conveyancer-add-clients')
