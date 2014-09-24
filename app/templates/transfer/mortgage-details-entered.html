@@ -22,11 +22,7 @@
 
       <form action="summary" method="get" class="form">
 
-        <div class="form-group">
-          <label for="mortgage-ref" class="form-label">MD Reference</label>
-          <p class='form-hint'>E.g. MD1234F</p>
-          <input type="text" class="form-control" id="mortgage-ref" value="MD98537F">
-        </div>
+        {% include "transfer/partials/_md-ref.html" %}
 
         <section class="panel-indent">
           <h2 class="heading-medium">Mortgage lender</h2>

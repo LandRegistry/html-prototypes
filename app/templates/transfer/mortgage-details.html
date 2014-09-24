@@ -22,11 +22,7 @@
 
       <form action="mortgage-details-entered" data-alternative-action="summary-no-mortgage" method="get" class="form mortgage-details-form">
 
-        <div class="form-group">
-          <label for="mortgage-ref" class="form-label">MD Reference</label>
-          <p class='form-hint'>E.g. MD1234F</p>
-          <input type="text" class="form-control" id="mortgage-ref">
-        </div>
+        {% include "transfer/partials/_md-ref.html" %}
 
         <fieldset>
           <legend>Mortgage date</legend>
