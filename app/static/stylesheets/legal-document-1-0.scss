@@ -93,3 +93,7 @@
     margin-top: $gutter;
     border-top: 1px solid $grey-3;
   }
+
+.legal-document--bounds .legal-document--item:first-of-type h2 {
+  margin-top: 15px;
+}
