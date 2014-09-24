@@ -218,10 +218,10 @@ def transfer_and_charge_citizen_1_semi_confirmed_3_0():
 
 # ---------------------------------------------------------------------------
 
-# Transaction flows, relationship starts, conveyancer initiates v2.1 --------
+# Transaction flows, relationship starts, conveyancer initiates v2.2 --------
 @app.route('/relationship-starts/conveyancer-start')
-def conveyancer_start_2_1():
-  return render_template('relationship-starts/conveyancer-start-2.1.html')
+def conveyancer_start_2_2():
+  return render_template('relationship-starts/conveyancer-start-2.2.html')
 
 # Step 1 - log in
 @app.route('/relationship-starts/login')
@@ -230,22 +230,22 @@ def relationship_starts_login_2_2():
 
 # Step 2 - find correct property
 @app.route('/relationship-starts/conveyancer-find-property')
-def conveyancer_find_property_2_1():
+def conveyancer_find_property_2_2():
   return render_template('relationship-starts/conveyancer-find-property-2.2.html')
 
 # Step 3 - results and select correct property
 @app.route('/relationship-starts/conveyancer-select-property')
-def conveyancer_select_property_2_1():
-  return render_template('relationship-starts/conveyancer-select-property-2.1.html')
+def conveyancer_select_property_2_2():
+  return render_template('relationship-starts/conveyancer-select-property-2.2.html')
 
 # Step 4 - select associated task
 @app.route('/relationship-starts/conveyancer-select-task')
-def conveyancer_select_task_2_1():
+def conveyancer_select_task_2_2():
   return render_template('relationship-starts/conveyancer-select-task-2.2.html')
 
 # Step 5 - set the number of clients
 @app.route('/relationship-starts/conveyancer-add-clients')
-def conveyancer_add_clients_2_1():
+def conveyancer_add_clients_2_2():
   return render_template('relationship-starts/conveyancer-add-clients-2.2.html')
 
 # Step 6 - add 1st client
@@ -261,7 +261,7 @@ def conveyancer_add_client_2_2_2():
 # Step 8 - confirmation
 @app.route('/relationship-starts/conveyancer-confirm')
 def conveyancer_confirm_2_1():
-  return render_template('relationship-starts/conveyancer-confirm-2.1.html')
+  return render_template('relationship-starts/conveyancer-confirm-2.2.html')
 
 # Step 9 - generated token
 @app.route('/relationship-starts/conveyancer-token')
