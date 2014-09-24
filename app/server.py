@@ -116,7 +116,7 @@ def transfer_done():
 def transfer_signing():
   json_data=open('app/static/data/complete-transfer.json', "r")
   data = json.load(json_data)
-  return render_template('transfer/transfer-signing.html', editable=False, data=data, citizen="seller")
+  return render_template('transfer/transfer-signing.html', editable=False, data=data, role="seller")
 
 # ---------------------------------------------------------------------------
 
@@ -133,7 +133,9 @@ def transfer_2nd_conveyancer_case_list():
 # Transfer prototypes - 2nd conveyancer, Step 3 - confirm page
 @app.route('/transfer-2nd-con/review-transfer')
 def transfer_2nd_conveyancer_review_transfer():
-  return render_template('transfer-2nd-conveyancer/review-transfer.html', editable=False)
+  json_data=open('app/static/data/complete-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer-2nd-conveyancer/review-transfer.html', editable=False, data=data, role="seller")
 
 # Transfer prototypes - 2nd conveyancer, Step 4 - transfer ready to sign
 @app.route('/transfer-2nd-con/marked-ready')
