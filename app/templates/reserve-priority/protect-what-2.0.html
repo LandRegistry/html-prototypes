@@ -52,11 +52,21 @@
               Lease
             </label>
 
+             <div id="leaseTaskDetail" class="panel-indent--checkbox-list">
+              <label class="form-label" for="lease-task-detail">lessee:</label>
+              <input type="text" class="form-control" id="lease-task-detail" name="lease-task-detail">
+            </div>           
+
 
             <label for="check-inline-4" class="block-label">
               <input id="check-inline-4" type="checkbox" name="easement" value="easement">
               Easement
             </label>
+
+            <div id="easementTaskDetail" class="panel-indent--checkbox-list">
+              <label class="form-label" for="easement-task-detail">specify easement:</label>
+              <input type="text" class="form-control" id="easement-task-detail" name="easement-task-detail">
+            </div>
 
 
             <label for="check-inline-5" class="block-label">
@@ -101,13 +111,32 @@
       }).trigger('change');
     });
 
-
     $(function() {
       $(':checkbox[name="mortgage"]').on('change', function() {
         if ($(this).is(':checked')) {
           $('#mortgageTaskDetail').show();
         } else {
           $('#mortgageTaskDetail').hide();
+        }
+      }).trigger('change');
+    });
+
+    $(function() {
+      $(':checkbox[name="easement"]').on('change', function() {
+        if ($(this).is(':checked')) {
+          $('#easementTaskDetail').show();
+        } else {
+          $('#easementTaskDetail').hide();
+        }
+      }).trigger('change');
+    });
+
+    $(function() {
+      $(':checkbox[name="lease"]').on('change', function() {
+        if ($(this).is(':checked')) {
+          $('#leaseTaskDetail').show();
+        } else {
+          $('#leaseTaskDetail').hide();
         }
       }).trigger('change');
     });

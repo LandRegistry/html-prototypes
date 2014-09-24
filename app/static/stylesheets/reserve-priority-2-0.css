@@ -3205,6 +3205,24 @@ pre code {
   margin-bottom: 0;
 }
 
+.legal-division--top {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 4px solid #2b8cc4;
+}
+
+.legal-division--bottom {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 4px solid #2b8cc4;
+}
+
+.action-division--top {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #dee0e2;
+}
+
 nav ol, nav ul {
   list-style-type: none;
 }
@@ -3225,6 +3243,48 @@ nav ol, nav ul {
 .page-contents li:before {
   content: '-';
   margin-right: 15px;
+}
+
+.js-enabled .js-faux-details > :first-child {
+  cursor: pointer;
+  position: relative;
+  margin-top: 0;
+  padding-left: 0.8em;
+}
+.js-enabled .js-faux-details > :first-child:hover {
+  color: #2e8aca;
+}
+.js-enabled .js-faux-details > :first-child:focus {
+  outline: 3px solid #ffbf47;
+}
+.js-enabled .js-faux-details > :first-child:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  border-top: 0.3464em dotted transparent;
+  border-right: 0.4 solid transparent;
+  border-bottom: 0.3464em dotted transparent;
+  border-left: 0.4em solid #0b0c0c;
+}
+.js-enabled .js-faux-details-wrapper {
+  display: none;
+  margin-bottom: 1.31579em;
+}
+@media (min-width: 641px) {
+  .js-enabled .js-faux-details-wrapper {
+    margin-bottom: 2.36842em;
+  }
+}
+.js-enabled .js-faux-details--open > :first-child:before {
+  top: 0.35em;
+  border-top: 0.4em solid #0b0c0c;
+  border-right: 0.3464em dotted transparent;
+  border-bottom: 0.4em solid transparent;
+  border-left: 0.3464em dotted transparent;
+}
+.js-enabled .js-faux-details--open .js-faux-details-wrapper {
+  display: block;
 }
 
 .content-title {
@@ -3285,6 +3345,7 @@ form .notification {
 }
 
 .panel-indent--checkbox-list {
+  clear: both;
   border-left: 4px solid #bfc1c3;
   padding: 10px 0 10px 15px;
   margin: 30px 15px 7.5px 0;
