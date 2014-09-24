@@ -22,11 +22,7 @@
 
       <form action="summary" method="get" class="form">
 
-        <div class="form-group">
-          <label for="mortgage-ref" class="form-label">MD Reference</label>
-          <p class='form-hint'>E.g. MD1234F</p>
-          <input type="text" class="form-control" id="mortgage-ref" value="MD98537F">
-        </div>
+        {% include "transfer/partials/_md-ref.html" %}
 
         <section class="panel-indent">
           <h2 class="heading-medium">Mortgage lender</h2>
@@ -46,25 +42,6 @@
             <dd>1007-789654</dd>
           </dl>
         </section>
-
-        <fieldset>
-          <legend>Mortgage date</legend>
-          <div class="date-of-birth">
-            <p class='form-hint datefield-hint'>For example, 28 4 2015</p>
-            <div class='datefield form-group form-group-day'>
-              <label for='buyer_date_of_birth_day'>Day</label>
-              <input class='form-control' id='buyer_date_of_birth_day' type='text' value=''>
-            </div>
-            <div class='datefield form-group form-group-month'>
-              <label for='buyer_date_of_birth_month'>Month</label>
-              <input class='form-control' id='buyer_date_of_birth_month' type='text' value=''>
-            </div>
-            <div class='datefield form-group form-group-year'>
-              <label for='buyer_date_of_birth_year'>Year</label>
-              <input class='form-control' id='buyer_date_of_birth_year' type='text' value=''>
-            </div>
-          </div>
-        </fieldset>
 
         <button class="button final-btn">Confirm mortgage details</button>
         <p><a href="conveyancer-case-list">Save draft</a></p>

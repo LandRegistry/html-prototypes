@@ -3442,3 +3442,11 @@ form .notification {
 .js-enabled .js-faux-details--open .js-faux-details-wrapper {
   display: block;
 }
+
+#property-restrictions ol {
+  margin-left: 1.2em;
+}
+#property-restrictions ol li {
+  list-style-type: decimal;
+  margin-bottom: 1.25em;
+}

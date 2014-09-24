@@ -167,7 +167,7 @@
     </div>
   </section><!-- end new provisions section -->
 
-  {% if citizen != "seller" %}
+  {% if role != "seller" %}
   <section class="document-section document-section--bordered">
     <h2 class="heading-medium">Mortgage details</h2>
     {% if data.mortgage is defined %}
@@ -207,23 +207,6 @@
       </div>
     </div>
 
-    <div class="grid-wrapper document-section__item ">
-      <div class="grid grid-1-4">
-        <div class="inner-block">Mortgage date</div>
-      </div>
-      <div class="grid grid-1-4">
-        <div class="inner-block">
-          {{ data.mortgage.date }}
-        </div>
-      </div>
-      {% if editable %}
-      <div class="grid grid-1-4">
-        <div class="inner-block">
-          <a href="mortgage-details" class="button-secondary">Change<span class="visuallyhidden"> date of mortgage</span></a>
-        </div>
-      </div>
-      {% endif %}
-    </div>
     {% else %}
     <div class="grid-wrapper document-section__item ">
       <div class="grid grid-1-2">
