@@ -63,12 +63,14 @@
         {
           "fullname": "Norma Jones",
           "status": "verified",
-          "code": ""
+          "code": "",
+          "signed": true
         },
         {
           "fullname": "Terry Jones",
           "status": "verified",
-          "code": "UDTS"
+          "code": "UDTS",
+          "signed": false
         }
       ],
       "transfer" : {
