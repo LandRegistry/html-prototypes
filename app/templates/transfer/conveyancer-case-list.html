@@ -46,7 +46,7 @@ Conveyancer case list | Create transfer
 
         <ul class="grid case-list">
 
-          {% for case in cases %}
+          {% for case in data.cases %}
             {{ build_case_item(case) }}
           {% endfor %}
 
