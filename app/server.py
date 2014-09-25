@@ -116,9 +116,9 @@ def transfer_done():
 # Transfer prototypes, signing the transfer page
 @app.route('/transfer/transfer-signing')
 def transfer_signing():
-  json_data=open('app/static/data/complete-transfer.json', "r")
+  json_data=open('app/static/data/ready-to-sign-transfer.json', "r")
   data = json.load(json_data)
-  return render_template('transfer/transfer-signing.html', editable=False, data=data, role="seller")
+  return render_template('transfer/transfer-signing.html', editable=False, data=data, role="buyer")
 
 # ---------------------------------------------------------------------------
 
