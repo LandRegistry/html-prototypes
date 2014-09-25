@@ -90,7 +90,7 @@ def transfer_summary_no_mortgage():
 # Transfer prototypes, transfer that has been withdrawn
 @app.route('/transfer/transfer-withdrawn')
 def transfer_withdrawn():
-  json_data=open('app/static/data/complete-transfer.json', "r")
+  json_data=open('app/static/data/withdrawn-transfer.json', "r")
   data = json.load(json_data)
   return render_template('transfer/transfer-withdrawn.html', editable=True, data=data)
 

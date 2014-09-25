@@ -74,6 +74,31 @@
       "transfer" : {
         "status": "ready to sign"
       }
+    },
+    {
+      "property": {
+        "title": "GHF11451",
+        "addr": {
+          "streetaddress": "32 Tentergate Road",
+          "addresslocality": "Knaresborough",
+          "postalcode": "HG7 5HY"
+        }
+      },
+      "clients": [
+        {
+          "fullname": "Gerald Turner",
+          "status": "verified",
+          "code": ""
+        },
+        {
+          "fullname": "Bernadette Thomson",
+          "status": "verified",
+          "code": ""
+        }
+      ],
+      "transfer" : {
+        "status": "withdrawn"
+      }
     }
   ]
 }
