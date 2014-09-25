@@ -47,7 +47,9 @@ def transfer_login():
 # Transfer prototypes, conveyancer-case-list page
 @app.route('/transfer/conveyancer-case-list')
 def conveyancer_case_list():
-  return render_template('transfer/conveyancer-case-list.html')
+  json_data=open('app/static/data/cases.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/conveyancer-case-list.html', cases=data)
 
 # Transfer prototypes, create transfer page
 @app.route('/transfer/create-transfer')
