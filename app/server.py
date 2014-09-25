@@ -326,10 +326,31 @@ def client_view_register_2_1():
 def client_2_start_2_2():
   return render_template('relationship-starts/client-2-start-2.2.html')
 
-# Step 7 - Client 2 visits start page
+# Step 7 - login with GOV.UK Verify - use sub flow...
+
+#       Sub flow - GOV.UK Verification ---------------------
+
+# GOV.UK verify - Sub flow Step 1 - for conveyancer create relationship flow
 @app.route('/relationship-starts/client-2-login')
 def client_2_verify_2_0():
-  return render_template('relationship-starts/client-2-login-2.0.html')
+  return render_template('relationship-starts/verify-subflow-client-2/verify-intro.html')
+
+# GOV.UK verify -  Sub flow Step 2 - who verified you
+@app.route('/relationship-starts/client-2-who-verified-you')
+def relationship_starts_client_2_verify_who_1():
+  return render_template('relationship-starts/verify-subflow-client-2/verify-who.html')
+
+# GOV.UK verify - Sub flow Step 3 - experian sign in
+@app.route('/relationship-starts/client-2-experian-sign-in')
+def relationship_starts_client_2_verify_experian_sign_in_1():
+  return render_template('relationship-starts/verify-subflow-client-2/verify-sign-in.html')
+
+# GOV.UK verify - Sub flow Step 4 - experian 2nd phase sign in
+@app.route('/relationship-starts/client-2-experian-sign-in-part-2')
+def relationship_starts_client_2_verify_experian_sign_in_2nd_part_1():
+  return render_template('relationship-starts/verify-subflow-client-2/verify-sign-in-2.html')
+
+#       end Sub flow - GOV.UK Verification ---------------------
 
 # Step 8 - Client 2 enters token
 @app.route('/relationship-starts/client-2-enter-token')

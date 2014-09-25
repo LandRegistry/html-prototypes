@@ -6,7 +6,6 @@
 
 {% block head %}
   <link href="{{ prototypes_asset_path }}stylesheets/legal-document-1-0.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="{{ prototypes_asset_path }}stylesheets/relationship-starts-2-0.css" media="screen" rel="stylesheet" type="text/css">
 {% endblock %}
   
 {% block content %}
@@ -16,16 +15,20 @@
 
     {% include "includes/prototypes_banner.html" %}
 
-    <div class="outer-block">
-      <div class="inner-block">
 
-        <a href="client-2-enter-token">
-          <img src="{{ prototypes_asset_path }}images/govuk-verify-1.png">
-        </a>
+	<div class="outer-block">
+	    <div class="inner-block">
 
-      </div>
-    </div>
+		    <p>
+		    	<a href="javascript:window.history.back()" class="track" data-category="Sign in page - Back link" data-action="Clicked the Back link">&lt; Back</a>
+	      	</p>
 
+	        <a href="client-2-experian-sign-in">
+	          <img src="{{ prototypes_asset_path }}images/verified-who.png">
+	        </a>
+
+	    </div>
+	</div>
 
   </div>
 </main>
