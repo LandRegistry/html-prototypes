@@ -270,10 +270,10 @@ def conveyancer_token_2_2():
 
 # ---------------------------------------------------------------------------
 
-# Transaction flows, relationship starts, client(s) confirm v2.1 --------
+# Transaction flows, relationship starts, client(s) confirm v2.2 --------
 @app.route('/relationship-starts/client-start')
 def client_start_2_1():
-  return render_template('relationship-starts/client-start-2.1.html')
+  return render_template('relationship-starts/client-start-2.2.html')
 
 # Step 1 - login with GOV.UK Verify - use sub flow...
 
@@ -323,8 +323,8 @@ def client_view_register_2_1():
 
 # Step 6 - Client 2 visits start page
 @app.route('/relationship-starts/client-2-start')
-def client_2_start_2_0():
-  return render_template('relationship-starts/client-2-start-2.0.html')
+def client_2_start_2_2():
+  return render_template('relationship-starts/client-2-start-2.2.html')
 
 # Step 7 - Client 2 visits start page
 @app.route('/relationship-starts/client-2-login')
