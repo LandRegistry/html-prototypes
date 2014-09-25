@@ -309,7 +309,7 @@ def client_enter_token_2_1():
 # Step 3 - Client 1 confirms
 @app.route('/relationship-starts/client-confirm')
 def client_confirm_2_1():
-  return render_template('relationship-starts/client-confirm-2.1.html')
+  return render_template('relationship-starts/client-confirm-2.2.html')
 
 # Step 4 - Client 1 receives confirmation
 @app.route('/relationship-starts/client-semi-confirmed')
@@ -360,7 +360,7 @@ def client_2_enter_token_2_0():
 # Step 9 - Client 2 confirms
 @app.route('/relationship-starts/client-2-confirm')
 def client_2_confirm_2_0():
-  return render_template('relationship-starts/client-2-confirm-2.0.html')
+  return render_template('relationship-starts/client-2-confirm-2.2.html')
 
 # Step 10 - Client 2 receives (all parties) confirmation
 @app.route('/relationship-starts/clients-confirmed')
