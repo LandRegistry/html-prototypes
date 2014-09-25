@@ -390,9 +390,16 @@ def register_3_0():
 # ---------------------------------------------------------------------------
 
 # Page prototypes, Register Changes View --------------------------
+
+# Change history - pending and historical
 @app.route('/changes-view/changes-1.0')
 def changes_1_0():
   return render_template('changes-view/changes-1.0.html')
+
+# Change history - historical only - nothing pending
+@app.route('/changes-view/changes-no-pending-1.0')
+def changes_no_pending_1_0():
+  return render_template('changes-view/changes-no-pending-1.0.html')
 
 # ---------------------------------------------------------------------------
 
