@@ -1,3 +1,4 @@
+{% from "transfer/_case-item.html" import build_case_item %}
 {% extends "global/prototypes_base.html" %}
 
 {% block page_title %}
@@ -45,95 +46,9 @@ Conveyancer case list | Create transfer
 
         <ul class="grid case-list">
 
-          <li class="case-list__item case-list__item--border">
-            <details class="inner-block">
-              <summary>
-                <h3 class="lede">GHR67834</h3>
-                <p itemscope itemtype="http://schema.org/PostalAddress">
-                  <span itemprop="streetAddress">Flat 18 Kingman Court, Verdant Road</span>, <span itemprop="addressLocality">London</span>, <span itemprop="postalCode">SV19 9BT</span>
-                </p>
-              </summary>
-              <div class="inner-block">
-                <ul>
-                  <li>Client: Jason Amilio Smith</li>
-                  <li>Client: Peter Smith</li>
-                </ul>
-                <div>
-                  <h4>Property</h4>
-                  <a href="../register-view/register-2.1">view title</a>
-                </div>
-                <div>
-                  <h4>Transfer</h4>
-                  <a href="create-transfer">create new transfer</a>
-                  <br />
-                  <a href="summary">transfer summary</a>
-                </div>
-                <div>
-                  <h4>Priority reservation</h4>
-                  <a href="/reserve-priority/select">reserve priority</a>
-                </div>
-                <a class="case-list__delete" href="">delete case</a>
-              </div>
-            </details>
-          </li>
-
-          <li class="case-list__item case-list__item--border">
-            <details class="inner-block">
-              <summary>
-                <h3 class="lede">GHT46758</h3>
-                <p itemscope itemtype="http://schema.org/PostalAddress">
-                  <span itemprop="streetAddress">108 Spring Road</span>, <span itemprop="addressLocality">Bedford</span>, <span itemprop="postalCode">BE9 3BS</span>
-                </p>
-              </summary>
-              <div class="inner-block">
-                <ul>
-                  <li>Client: Sarah Spencer</li>
-                  <li>Client: Brian Kerr</li>
-                </ul>
-                <div>
-                  <h4>Property</h4>
-                  <a href="../register-view/register-2.1">view title</a>
-                </div>
-                <div>
-                  <h4>Transfer</h4>
-                  <a href="create-transfer">create new transfer</a>
-                  <br />
-                  <a href="transfer-empty-states">transfer summary</a>
-                </div>
-                <div>
-                  <h4>Property reservation</h4>
-                  <a href="/reserve-priority/select">reserve priority</a>
-                </div>
-                <a class="case-list__delete" href="">delete case</a>
-              </div>
-            </details>
-          </li>
-
-          <li class="case-list__item case-list__item--border">
-            <details class="inner-block">
-              <summary>
-                <h3 class="lede">GHN89712</h3>
-                <p itemscope itemtype="http://schema.org/PostalAddress">
-                  <span itemprop="streetAddress">Shannon Cottage, Martlesham</span>, <span itemprop="addressLocality">Whitby</span>, <span itemprop="postalCode">WH6 7MA</span>
-                </p>
-              </summary>
-              <div class="inner-block">
-                <ul>
-                  <li>Client: Norma Jones</li>
-                  <li>Client: Terry Jones</li>
-                </ul>
-                <div>
-                  <h4>Transfer</h4>
-                  <a href="create-transfer">create transfer</a>
-                </div>
-                <div>
-                  <h4>Property reservation</h4>
-                  <a href="/reserve-priority/select">reserve priority</a>
-                </div>
-                <a class="case-list__delete" href="">delete case</a>
-              </div>
-            </details>
-          </li>
+          {% for case in data.cases %}
+            {{ build_case_item(case) }}
+          {% endfor %}
 
         </ul>
       </div>

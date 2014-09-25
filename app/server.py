@@ -47,7 +47,9 @@ def transfer_login():
 # Transfer prototypes, conveyancer-case-list page
 @app.route('/transfer/conveyancer-case-list')
 def conveyancer_case_list():
-  return render_template('transfer/conveyancer-case-list.html')
+  json_data=open('app/static/data/cases.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/conveyancer-case-list.html', data=data)
 
 # Transfer prototypes, create transfer page
 @app.route('/transfer/create-transfer')
@@ -88,7 +90,7 @@ def transfer_summary_no_mortgage():
 # Transfer prototypes, transfer that has been withdrawn
 @app.route('/transfer/transfer-withdrawn')
 def transfer_withdrawn():
-  json_data=open('app/static/data/complete-transfer.json', "r")
+  json_data=open('app/static/data/withdrawn-transfer.json', "r")
   data = json.load(json_data)
   return render_template('transfer/transfer-withdrawn.html', editable=True, data=data)
 
@@ -114,9 +116,9 @@ def transfer_done():
 # Transfer prototypes, signing the transfer page
 @app.route('/transfer/transfer-signing')
 def transfer_signing():
-  json_data=open('app/static/data/complete-transfer.json', "r")
+  json_data=open('app/static/data/ready-to-sign-transfer.json', "r")
   data = json.load(json_data)
-  return render_template('transfer/transfer-signing.html', editable=False, data=data, role="seller")
+  return render_template('transfer/transfer-signing.html', editable=False, data=data, role="buyer")
 
 # ---------------------------------------------------------------------------
 
