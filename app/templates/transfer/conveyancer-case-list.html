@@ -1,4 +1,3 @@
-{% from "transfer/_case-item.html" import build_case_item %}
 {% extends "global/prototypes_base.html" %}
 
 {% block page_title %}
@@ -46,6 +45,7 @@ Conveyancer case list | Create transfer
 
         <ul class="grid case-list">
 
+          {% from "transfer/_case-item.html" import build_case_item %}
           {% for case in data.cases %}
             {{ build_case_item(case) }}
           {% endfor %}

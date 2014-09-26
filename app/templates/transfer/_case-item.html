@@ -1,4 +1,4 @@
-{% macro build_case_item(case) %}
+{% macro build_case_item(case, conveyancer='buyer') %}
 <li class="case-list__item case-list__item--border">
   <details class="inner-block">
     <summary>
@@ -54,17 +54,28 @@
         </div>
         <div class="grid grid-1-4">
           <div class="inner-block">
-            {% if case.transfer.status == "-" %}
-            <a href="create-transfer" class="button-secondary">create<span class="visuallyhidden"> a transfer</span></a>
-            {% elif case.transfer.status == "drafted" %}
-            <a href="transfer-empty-states" class="button-secondary">edit<span class="visuallyhidden"> a transfer</span></a>
-            {% elif case.transfer.status == "under review" %}
-            <a href="summary-withdraw-option" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
-            {% elif case.transfer.status == "withdrawn" %}
-            <a href="transfer-withdrawn" class="button-secondary">edit<span class="visuallyhidden"> a transfer</span></a>
-            {% elif case.transfer.status == "ready to sign" %}
-            <a href="transfer-signing" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
+            {% if conveyancer == "buyer" %}
+              {% if case.transfer.status == "-" %}
+              <a href="create-transfer" class="button-secondary">create<span class="visuallyhidden"> a transfer</span></a>
+              {% elif case.transfer.status == "drafted" %}
+              <a href="transfer-empty-states" class="button-secondary">edit<span class="visuallyhidden"> a transfer</span></a>
+              {% elif case.transfer.status == "under review" %}
+              <a href="summary-withdraw-option" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
+              {% elif case.transfer.status == "withdrawn" %}
+              <a href="transfer-withdrawn" class="button-secondary">edit<span class="visuallyhidden"> a transfer</span></a>
+              {% elif case.transfer.status == "ready to sign" %}
+              <a href="transfer-signing" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
+              {% else %}
+              {% endif %}
             {% else %}
+              {% if case.transfer.status == "under review" %}
+              <a href="review-transfer" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
+              {% elif case.transfer.status == "withdrawn" %}
+              <a href="transfer/transfer-withdrawn" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
+              {% elif case.transfer.status == "ready to sign" %}
+              <a href="transfer/transfer-signing" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
+              {% else %}
+              {% endif %}
             {% endif %}
           </div>
         </div>
@@ -72,6 +83,7 @@
 
       <div class="grid-divider"></div>
 
+      {% if conveyancer == "buyer" %}
       <div class="grid-wrapper document-section__item">
         <div class="grid grid-1-4">
           <h2 class="inner-block heading-small">Property</h2>
@@ -89,6 +101,7 @@
       </div>
 
       <div class="grid-divider"></div>
+      {% endif %}
 
       <div class="grid-wrapper document-section__item">
         <div class="grid grid-1-4">
