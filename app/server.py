@@ -120,6 +120,13 @@ def transfer_signing():
   data = json.load(json_data)
   return render_template('transfer/transfer-signing.html', editable=False, data=data, role="buyer")
 
+# Transfer prototypes, signing the transfer page
+@app.route('/transfer/transfer-signing-seller')
+def transfer_signing_seller():
+  json_data=open('app/static/data/ready-to-sign-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/transfer-signing-seller.html', editable=False, data=data, role="seller")
+
 # ---------------------------------------------------------------------------
 
 # Transfer prototypes - 2nd conveyancer, Step 1 - login page
