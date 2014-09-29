@@ -71,9 +71,9 @@
               {% if case.transfer.status == "under review" %}
               <a href="review-transfer" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
               {% elif case.transfer.status == "withdrawn" %}
-              <a href="transfer/transfer-withdrawn" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
+              <a href="/transfer/transfer-withdrawn" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
               {% elif case.transfer.status == "ready to sign" %}
-              <a href="transfer/transfer-signing" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
+              <a href="/transfer/transfer-signing" class="button-secondary">view<span class="visuallyhidden"> a transfer</span></a>
               {% else %}
               {% endif %}
             {% endif %}
@@ -106,7 +106,7 @@
       <div class="grid-wrapper document-section__item">
         <div class="grid grid-1-4">
           <div class="inner-block">
-            <a href="create-transfer" class="button-secondary">Remove case</a>
+            <a href="#" class="button-secondary">Remove case</a>
           </div>
         </div>
       </div>
