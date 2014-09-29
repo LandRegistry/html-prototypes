@@ -137,7 +137,7 @@ def transfer_2nd_conveyancer_login():
 # Transfer prototypes - 2nd conveyancer, Step 2 - conveyancer-case-list
 @app.route('/transfer-2nd-con/conveyancer-case-list')
 def transfer_2nd_conveyancer_case_list():
-  json_data=open('app/static/data/cases.json', "r")
+  json_data=open('app/static/data/cases-seller.json', "r")
   data = json.load(json_data)
   return render_template('transfer-2nd-conveyancer/conveyancer-case-list.html', data=data)
 
