@@ -132,7 +132,7 @@ def transfer_signing_seller():
 # Transfer prototypes - 2nd conveyancer, Step 1 - login page
 @app.route('/transfer-2nd-con/login')
 def transfer_2nd_conveyancer_login():
-  return render_template('transfer-2nd-conveyancer/login.html')
+  return render_template('common/login.html', next_page="/transfer-2nd-con/conveyancer-case-list")
 
 # Transfer prototypes - 2nd conveyancer, Step 2 - conveyancer-case-list
 @app.route('/transfer-2nd-con/conveyancer-case-list')
