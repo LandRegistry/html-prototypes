@@ -42,7 +42,7 @@ def govuk_property_details_2_0():
 # Transfer prototypes, login page
 @app.route('/transfer/login')
 def transfer_login():
-  return render_template('transfer/login.html')
+  return render_template('common/login.html', next_page="/transfer/conveyancer-case-list")
 
 # Transfer prototypes, conveyancer-case-list page
 @app.route('/transfer/conveyancer-case-list')
@@ -237,7 +237,7 @@ def conveyancer_start_2_2():
 # Step 1 - log in
 @app.route('/relationship-starts/login')
 def relationship_starts_login_2_2():
-  return render_template('relationship-starts/conveyancer-login-2.2.html')
+  return render_template('common/login.html', next_page="/relationship-starts/conveyancer-find-property")
 
 # Step 2 - find correct property
 @app.route('/relationship-starts/conveyancer-find-property')
