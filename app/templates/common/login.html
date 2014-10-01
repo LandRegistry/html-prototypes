@@ -4,11 +4,6 @@
 Log in
 {% endblock %}
 
-{% block head %}
-  <link href="{{ prototypes_asset_path }}stylesheets/legal-document-1-0.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="{{ prototypes_asset_path }}stylesheets/relationship-starts-2-0.css" media="screen" rel="stylesheet" type="text/css">
-{% endblock %}
-  
 {% block content %}
 
 <main id="wrapper" role="main">
@@ -22,7 +17,7 @@ Log in
       <h1 class="form-title heading-large">Login</h1>
 
 
-      <form action="conveyancer-find-property" method="get" class="form">
+      <form action="{{ next_page }}" method="get" class="form">
 
         <div class="form-group">
           <label for="username" class="form-label">Username</label>
