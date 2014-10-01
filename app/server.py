@@ -19,6 +19,12 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+# ---------------------------------------------------------------------------
+
+#  -----------------
+@app.route('/common/payment')
+def common_payment():
+  return render_template('common/payment.html', next_page="/")
 
 # ---------------------------------------------------------------------------
 
