@@ -4057,6 +4057,19 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
   }
 }
 
+.document-section__item {
+  margin-left: 0;
+  margin-right: 0;
+}
+.document-section__item:nth-child(even) {
+  background: #f8f8f8;
+  padding: 10px 0;
+}
+
+.document-section__item--collapse {
+  margin: 0;
+}
+
 .transferees {
   margin-top: 15px;
 }
@@ -4076,4 +4089,11 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 
 .addr-collapse {
   margin-bottom: 0;
+}
+
+.legal-document--bounds {
+  margin: 0 30px 30px;
+}
+.inner-block .legal-document--bounds {
+  margin: 0 0 30px;
 }
