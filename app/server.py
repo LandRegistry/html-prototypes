@@ -19,6 +19,12 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+# ---------------------------------------------------------------------------
+
+#  -----------------
+@app.route('/common/payment')
+def common_payment():
+  return render_template('common/payment.html', next_page="/")
 
 # ---------------------------------------------------------------------------
 
@@ -54,7 +60,7 @@ def find_owner_results():
 # GOV.UK pages, property details v2.0 -----------------
 @app.route('/find-owner/property-details-2.0')
 def find_owner_details_2_0():
-  return render_template('user-find-owner/property-details-2.0.html', next_page="/")
+  return render_template('user-find-owner/property-details-2.0.html', next_page="/find-owner/verify")
 
 # GOV.UK pages, IDA/Credit Card/login stuff -----------------
 
@@ -65,22 +71,22 @@ def find_owner_details_2_0():
 # GOV.UK verify - Sub flow Step 1 - for conveyancer create relationship flow
 @app.route('/find-owner/verify')
 def find_owner_verify():
-  return render_template('user-find-owner/govuk-verify/verify-intro.html')
+  return render_template('user-find-owner/govuk-verify/verify-intro.html', next_page="/find-owner/who-verified-you")
 
 # GOV.UK verify -  Sub flow Step 2 - who verified you
 @app.route('/find-owner/who-verified-you')
 def find_owner_verify_who():
-  return render_template('user-find-owner/govuk-verify/verify-who.html')
+  return render_template('user-find-owner/govuk-verify/verify-who.html', next_page="/find-owner/experian-sign-in")
 
 # GOV.UK verify - Sub flow Step 3 - experian sign in
 @app.route('/find-owner/experian-sign-in')
 def find_owner_verify_experian_sign_in_1():
-  return render_template('user-find-owner/govuk-verify/verify-sign-in.html')
+  return render_template('user-find-owner/govuk-verify/verify-sign-in.html', next_page="/find-owner/experian-sign-in-part-2")
 
 # GOV.UK verify - Sub flow Step 4 - experian 2nd phase sign in
 @app.route('/find-owner/experian-sign-in-part-2')
 def find_owner_verify_experian_sign_in_2nd_part_1():
-  return render_template('user-find-owner/govuk-verify/verify-sign-in-2.html')
+  return render_template('user-find-owner/govuk-verify/verify-sign-in-2.html', next_page="/find-owner/register-view")
 
 #       end Sub flow - GOV.UK Verification ---------------------
 
@@ -94,6 +100,56 @@ def find_owner_register_view():
 def find_owner_historian_view():
   return render_template('user-find-owner/changes-1.0.html', next_page="/")
 
+# ---------------------------------------------------------------------------
+
+# scenario: user wants to find out who owns a property (IDA + payment)
+# starts on GOV.UK and flows into register view
+@app.route('/find-owner/b/search')
+def find_owner_b_search():
+  return render_template('user-find-owner/search.html', next_page="/find-owner/b/results")
+
+# GOV.UK pages, results listing -----------------
+@app.route('/find-owner/b/results')
+def find_owner_b_results():
+  return render_template('user-find-owner/results.html', next_page="/find-owner/b/property-details-2.0")
+
+# GOV.UK pages, property details v2.0 -----------------
+@app.route('/find-owner/b/property-details-2.0')
+def find_owner_b_details_2_0():
+  return render_template('user-find-owner/property-details-2.0.html', next_page="/find-owner/b/verify")
+
+# Sub flow - GOV.UK Verification ---------------------
+
+# GOV.UK verify - Sub flow Step 1
+@app.route('/find-owner/b/verify')
+def find_owner_b_verify():
+  return render_template('user-find-owner/govuk-verify/verify-intro.html', next_page="/find-owner/b/who-verified-you")
+
+# GOV.UK verify -  Sub flow Step 2
+@app.route('/find-owner/b/who-verified-you')
+def find_owner_b_verify_who():
+  return render_template('user-find-owner/govuk-verify/verify-who.html', next_page="/find-owner/b/experian-sign-in")
+
+# GOV.UK verify - Sub flow Step 3 - experian sign in
+@app.route('/find-owner/b/experian-sign-in')
+def find_owner_b_verify_experian_sign_in_1():
+  return render_template('user-find-owner/govuk-verify/verify-sign-in.html', next_page="/find-owner/b/experian-sign-in-part-2")
+
+# GOV.UK verify - Sub flow Step 4 - experian 2nd phase sign in
+@app.route('/find-owner/b/experian-sign-in-part-2')
+def find_owner_b_verify_experian_sign_in_2nd_part_1():
+  return render_template('user-find-owner/govuk-verify/verify-sign-in-2.html', next_page="/find-owner/b/card-payment")
+
+# end Sub flow - GOV.UK Verification ---------------------
+
+# Sub flow - card payment ---------------------
+
+# GOV.UK pages, property details v2.0 -----------------
+@app.route('/find-owner/b/card-payment')
+def find_owner_b_card_payment():
+  return render_template('common/payment.html', next_page="/find-owner/register-view")
+
+# end sub flow - card payment ---------------------
 
 # ---------------------------------------------------------------------------
 
