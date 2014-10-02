@@ -116,7 +116,7 @@ def find_owner_b_results():
 # GOV.UK pages, property details v2.0 -----------------
 @app.route('/find-owner/b/property-details-2.0')
 def find_owner_b_details_2_0():
-  return render_template('user-find-owner/property-details-2.0.html', next_page="/find-owner/b/verify")
+  return render_template('user-find-owner/property-details-2.1.html', next_page="/find-owner/b/verify")
 
 # Sub flow - GOV.UK Verification ---------------------
 
@@ -144,7 +144,12 @@ def find_owner_b_verify_experian_sign_in_2nd_part_1():
 
 # Sub flow - card payment ---------------------
 
-# GOV.UK pages, property details v2.0 -----------------
+# GOV.UK pages, accept cost to view register -----------------
+@app.route('/find-owner/b/accept-cost')
+def find_owner_b_accept_cost():
+  return render_template('user-find-owner/accept-cost.html', next_page="/find-owner/b/card-payment")
+
+# GOV.UK pages, pay to view register -----------------
 @app.route('/find-owner/b/card-payment')
 def find_owner_b_card_payment():
   return render_template('common/payment.html', next_page="/find-owner/register-view")
