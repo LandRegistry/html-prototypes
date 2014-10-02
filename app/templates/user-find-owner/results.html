@@ -8,7 +8,14 @@
   <link href="{{ prototypes_asset_path }}stylesheets/legal-document-1-0.css" media="screen" rel="stylesheet" type="text/css">
   <link href="{{ prototypes_asset_path }}stylesheets/relationship-starts-2-0.css" media="screen" rel="stylesheet" type="text/css">
 {% endblock %}
-  
+
+{% block inside_header %}
+  {% include "common/partials/global_search_box.html" %}
+{% endblock %}
+
+{% block header_class %}{% endblock %}
+{% block proposition_header %}{% endblock %}
+
 {% block content %}
 
 <main id="wrapper" role="main">
