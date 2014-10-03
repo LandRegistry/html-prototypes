@@ -19,7 +19,7 @@
         <div class="inner-block">Title</div>
       </div>
       <div class="grid grid-1-3">
-        <div class="inner-block"><p>{{ data.property.title }}</p></div>
+        <div class="inner-block">{{ data.property.title }}</div>
       </div>
     </div>
 
@@ -29,7 +29,7 @@
       </div>
       <div class="grid grid-1-4">
         <div class="inner-block">
-          <ul>
+          <ul class="collapse">
             {% for seller in data.property.sellers %}
                 <li>{{ seller }}</li>
             {% endfor %}
