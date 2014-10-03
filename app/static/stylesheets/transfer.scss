@@ -202,11 +202,8 @@ input[type="radio"]:checked ~ .dec-trust__hidden {
 
 .document-section .document-section__item.empty-state {
   padding: 10px 0;
-  margin-left: -13px;
   margin-right: 0;
-  @include media(tablet) {
-    margin-left: -18px;
-  }
+  background: $error-background;
 }
 
 .document-section__item {
