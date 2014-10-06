@@ -45,7 +45,7 @@
           <div class="grid-wrapper">
             {% for buyer in data.buyers  %}
             <div class="grid grid-1-2">
-              <p class="inner-block">{{ buyer.name }} {% if buyer.isuser %}<span class="alert-flag">You</span>{% endif %}</p>
+              <p class="inner-block">{{ buyer.name }} {% if role == "citizen" and buyer.isuser %}<span class="alert-flag">You</span>{% endif %}</p>
             </div>
             {% endfor %}
           </div>
@@ -53,7 +53,8 @@
 
       </section>
 
-      <form action="/transfer-and-charge-v3/citizen-1-sms" method="get" class="form">
+      {% if role == "citizen" %}
+      <form action="{{ next_page }}" method="get" class="form">
         <div class="form-group">
           <label for="check-1" class="block-label">
             <input id="check-1" type="checkbox" name="agree-execution">
@@ -64,6 +65,7 @@
           <button type="submit" class="button">Sign this agreement</button>
         </div>
       </form>
+      {% endif %}
     </div>
 
   </div>

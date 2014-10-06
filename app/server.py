@@ -329,7 +329,14 @@ def transfer_and_charge_citizen_1_enter_token_3_0():
 # Step 3 - Client 1 signs mortgage deed
 @app.route('/transfer-and-charge-v3/citizen-1-sign-mortgage')
 def transfer_and_charge_citizen_1_sign_mortgage_3_0():
-  return render_template('transfer-and-charge/citizen-1-sign-mortgage-2.0.html', next_page="/transfer/transfer-signing")
+  return render_template('transfer-and-charge/citizen-1-sign-mortgage-2.0.html', next_page="/transfer-and-charge-v3/citizen-1-sign-transfer")
+
+# Step 3 - Client 1 signs transfer deed
+@app.route('/transfer-and-charge-v3/citizen-1-sign-transfer')
+def transfer_and_charge_citizen_1_sign_transfer_3_0():
+  json_data=open('app/static/data/ready-to-sign-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/transfer-signing.html', next_page="/transfer-and-charge-v3/citizen-1-sms", data=data, role="citizen")
 
 # Step 3a - external process step - show user sms message
 @app.route('/transfer-and-charge-v3/citizen-1-sms')
