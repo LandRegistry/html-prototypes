@@ -533,6 +533,10 @@ def register_3_0():
 @app.route('/register-view/register-test-title')
 def register_test_title():
   return render_template('register-view/register-test-title.html')
+@app.route('/register-view/register-hybrid')
+def register_hybrid():
+  return render_template('register-view/register-hybrid.html')
+
 
 # ---------------------------------------------------------------------------
 
