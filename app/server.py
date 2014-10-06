@@ -272,6 +272,13 @@ def transfer_2nd_conveyancer_review_transfer():
 def transfer_2nd_conveyancer_marked_ready():
   return render_template('transfer-2nd-conveyancer/marked-ready.html')
 
+# Transfer prototypes, transfer that has been withdrawn
+@app.route('/transfer-2nd-con/transfer-withdrawn')
+def transfer_2nd_con_withdrawn():
+  json_data=open('app/static/data/withdrawn-transfer.json', "r")
+  data = json.load(json_data)
+  return render_template('transfer/transfer-withdrawn.html', editable=False, data=data)
+
 # ---------------------------------------------------------------------------
 
 # Transaction flows, citizens sign transfer and charge v2.0 -----------------
