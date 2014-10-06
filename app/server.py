@@ -524,7 +524,7 @@ def register_2_1():
 def register_3_0():
   return render_template('register-view/register-3.0.html')
 @app.route('/register-view/register-test-title')
-def register_test-title():
+def register_test_title():
   return render_template('register-view/register-test-title.html')
 
 # ---------------------------------------------------------------------------
