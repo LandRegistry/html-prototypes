@@ -17,12 +17,15 @@
     {% include "includes/prototypes_banner.html" %}
 
     <div class="inner-block">
-      <h1 class="heading-large">Transfer deed</h1>
 
+      <h1 class="heading-large">Transfer deed</h1>
       <p class="lede text">Please check all the details carefully before signing.</p>
+
+    </div>
 
       {% include "transfer/partials/_transfer-summary-dynamic-v1.5.html" %}
 
+    <div class="inner-block">
       <section class="document-section document-section--flush text">
         <h2 class="heading-medium">The transferors agree to transfer ownership of the property to the transferees.</h2>
 
@@ -42,7 +45,7 @@
           <div class="grid-wrapper">
             {% for buyer in data.buyers  %}
             <div class="grid grid-1-2">
-              <p class="inner-block">{{ buyer.name }} {% if buyer.isuser %}<span class="alert-flag">You</span>{% endif %}</p>
+              <p class="inner-block">{{ buyer.name }} {% if role == "citizen" and buyer.isuser %}<span class="alert-flag">You</span>{% endif %}</p>
             </div>
             {% endfor %}
           </div>
@@ -50,7 +53,8 @@
 
       </section>
 
-      <form action="/transfer-and-charge-v3/citizen-1-sms" method="get" class="form">
+      {% if role == "citizen" %}
+      <form action="{{ next_page }}" method="get" class="form">
         <div class="form-group">
           <label for="check-1" class="block-label">
             <input id="check-1" type="checkbox" name="agree-execution">
@@ -61,6 +65,9 @@
           <button type="submit" class="button">Sign this agreement</button>
         </div>
       </form>
+      {% else %}
+      <a href="conveyancer-case-list">back to case list</a>
+      {% endif %}
     </div>
 
   </div>
