@@ -158,6 +158,58 @@ def find_owner_b_card_payment():
 
 # ---------------------------------------------------------------------------
 
+# scenario: user wants to find out who owns a property rouute c - (IDA) (real fake title)
+# starts on GOV.UK and flows into register view
+@app.route('/find-owner/c/search')
+def find_owner_c_search():
+  return render_template('user-find-owner/search.html', next_page="/find-owner/c/results")
+
+# GOV.UK pages, results listing -----------------
+@app.route('/find-owner/c/results')
+def find_owner_c_results():
+  return render_template('user-find-owner/results-c.html', next_page="/find-owner/c/property-details-2.0")
+
+# GOV.UK pages, property details v2.0 -----------------
+@app.route('/find-owner/c/property-details-2.0')
+def find_owner_c_details_2_0():
+  return render_template('user-find-owner/property-details-2.1-c.html', next_page="/find-owner/c/verify")
+
+# Sub flow - GOV.UK Verification ---------------------
+
+# GOV.UK verify - Sub flow Step 1
+@app.route('/find-owner/c/verify')
+def find_owner_c_verify():
+  return render_template('user-find-owner/govuk-verify/verify-intro.html', next_page="/find-owner/c/who-verified-you")
+
+# GOV.UK verify -  Sub flow Step 2
+@app.route('/find-owner/c/who-verified-you')
+def find_owner_c_verify_who():
+  return render_template('user-find-owner/govuk-verify/verify-who.html', next_page="/find-owner/c/experian-sign-in")
+
+# GOV.UK verify - Sub flow Step 3 - experian sign in
+@app.route('/find-owner/c/experian-sign-in')
+def find_owner_c_verify_experian_sign_in_1():
+  return render_template('user-find-owner/govuk-verify/verify-sign-in.html', next_page="/find-owner/c/experian-sign-in-part-2")
+
+# GOV.UK verify - Sub flow Step 4 - experian 2nd phase sign in
+@app.route('/find-owner/c/experian-sign-in-part-2')
+def find_owner_c_verify_experian_sign_in_2nd_part_1():
+  return render_template('user-find-owner/govuk-verify/verify-sign-in-2.html', next_page="/find-owner/c/register-view")
+
+# end Sub flow - GOV.UK Verification ---------------------
+
+# GOV.UK pages, property details v2.0 -----------------
+@app.route('/find-owner/c/register-view')
+def find_owner_c_register_view():
+  return render_template('user-find-owner/register-test-title-c.html', next_page="/find-owner/c/changes-view")
+
+# GOV.UK pages, property details v2.0 -----------------
+@app.route('/find-owner/c/changes-view')
+def find_owner_c_historian_view():
+  return render_template('user-find-owner/changes-1.0-c.html', next_page="/")
+
+# ---------------------------------------------------------------------------
+
 # Transfer prototypes, login page
 @app.route('/transfer/login')
 def transfer_login():
