@@ -4010,11 +4010,13 @@ form .notification {
 }
 
 #property-restrictions ol,
-.register-hybrid ol {
+.register-hybrid ol,
+ol.numbered {
   margin-left: 1.2em;
 }
-#property-restrictions ol li,
-.register-hybrid ol li {
+#property-restrictions ol > li,
+.register-hybrid ol > li,
+ol.numbered > li {
   list-style-type: decimal;
   margin-bottom: 1.25em;
 }

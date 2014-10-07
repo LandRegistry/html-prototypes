@@ -189,10 +189,11 @@
 }
 
 #property-restrictions ol,
-.register-hybrid ol {
+.register-hybrid ol,
+ol.numbered {
   margin-left: 1.2em;
 
-  li {
+  & > li {
     list-style-type: decimal;
     margin-bottom: em(20, 16);
   }
