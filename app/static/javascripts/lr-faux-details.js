@@ -27,13 +27,11 @@
           .attr('tabindex', '0')
           .on('click', function(e) {
             $(this).parent().toggleClass('js-faux-details--open');
-            $(root).trigger('govuk.pageSizeChanged');
           })
           .on('keydown', function(e) {
             // e.preventDefault(); not needed?
             if (e.keyCode == 13) {
               $(this).parent().toggleClass('js-faux-details--open');
-              $(root).trigger('govuk.pageSizeChanged');
             }
           });
       });
