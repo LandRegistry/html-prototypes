@@ -43,6 +43,11 @@ def govuk_results_2_0():
 def govuk_property_details_2_0():
   return render_template('govuk-views/property-details-2.0.html')
 
+# GOV.UK pages, property details v2.1 -----------------
+@app.route('/govuk/property-details-2.1')
+def govuk_property_details_2_1():
+  return render_template('govuk-views/property-details-2.1.html')
+
 
 # ---------------------------------------------------------------------------
 
