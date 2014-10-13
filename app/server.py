@@ -206,12 +206,7 @@ def find_owner_c_verify_experian_sign_in_2nd_part_1():
 # GOV.UK pages, property details v2.0 -----------------
 @app.route('/find-owner/c/register-view')
 def find_owner_c_register_view():
-  return render_template('user-find-owner/register-test-title-c.html', next_page="/find-owner/c/changes-view")
-
-# GOV.UK pages, property details v2.0 -----------------
-@app.route('/find-owner/c/changes-view')
-def find_owner_c_historian_view():
-  return render_template('user-find-owner/changes-1.0-c.html', next_page="/")
+  return render_template('register-view/register-test-title.html')
 
 # ---------------------------------------------------------------------------
 

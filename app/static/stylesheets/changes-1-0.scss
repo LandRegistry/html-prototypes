@@ -87,7 +87,15 @@ $previous: $mauve;
     margin-bottom: $gutter-half;
     padding-bottom: $gutter-half;
     border-bottom: 1px dotted $grey-2;
+
+    .changelog:last-of-type {
+      border-bottom: 1px dotted $grey-2;
+    }
+
+    .link-to-register {
+      margin-top: $gutter-half;
+      margin-bottom: 0;
+    }
   }
 
 }
-

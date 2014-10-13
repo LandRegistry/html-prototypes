@@ -153,3 +153,10 @@
   padding-bottom: 15px;
   border-bottom: 1px dotted #bfc1c3;
 }
+.register-changes-previous details[open] .changelog:last-of-type {
+  border-bottom: 1px dotted #bfc1c3;
+}
+.register-changes-previous details[open] .link-to-register {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
