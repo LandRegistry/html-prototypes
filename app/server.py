@@ -210,6 +210,64 @@ def find_owner_c_register_view():
 
 # ---------------------------------------------------------------------------
 
+
+# scenario: user wants to find out ... something about a property
+# starts on GOV.UK and flows into register view
+# Verify + Payment + real fake title
+@app.route('/find-owner/d/search')
+def find_owner_d_search():
+  return render_template('user-find-owner/search.html', next_page="/find-owner/d/results")
+
+# GOV.UK pages, results listing -----------------
+@app.route('/find-owner/d/results')
+def find_owner_d_results():
+  return render_template('user-find-owner/results-c.html', next_page="/find-owner/d/property-details-2.0")
+
+# GOV.UK pages, property details v2.0 -----------------
+@app.route('/find-owner/d/property-details-2.0')
+def find_owner_d_details_2_0():
+  return render_template('user-find-owner/property-details-2.1-c.html', next_page="/find-owner/d/verify")
+
+#   Verify ---------------------
+
+# verify - Step 1
+@app.route('/find-owner/d/verify')
+def find_owner_d_verify():
+  return render_template('user-find-owner/govuk-verify/verify-intro.html', next_page="/find-owner/d/who-verified-you")
+
+# verify - Step 2
+@app.route('/find-owner/d/who-verified-you')
+def find_owner_d_verify_who():
+  return render_template('user-find-owner/govuk-verify/verify-who.html', next_page="/find-owner/d/experian-sign-in")
+
+# verify - Step 3 - experian sign in
+@app.route('/find-owner/d/experian-sign-in')
+def find_owner_d_verify_experian_sign_in_1():
+  return render_template('user-find-owner/govuk-verify/verify-sign-in.html', next_page="/find-owner/d/experian-sign-in-part-2")
+
+# verify - Step 4 - experian 2nd phase sign in
+@app.route('/find-owner/d/experian-sign-in-part-2')
+def find_owner_d_verify_experian_sign_in_2nd_part_1():
+  return render_template('user-find-owner/govuk-verify/verify-sign-in-2.html', next_page="/find-owner/d/card-payment")
+
+#   end Verify ---------------------
+
+#   card payment ---------------------
+
+# pay to view register -----------------
+@app.route('/find-owner/d/card-payment')
+def find_owner_d_card_payment():
+  return render_template('common/payment.html', next_page="/find-owner/d/register-view")
+
+# end card payment ---------------------
+
+# GOV.UK pages, property details v2.0 -----------------
+@app.route('/find-owner/d/register-view')
+def find_owner_d_register_view():
+  return render_template('register-view/register-test-title.html')
+
+# ---------------------------------------------------------------------------
+
 # Transfer prototypes, login page
 @app.route('/transfer/login')
 def transfer_login():
