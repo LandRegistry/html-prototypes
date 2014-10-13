@@ -198,3 +198,13 @@ ol.numbered {
     margin-bottom: em(20, 16);
   }
 }
+
+.pending-changes-flag {
+  margin-top: $gutter-half;
+  padding-top: $gutter-half;
+  border-top: 1px solid #fff;
+
+  a {
+    margin: 0;
+  }
+}
