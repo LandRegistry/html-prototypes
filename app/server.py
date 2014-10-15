@@ -19,6 +19,14 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('common/proto-404.html'), 404
+
+@app.route('/404')
+def edge_of_proto(e):
+    return render_template('common/proto-404.html')
+
 # ---------------------------------------------------------------------------
 
 #  -----------------
