@@ -4147,6 +4147,14 @@ ol.numbered > li {
   padding-top: 15px;
   border-top: 1px solid #fff;
 }
+.pending-changes-flag p {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+  color: #005ea5;
+  background-color: #ffffff;
+}
 .pending-changes-flag a {
   margin: 0;
+  font-weight: 700;
 }

@@ -204,7 +204,17 @@ ol.numbered {
   padding-top: $gutter-half;
   border-top: 1px solid #fff;
 
+  p {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    padding: 2px 5px 0;
+    color: #005ea5;
+    background-color: #ffffff;
+  }
+
   a {
     margin: 0;
+    font-weight: 700;
   }
 }
+
