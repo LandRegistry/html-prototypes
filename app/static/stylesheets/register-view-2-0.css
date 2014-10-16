@@ -4158,3 +4158,27 @@ ol.numbered > li {
   margin: 0;
   font-weight: 700;
 }
+
+p.sub-heading-small {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 0px;
+  margin-bottom: 0.3125em;
+  color: #6f777b;
+}
+
+.panel-indent--help {
+  clear: both;
+  border-left: 4px solid #bfc1c3;
+  padding: 0px 0 0px 15px;
+  margin: 10px 15px 30px 20px;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  color: #6f777b;
+}
