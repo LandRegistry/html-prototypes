@@ -276,6 +276,14 @@ def find_owner_d_register_view():
 
 # ---------------------------------------------------------------------------
 
+# Alternate Register view.  V4 with sections fully open
+
+@app.route('/register-view/register-view-4-expanded')
+def register_view_4_0_expanded():
+  return render_template('register-view/register-test-title-expanded.html', next_page="404")
+
+# ---------------------------------------------------------------------------
+
 # Transfer prototypes, login page
 @app.route('/transfer/login')
 def transfer_login():
