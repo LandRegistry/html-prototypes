@@ -30,43 +30,14 @@ ruby -v
 
 When you've confirmed you have Ruby installed, run ```gem install sass``` to install Sass.
 
-### A Python virtual environment
-
-1. install [virtualenv](https://virtualenv.pypa.io/en/latest)
-
-2. install [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/)
-
-Note very important the part in virtualenvwrapper install intructions about sourcing the virtualenvwrapper.sh in your .bash_profile.
-
-On my machine I have the following in my .bash_profile
-
-```
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-```
-
-So when I call ```mkvirtualenv some-name``` I get a some-name virtual environment directory in ~/.virtualenvs
-
-Now create a virtualenv for the html-prototypes project
-
-```
-mkvirtualenv html-prototypes
-```
-
-This automatically activates the virtualenv. Once done any pip installs will install into that virtualenv.
-
-Anytime you want to activate the virtualenv from that point on, you just enter
-
-```
-workon html-prototypes
-```
-
 
 ## Getting started
 
-Once you've got the requirements in place:
+Get hold of the [development environment](https://github.com/LandRegistry/development-environment) and get it running :)
 
-* Clone this repo.
+Then in a new tab:
+
 * Ensure you’ve cd’ed into the html-prototypes folder, then ```npm install``` to install dependencies.
-* Start your Python virtual environment: ```workon html-prototypes```
-* To run the server and have sass files watched: ```grunt```
+* To have sass files watched: ```grunt```
+
+Off you go.
