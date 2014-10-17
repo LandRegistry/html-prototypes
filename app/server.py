@@ -284,6 +284,16 @@ def register_view_4_0_expanded():
 
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+
+# Alternate Register view.  V4 with help on show
+
+@app.route('/register-view/register-view-4-help-text')
+def register_view_4_0_help_text():
+  return render_template('register-view/register-test-title-help.html', next_page="404")
+
+# ---------------------------------------------------------------------------
+
 # Transfer prototypes, login page
 @app.route('/transfer/login')
 def transfer_login():
