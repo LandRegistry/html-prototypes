@@ -19,6 +19,14 @@ def asset_path_context_processor():
 def home():
   return render_template('index.html')
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('common/proto-404.html'), 404
+
+@app.route('/404')
+def edge_of_proto(e):
+    return render_template('common/proto-404.html')
+
 # ---------------------------------------------------------------------------
 
 #  -----------------
@@ -265,6 +273,14 @@ def find_owner_d_card_payment():
 @app.route('/find-owner/d/register-view')
 def find_owner_d_register_view():
   return render_template('register-view/register-test-title.html')
+
+# ---------------------------------------------------------------------------
+
+# Alternate Register view.  V4 with sections fully open
+
+@app.route('/register-view/register-view-4-expanded')
+def register_view_4_0_expanded():
+  return render_template('register-view/register-test-title-expanded.html', next_page="404")
 
 # ---------------------------------------------------------------------------
 
