@@ -38,113 +38,44 @@
   margin-top: 0;
 }
 
-/* .register-related-items {
-  margin-top: $gutter;
-  padding-top: $gutter;
-  border-top: 4px solid $light-blue;
-} */
-
-.register-make-change {
-  margin-top: $gutter;
-  padding-top: $gutter;
-  border-top: 2px solid $grey-3;
-}
-
 .maps-and-plans-item {
   img {
     border: 3px solid $grey-3;
   }
 }
 
-.note {
-  margin: 1em 0;
+.pending-changes-flag {
+  margin-top: $gutter;
+  padding-top: $gutter;
+  border-top: 1px solid $white;
+
   p {
-    margin-bottom: 0.25em;
+    display: inline-block;
+    margin: 0;
+    padding: $gutter-half;
+    background-color: $white;
   }
+}
+
+details {
+  margin-bottom: $gutter-half;
 }
 
 .group {
   @extend %contain-floats;
 }
 
-.deed-relationship {
-  @extend %contain-floats;
-  margin-bottom: 1em;
-  
-  dt {
-    font-style: italic;
-    padding-bottom: 0.25em;
-  }
-  dd {
-    padding-bottom: 0.25em;
-  }
-
-  @include media(tablet) {
-    dl {
-      float: left;
-      width: $half;
-    }
-    dt {
-      float: left;
-      width: 30%;
-    }
-    dd {
-      float: left;
-      width: 70%;
-      &:not(:first-of-type) {
-        margin-left: 30%;
-      }
-    }
-  }
-}
-
-
-// in-page changelog
-.changelog {
-  padding-top: 1em;
-  border-top: 1px dotted $grey-3;
-
-  @extend %contain-floats;
-  @include core-16;
-
-  h5 {
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  .removal,
-  .addition {
-    @include box-sizing(border-box);
-  }
-
-  .removal {
-    float: left;
-    width: $half;
-    padding-right: $gutter-half;
-  }
-
-  .addition {
-    float: right;
-    width: $half;
-    padding-left: $gutter-half;
-  }
-}
-
-.pending-changes-flag {
-  margin-top: $gutter-half;
-  padding-top: $gutter-half;
-  border-top: 1px solid #fff;
-
-  p {
-    display: inline-block;
-    margin: 0 8px 0 0;
-    padding: $gutter-half;
-    background-color: $white;
-  }
-}
-
-h3.sub-heading-small {
-  margin-top: 0;
-  color: $black;
+h4.documents {
   font-weight: normal;
+}
+
+.items {
+  padding-bottom: $gutter-half;
+  margin-bottom: 0;
+  border-bottom: 1px solid $grey-4;
+}
+
+.legal-division--top {
+  margin-top: 0;
+  padding-top: 0;
 }
