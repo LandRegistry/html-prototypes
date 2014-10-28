@@ -29,6 +29,17 @@ def edge_of_proto(e):
 
 # ---------------------------------------------------------------------------
 
+# LAST OF THE ALPHA PROTOTYPES!
+
+# A "citizen facing" register concept
+#
+# If we're having to download a "legal copy" then this page can be much more straightforward
+@app.route('/register-view/register-view-citizen-1')
+def register_view_citizen_1():
+  return render_template('register-view/register-view-citizen-1.html', next_page="404")
+
+# ---------------------------------------------------------------------------
+
 #  -----------------
 @app.route('/common/payment')
 def common_payment():
