@@ -27,14 +27,6 @@ def page_not_found(e):
 def edge_of_proto(e):
     return render_template('common/proto-404.html')
 
-
-# ---------------------------------------------------------------------------
-
-#hackday 
-@app.route('/hackday/land-ownership-record')
-def hackday_land_record():
-  return render_template('hackday/land-record.html', next_page="404")
-
 # ---------------------------------------------------------------------------
 
 # LAST OF THE ALPHA PROTOTYPES!
